@@ -1,0 +1,55 @@
+[gd_scene format=4]
+
+[ext_resource type="Texture2D" path="res://Assets/KitchenProducts/Bottle006/Bottle006_products.png" id="1_ehcqj"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1gwmb"]
+resource_name = "products"
+cull_mode = 2
+albedo_texture = ExtResource("1_ehcqj")
+roughness = 0.5
+texture_filter = 2
+metadata/_gltf_primary_texture_coord = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_irvmk"]
+_surfaces = [{
+"aabb": AABB(-0.027405538, 7.490814e-05, -0.027405636, 0.05479849, 0.18257125, 0.054797776),
+"format": 34896613377,
+"index_count": 84,
+"index_data": PackedByteArray("EgATABQAAAASABQAAwASAAAAAAAUAAIAAgADAAAABAADAAIAAgAFAAQAAgAUAAUAAwAHABIAFAALAAUAFAATAAsABwAVABIAEgAVABMABwAIABUACAAGABUACAAJAAYAFQAGAAEABgAJAAEAFQABABMAAQAJAAoAEwABAAoAEwAKAAsACwAKAAwACwAMAA0ADgALAA0ADgANAA8AEAAOAA8AEAAPABEA"),
+"lods": [0.053338446, PackedByteArray("AAABAAIAAgADAAAABAADAAIAAgAFAAQAAgABAAUAAwAGAAAAAAAGAAEAAwAHAAYABwAIAAYACAAJAAYABgAJAAEAAQAJAAoAAQALAAUAAQAKAAsACwAKAAwACwAMAA0ADgALAA0ADgANAA8AEAAOAA8AEAAPABEA")],
+"name": "products",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 22,
+"vertex_data": PackedByteArray("EAAAAP7/AABzvf//ZL0AAP7/AAD+/wAAEAAAACAAAAD+/wAAAAAAAP//V8IAAAAAmkL+/4S9AAAQAFfCIAAAAJpC5NarQgAAmkL+/6tCAABjvf//mkIAAGO95NaaQgAAikL+/5pCAACKQuTWmkIAAO7/V8IPAAAAAABXwg8AAADu/wAADwAAAAAAAAAPAAAAEABXwv//AABzveTWZL0AAP7/V8L//wAAm0Lk1nO9AAA=")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_s8pc0"]
+resource_name = "Bottle006_Plane_038"
+_surfaces = [{
+"aabb": AABB(-0.027405538, 7.490814e-05, -0.027405636, 0.05479849, 0.18257125, 0.054797776),
+"attribute_data": PackedByteArray("9mfQffKD2AGijdB9DXLYAfZnsR8Ncr4V8oPYAQ1y2AH2Z9B9oo3QffZnsR/yg74Voo2xH/Zn0H2ijdB9DXK+FfKD2AENctgBDXLYAfKDvhWijbEf8oPYAfZn0H2ijdB9CXCjDxxokBccaKMPI2ihD6CXSwIbiM8RG4hLAhiISAL2Z7Ef8oO+FaKNsR8Ncr4V8oO+FaKNsR/2Z7EfDXK+FQ=="),
+"format": 34896613399,
+"index_count": 84,
+"index_data": PackedByteArray("IAAhACIAAAAgACIAAAAiAAIAIAAjACEAIwABACEAIwADAAEABAAkACUACAAEACUACAAlAAkABAAFACQABQAGACQABQAHAAYACgALAAwADQAKAAwADQAMAA4ACgAPAAsADwAQAAsADwARABAAJgATABQAFgAmABQAFgAUABcAJgAnABMAJwAVABMAJwASABUAGAAZABoAGwAZABgAHAAdAB4AHwAdABwA"),
+"lods": [0.053338446, PackedByteArray("AAABAAIAAAADAAEABAAFAAYABQAHAAYACAAEAAYACAAGAAkACgALAAwADQAKAAwADQAMAA4ACgAPAAsADwAQAAsADwARABAAEgATABQAEgAVABMAFgASABQAFgAUABcAGAAZABoAGwAZABgAHAAdAB4AHwAdABwA")],
+"material": SubResource("StandardMaterial3D_1gwmb"),
+"name": "products",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 40,
+"vertex_data": PackedByteArray("EAAAAP7/AIBzvf//ZL0GgP7/AAD+/wCAmkL+/4S9BoAQAFfCIADWwJpC5NarQgnCmkL+/4S9/7+aQv7/q0L/vxAAAAAgAP+/EAAAAP7//7/u/1fCDwD//4pC5NaaQv//AABXwg8A///u/wAADwD//wAAAAAPAP//Y73k1ppC//+KQv7/mkL//2O9//+aQv//c73//2S9BMBjveTWmkINwv//V8IAANbAY73//5pCBMD+/wAA/v//v/7/AAAAAP+/c73//2S9/z+aQv7/q0L/P2O9//+aQlHVmkL+/4S9/z/+/wAA/v+uKhAAAAAgAK4qEAAAAP7//7/+/wAAAACuKhAAV8L//7+Lc73k1mS9Y5L+/1fC///Ai5tC5NZzvWOSm0Lk1nO9CcIQAFfC///WwP7/V8L//9bAc73k1mS9DcL/f///WWaWGf9///9aZpYZZo4w4yOUt9f/f////3////9/////f////3/E7/9/GOj/f8Tv/3////9/////fxjo/3/+//9//v//fwAAR6gjFM2cZw7/fwAA/38AAP9/AAD3/wOA9/8DgK2qqKr3/wOAqCpQ1agqUNUAAP9/qCpQ1f7/+3/g/99//v//f97/0n8ilLnXZo4w482cZg5JqCMU")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_irvmk")
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_51aqh"]
+points = PackedVector3Array(0.0131, 0.17442301, 0.0131, -0.0274, 0.003286516, -0.0274, -0.027160319, 0.0040534968, 0.0274, 0.0274, 0.0040534968, -0.027160319, -0.0274, 0.13812295, -0.0274, 0.0274, 0.0040534968, 0.0274, -0.027160319, 0.13771558, 0.0274, 0.0274, 0.13771558, -0.027160319, 0.0274, 0.13771558, 0.0274, -0.0131, 0.17595696, -0.0131, -0.012933371, 0.17489053, 0.013173052, 0.0131, 0.17442301, -0.012860319)
+
+[node name="Bottle006" type="Node3D" unique_id=1801639700]
+transform = Transform3D(1.7, 0, 0, 0, 1.7, 0, 0, 0, 1.7, 0, 0, 0)
+
+[node name="bottle_006" type="MeshInstance3D" parent="." unique_id=1716009254]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.198883e-06, -7.490814e-05, 6.67572e-06)
+mesh = SubResource("ArrayMesh_s8pc0")

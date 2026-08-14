@@ -1,0 +1,59 @@
+[gd_scene format=4]
+
+[ext_resource type="Texture2D" path="res://Assets/OfficeProps/Keyboard/Keyboard_computer.png" id="1_td12y"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_50fvq"]
+resource_name = "computer"
+cull_mode = 2
+albedo_texture = ExtResource("1_td12y")
+roughness = 0.5
+texture_filter = 2
+metadata/_gltf_primary_texture_coord = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_by1hf"]
+_surfaces = [{
+"aabb": AABB(-0.2275, -1.8626451e-09, -0.08455352, 0.455, 0.03879396, 0.16955352),
+"format": 34896613377,
+"index_count": 60,
+"index_data": PackedByteArray("AAABAAIABwACAAEAAwACAAcAAwAAAAIABwABAAgACAADAAcAAAAEAAEABAAIAAEAAwAFAAAABAAJAAgACAAJAAMAAAAGAAQAAAAFAAYABAAGAAkABQADAAoABgAFAAoACQAKAAMABgAKAAsACQALAAoACQAGAAsA"),
+"lods": [0.13203844, PackedByteArray("AAABAAIAAQADAAIAAwAAAAIAAAAEAAEAAwAFAAAABAAGAAEABgADAAEAAAAGAAQABgAFAAMAAAAFAAYA")],
+"name": "computer",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 12,
+"vertex_data": PackedByteArray("AAAAALIGAAD//3HmAAAAAAAAceYAAAAAAABMoKl/AAD//wAAsgYAAAAAAAD//wAA//8AAP//AAAAAP//hxEAAP////+HEQAA//9MoKl/AAAAANtsTvoAAP//22xO+gAA")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_f4pyt"]
+resource_name = "Keyboard_Cube_011"
+_surfaces = [{
+"aabb": AABB(-0.2275, -1.8626451e-09, -0.08455352, 0.455, 0.03879396, 0.16955352),
+"attribute_data": PackedByteArray("CwIH9NIKJnXbC/LzAwE7dS9BHHJYJAf20gomddsL8vMvQaz2zAtFaqg9Wm3SCiZ1WCQH9tAM4P7bC/Lzsj1i+/8AlxuZQskDmUKXG/8AyQNCDrF1QCQRc0E8HHJBPKz2QTwcckAkEXNCDrF1dQ9j83UPY/NBPKz2"),
+"format": 34896613399,
+"index_count": 60,
+"index_data": PackedByteArray("AAABAAIAAAADAAEACQAUAAsACQAVABQACQAKABUAFQAKABYABAAXABgABAAIABcAGQAYABcAGQAXAAUAGgAZAAUAGgAFABsAGwAGABoAGwAHAAYADAAOABwADAANAA4ADAAPAA0ADwAMAB0AEAARABIAEAATABEA"),
+"lods": [0.13203844, PackedByteArray("AAABAAIAAAADAAEABAAFAAYABgAFAAcABAAIAAUACQAKAAsADAANAA4ADAAPAA0AEAARABIAEAATABEA")],
+"material": SubResource("StandardMaterial3D_50fvq"),
+"name": "computer",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 30,
+"vertex_data": PackedByteArray("AAAAALIGX/z//3HmAABf/AAAceYAAF/8//8AALIGX/z//wAA//+CwAAATKCpf1PQ//9x5gAAg9oAAHHmAABg4AAAAAD//4LA//8AALIGOv///wAA//9b/v//ceYAAN36AABMoKl/CsAAAAAAsgYGwAAAceYAAAHAAAAAAP//C8AAAAAAsgb/v///AAD///+///8AALIG/78AAAAA////v/////+HETH///9MoKl/Kv7//9tsTvpk/gAA22xO+oHG///bbE76zsf//0ygqX8B1P////+HERrWAAD//4cRLNcAAP//hxEBwAAA22xO+gvAOEK3QThCt0E4QrdBOEK3QcWLxYtaqrCnubNTrEmqz7HFi8WLkr8mfxm/M354BUM9BXwL+Nh8sfk+fn383Hu49wAA/38AAP9/AAD/fwAA/3/jAI4//r7+fR6/Pn60nk6e1J2Unmqmg6l6rBGrG6vGq5+DLv7le8v3")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_by1hf")
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_6v3c4"]
+points = PackedVector3Array(0.23111111, 0.018055554, 0.08512221, -0.23111111, 0.03972222, -0.088211104, -0.23111111, -0.0036111102, 0.08512221, 0.23111111, -0.0036111102, -0.08098323, 0.23111111, 0.03972222, -0.088211104, -0.23111111, 0.025270706, 0.07064949, 0.23111111, -0.0036111102, 0.08512221, 0.23111111, 0.03972222, -0.037649896, -0.23111111, -0.0036111102, -0.08098323, -0.23111111, 0.03972222, -0.037649896, 0.23111111, 0.025270706, 0.07064949, -0.23111111, 0.018055554, 0.08512221)
+
+[node name="Keyboard" type="Node3D" unique_id=259957388]
+
+[node name="keyboard" type="MeshInstance3D" parent="." unique_id=439099318]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.0002232492)
+mesh = SubResource("ArrayMesh_f4pyt")
+
+[node name="keyboard_col" type="StaticBody3D" parent="keyboard" unique_id=3294830]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="keyboard/keyboard_col" unique_id=1589745200]
+shape = SubResource("ConvexPolygonShape3D_6v3c4")

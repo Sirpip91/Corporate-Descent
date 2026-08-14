@@ -1,0 +1,56 @@
+[gd_scene format=4]
+
+[ext_resource type="Texture2D" path="res://Assets/OfficeProps/PaperStack/PaperStack_files.png" id="1_0arnn"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bmvdq"]
+resource_name = "files"
+cull_mode = 2
+albedo_texture = ExtResource("1_0arnn")
+roughness = 0.5
+texture_filter = 2
+metadata/_gltf_primary_texture_coord = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_6b4pd"]
+_surfaces = [{
+"aabb": AABB(-0.07425001, 0, -0.10500001, 0.14850003, 0.049999997, 0.21000002),
+"format": 34896613377,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAQADAAIAAAAEAAEAAgADAAUAAgAFAAAAAAAGAAQAAAAFAAYABAAHAAEAAQAHAAMABAAGAAcABQADAAcABQAHAAYA"),
+"name": "files",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("AAAAAAAAAAD//wAA/v8AAP7/AAAAAAAA/v///wAAAAAAAAAA//8AAAAA//8AAAAAAAD/////AAD//////v8AAA==")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_fp363"]
+resource_name = "PaperStack_Plane_001"
+_surfaces = [{
+"aabb": AABB(-0.07425001, 0, -0.10500001, 0.14850003, 0.049999997, 0.21000002),
+"attribute_data": PackedByteArray("8q7498L87onC/Pj38q7uif6uIRs4/b+J/q6/iTj9IRvNEmsbil1BAopdaxvNEkECil1IAs0SchvNEkgCil1yG8xvQx8aBm04GgZDH8xvbTjMb0sfGgZ1OBoGSx/Mb3U4"),
+"format": 34896613399,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
+"material": SubResource("StandardMaterial3D_bmvdq"),
+"name": "files",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("AAAAAAAA/7///wAA/v//v/7/AAAAAP+/AAAAAP///78AAP//AAD/v//////+//+/AAD//////7/+////AAD/vwAAAAD//wCA//////7/AID//wAA/v8AgAAA/////wCA/v8AAAAA//8AAP//AAD//wAAAAAAAP///v///wAA/////wAA/v////7///8AAP///v8AAAAA/////////v///wAAAAAAAP//AAD///////8AAAAA/////wAA//8AAP//AAD/fwAA/38AAP9/AAD/f////3////9/////f////3//f////3////9/////f////v//f/7//3/+//9/////f/+//3//v/9//7//f/+//3//P/9//z//f/8//3//P/9/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_6b4pd")
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_v8hgd"]
+points = PackedVector3Array(-0.071175, 0.049999997, -0.09999999, 0.07429876, 0.012200217, 0.10239827, 0.072575, 3.469447e-18, 0.1, 0.0742013, 0.015415377, -0.102262676, -0.07117501, -3.469447e-18, -0.1, -0.071175, 0.049999997, 0.09999999, 0.07256092, 0.049999997, 0.09999999, -0.07117501, -3.469447e-18, 0.1, 0.07256092, 0.049999997, -0.09999999, 0.072575, 3.469447e-18, -0.1, 0.07427437, 0.015405849, 0.05118217)
+
+[node name="PaperStack" type="Node3D" unique_id=577928118]
+
+[node name="paper stack" type="MeshInstance3D" parent="." unique_id=351961352]
+mesh = SubResource("ArrayMesh_fp363")
+
+[node name="paper stack_col" type="StaticBody3D" parent="paper stack" unique_id=1377512282]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="paper stack/paper stack_col" unique_id=452280431]
+shape = SubResource("ConvexPolygonShape3D_v8hgd")

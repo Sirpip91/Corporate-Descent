@@ -13,6 +13,17 @@ var inventory: Array[String] = []
 # ── Settings (persist across scenes) ─────────────────────────────────────────
 var mouse_sensitivity: float = 0.004
 var master_volume: float = 1.0
+var volumetric_fog_enabled: bool = true
+
+
+# Re-derives the active WorldEnvironment's volumetric fog from (the level's own
+# authored setting) AND (the player's preference) — this can only turn a
+# level's fog off, never turn it on for a level that wasn't built with it.
+func apply_graphics_settings() -> void:
+	var world_env := get_tree().get_first_node_in_group("world_environment")
+	if world_env and world_env.environment and world_env.has_meta("base_volumetric_fog"):
+		world_env.environment.volumetric_fog_enabled = \
+			world_env.get_meta("base_volumetric_fog") and volumetric_fog_enabled
 
 
 func has_item(id: String) -> bool:

@@ -15,7 +15,7 @@ var _player: Node3D = null
 var _saved_collision: Array = []  # Array of {node, layer, mask}
 
 # Where the item rests in front of the camera. Z = distance from face (less negative = closer to screen).
-const HOLD_POSITION  := Vector3(0.0, 0.0, -0.60)
+const HOLD_POSITION  := Vector3(0.0, 0.0, -0.40)
 # Item starts below and slides up to HOLD_POSITION — gives the pickup a lift-up feel.
 const ENTRY_POSITION := Vector3(0.0, -1.20, -0.60)
 
@@ -26,6 +26,15 @@ const ZOOM_FAR     := -0.90  # furthest the item can be from the screen
 
 var _hold_z: float = -0.60
 var _zoom_tween: Tween
+
+
+func _find_collision_objects(node: Node) -> Array:
+	var found: Array = []
+	for child in node.get_children():
+		if child is CollisionObject3D:
+			found.append(child)
+		found += _find_collision_objects(child)
+	return found
 
 
 func begin(target: Node3D) -> void:
@@ -47,15 +56,16 @@ func begin(target: Node3D) -> void:
 	_player.movement_locked  = true
 	_player.examining        = true
 
-	# Disable collision on all direct CollisionObject3D children before reparenting.
-	# Without this, the StaticBody3D ends up inside the player capsule and physics
-	# launches the player across the room.
+	# Disable collision on every CollisionObject3D anywhere under target before
+	# reparenting. Without this, the StaticBody3D ends up inside the player
+	# capsule and physics launches the player across the room. Most generated
+	# props nest their StaticBody3D under the mesh (root > mesh > StaticBody3D),
+	# not as a direct child of root, so this has to search the whole subtree.
 	_saved_collision.clear()
-	for child in target.get_children():
-		if child is CollisionObject3D:
-			_saved_collision.append({"node": child, "layer": child.collision_layer, "mask": child.collision_mask})
-			child.collision_layer = 0
-			child.collision_mask  = 0
+	for col in _find_collision_objects(target):
+		_saved_collision.append({"node": col, "layer": col.collision_layer, "mask": col.collision_mask})
+		col.collision_layer = 0
+		col.collision_mask  = 0
 
 	# Reparent to camera without preserving transform, then snap to entry position.
 	# The snap happens before the first rendered frame, so it's invisible.

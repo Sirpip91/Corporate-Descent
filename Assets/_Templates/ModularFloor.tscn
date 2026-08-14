@@ -1,0 +1,19 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://Assets/_Templates/modular_surface.gd" id="1_8wocj"]
+[ext_resource type="Texture2D" path="res://Assets/OfficeSurfaces/Carpet/Carpet_carpet.png" id="2_yxgif"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_kvria"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_m8q67"]
+size = Vector3(2, 0.1, 2)
+
+[node name="ModularFloor" type="MeshInstance3D" unique_id=778030315]
+mesh = SubResource("PlaneMesh_kvria")
+script = ExtResource("1_8wocj")
+texture = ExtResource("2_yxgif")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=1901986213]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=1957360065]
+shape = SubResource("BoxShape3D_m8q67")

@@ -1,0 +1,58 @@
+[gd_scene format=4]
+
+[ext_resource type="Texture2D" path="res://Assets/ItemsWeapons/Cash4/Cash4_money_1.png" id="1_1wxof"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wumex"]
+resource_name = "money_1"
+cull_mode = 2
+albedo_texture = ExtResource("1_1wxof")
+texture_filter = 2
+metadata/_gltf_primary_texture_coord = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_siqyh"]
+_surfaces = [{
+"aabb": AABB(-0.062321834, 2.1243094e-09, -0.11404803, 0.1250656, 0.036363196, 0.22809604),
+"format": 34896613377,
+"index_count": 84,
+"index_data": PackedByteArray("CQABAAoAAwAKAAEAAwABAAAACQAAAAEAAwAAAAUAAAAJAAsAAAALAAUADAADAAUADAAFAAsAAwAMAAoACQAIAAsADAALAAgACQANAAgACgANAAkADAAIAA4ADQAOAAgADgAHAAwACgAPAA0ADQAPAA4ACgAEAA8ADwAGAA4ADgAGAAcADwAEAAYADAAHAAIADAACAAoAAgAHAAYACgACAAQAAgAGAAQA"),
+"lods": [0.007482688, PackedByteArray("AAABAAIAAwACAAEAAwABAAAAAgAEAAAAAwAAAAUAAgAGAAQAAwAHAAIAAgAHAAYAAwAFAAgAAAAIAAUACAAHAAMAAAAEAAgACAAGAAcABAAGAAgA")],
+"name": "money_1",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 16,
+"vertex_data": PackedByteArray("///+/84CAAD//wAAAAAAAP//AAD//wAAAAAAAAAAAAD/////MP0AAAAA/v/OAgAAAAD//zD9AAAAAAAA//8AAAwCy9z/fwAA8v1l7v8/AADy/QAA/38AAAwCZe7/PwAADAIAAP9/AADy/cvc/38AAAwCZe7/vwAA8v1l7v+/AAA=")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_tv4w7"]
+resource_name = "Cash4_cash_4_001"
+_surfaces = [{
+"aabb": AABB(-0.062321834, 2.1243094e-09, -0.11404803, 0.1250656, 0.036363196, 0.22809604),
+"attribute_data": PackedByteArray("/3//jf9//5//v/+f/7//jRvl/7H///+f/+T/n////7H///+x/+T/n////58b5f+x/3//Rf9/AAD/nwAA/7//Rf+/AAD/f/9F/7//Rf+//4v/f/+L/3//n/9//43/n/+N/7//n/+//43/j/+N/5//n/+f/43/r/+N/4//Rf+PAAD/n/9F/6//Rf+vAAD/n/+f/4//jf+v/43/n/9F/5//iw=="),
+"format": 34896613399,
+"index_count": 84,
+"index_data": PackedByteArray("GgABABsAGgAAAAEAGwAcABoAGwAdABwAGwADAB0AGwACAAMABAAFAAYABAAHAAUACAAJAAoACAALAAkAHgANAB8AHgAMAA0AIAAeAB8AIAAfAA4AIQAgAA4AIQAOACIADwAhACIADwAiABAAIwAWACQAIwAVABYAIwAkABcAIwAXACUAJQAYACMAJQAZABgAJgATACcAJgASABMAEQAmACcAEQAnABQA"),
+"lods": [0.007482688, PackedByteArray("AAABAAIAAgADAAAABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADwAMAA4ADwAOABAAEQASABMAEQATABQAFQAWABcAFwAYABUAFwAZABgA")],
+"material": SubResource("StandardMaterial3D_wumex"),
+"name": "money_1",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 40,
+"vertex_data": PackedByteArray("///+/84ClwH//wAAAAAeAf//AAD//0QA/////zD9CwAAAAAAAADMAv///v/OAswCAAD+/84CzAL//wAAAADMAv//AAD//8uCAAD//zD9y4L/////MP3LggAAAAD//8uC/////zD91dYAAP//MP041gwCy9z/f1TV///+/84CDdQAAP7/zgK01AAAAAAAAFHVAAAAAP//idX//wAA//9R1f//AAAAAInVAAAAAAAAgr8AAP7/zgKCvwwCy9z/f/+/AAAAAP//fcAAAP//MP1/wPL9Ze7/P6sA8v0AAP9/AADy/cvc/38AAPL9Ze7/vxIB8v1l7v+/ftYMAmXu/78u1vL9y9z/f1TV8v1l7v8/D9QMAmXu/z9k1AwCAAD/f/+/DAJl7v8/nb8MAmXu/79owAwCAAD/fzvV8v0AAP9/O9UMv9p+Tb9dfzvAS4AbwIqA////f////3////9/////f////3////9/////f////39q1Moqz9SOK1TVqioa1kAqvNV+KagqUdXKKpTVqCpR1coqlNWXgM/+GoDN/v9//v+hg5f9j4Wh/I+/w38zAOU//7//f7ABdz+i1Cwr1dSQK1TVqioZ1kgq6dXmKf9/lf+0fWj66oGJ/psqNtWbKjbV")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_siqyh")
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_tummv"]
+points = PackedVector3Array(-0.062066473, 0.02685607, -0.11215548, 0.06026629, 3.469447e-18, 0.105282426, 0.06617619, 0.037999995, -0.11216001, -0.06410952, 0.037999995, 0.11216001, -0.058199618, 3.469447e-18, -0.105282426, 0.06026629, 0, -0.105282426, -0.058199618, 0, 0.105282426, 0.06617619, 0.037999995, 0.11216001, -0.06410952, 0.037999995, -0.11216001, -0.062066473, 0.02685607, 0.11215548)
+
+[node name="Cash4" type="Node3D" unique_id=703800577]
+
+[node name="cash_4" type="MeshInstance3D" parent="." unique_id=1011305219]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00020980835, 0, 0)
+mesh = SubResource("ArrayMesh_tv4w7")
+
+[node name="cash_4_col" type="StaticBody3D" parent="cash_4" unique_id=80364797]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="cash_4/cash_4_col" unique_id=489272504]
+shape = SubResource("ConvexPolygonShape3D_tummv")

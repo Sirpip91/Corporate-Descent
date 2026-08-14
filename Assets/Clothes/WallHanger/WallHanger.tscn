@@ -1,0 +1,58 @@
+[gd_scene format=4]
+
+[ext_resource type="Texture2D" path="res://Assets/Clothes/WallHanger/WallHanger_clothes.png" id="1_mde30"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rha50"]
+resource_name = "clothes shiny"
+cull_mode = 2
+albedo_texture = ExtResource("1_mde30")
+roughness = 0.5
+texture_filter = 2
+metadata/_gltf_primary_texture_coord = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_gek1g"]
+_surfaces = [{
+"aabb": AABB(-7.398427e-08, -0.025, -0.59999996, 0.03000003, 0.05, 1.1999999),
+"format": 34896613377,
+"index_count": 144,
+"index_data": PackedByteArray("AAABAAIAAAACAAMABAACAAEABAADAAIABAABAAUABAAGAAMABQABAAcABQAIAAQABgAEAAgABQAHAAkACQAKAAUABQAKAAgACQALAAoACAAKAAsACAALAAwACAAMAA0ACAANAA4ABgAIAA4ADwAOAA0ADwAGAA4ABgAPABAABgAQAAMAEQADABAAEQAQABIAEwARABIAAAADABEAEwAUABEAFAAAABEAFAATABUAFAAVABYAFwAWABUAFAAYAAAAGAAUABYAFwAZABYAGAAWABkAFwAaABkAGAAZABoAFwAbABoAGAAaABwAHAAaABsAHAAAABgAHAAbAB0AHAAeAAAAHQAeABwAAAAeAAEAHQAfAB4AHgAHAAEAHgAfAAcA"),
+"name": "clothes shiny",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 32,
+"vertex_data": PackedByteArray("//8AAP9/AAD///////8AAP//////fwAA/////wAAAAA45f///38AADjl//8k/wAAOOX//9oAAAAAAP////8AADjly8z/fwAAAAD//yT/AAA45cvMJP8AAAAAy8wk/wAAAADLzP9/AAAAAMvM2gAAADjly8zaAAAAAAD//9oAAAAAAP//AAAAAP//AAAAAAAAAAAAAAAAAAAAAAAA2gAAADjlAADaAAAAAAAyM9oAAAA45TIz2gAAAAAAMjP/fwAAOOUAAP9/AAA45TIz/38AADjlMjMk/wAAAAAyMyT/AAA45QAAJP8AAAAAAAAk/wAA//8AAP//AAAAAAAA//8AAA==")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_unswc"]
+resource_name = "WallHanger_Cube_102"
+_surfaces = [{
+"aabb": AABB(-7.398427e-08, -0.025, -0.59999996, 0.03000003, 0.05, 1.1999999),
+"attribute_data": PackedByteArray("35r5TtwJ40LfmuNC3An5TtwJ40LcCflO3An5TpwC40LcCeNCnAL5TqagujyaECU/mhC6PKagJT+aECU/mhC6POezp/hprRL7aa2n+OezEvsHFdszCqYZMxOl2zMKplk6E6VZOgcVGTMKphkzE6XbMwqmWToTpVk60gX4PtsEuDfSBXo42wT4Pt2VuDfdlXo40gV6ONsEuDfSBfg+2wT4PhFIyCsXkAcvEUgHLxeQyCsXkAcvF5DIK0xHFSRRj1QnTEdUJ1GPFSRRj1QnUY8VJJoQujwcCiU/HAq6PJoQJT9praf4Xh0S+14dp/hprRL7aa2n+GmtEvvcCflOnALjQpwC+U7cCeNC57On+GmtEvvnsxL7aa2n+JoQujwcCiU/mhAlPxwKujw="),
+"format": 34896613399,
+"index_count": 144,
+"index_data": PackedByteArray("AAABAAIAAAADAAEAAAACAAQAAAAEAAUABgAHAAgABgAJAAcACgALAAwACgANAAsACgAOAA0ACgAPAA4AEAARABIAEAATABEAFAAVABYAFgAVABcAFgAXABgAFAAZABUAFAAaABkAFAAbABoAGwAcABoAGwAdABwAHgAfACAAHgAhAB8AIAAfACIAIAAiACMAJAAjACIAJAAiACUAJgAkACUAJgAlACcAKAApACoAKAArACkAKAAqACwAKAAsAC0ALgAvADAALgAxAC8ALgAwADIALgAyADMANAA1ADYANAA3ADUAOAA5ADoAOAA7ADkAPAA6ADkAPAA5AD0APgA/AEAAPgBBAD8AQgBDAEQAQgBFAEMARgBHAEgARgBJAEcA"),
+"material": SubResource("StandardMaterial3D_rha50"),
+"name": "clothes shiny",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 74,
+"vertex_data": PackedByteArray("//8AAP9/AAD/////////v///////fwAA//8AAP///7//////AAAAAP//AAAAAAAA//8AAP//AIAAAP////8AgP///////wCAAAAAAP//AIA45QAA/3//PzjlMjMk////OOUAACT///845TIz/3//PzjlMjPaAP8/OOUAANoA/z8AAP//JP///zjly8wk////OOX//yT///8AAMvMJP///zjl////f6oq////////VNU45f//JP9U1QAA/////1TVAAD//yT/VNX//////3+qKv////8AAKoqOOX//9oAqioAAP//AACqKgAA///aAKoqAAAAACT/VNX//wAA//9U1TjlAAAk/1TVAAAAAP//VNX//wAA/3+qKjjlAAD/f6oqOOUAANoAqir//wAAAACqKgAAAADaAKoqAAAAAAAAqio45cvM/3+qKgAAy8wk/1TVAADLzP9/qio45cvMJP9U1QAAy8zaAKoqOOXLzNoAqioAADIz/3+qKjjlMjMk/1TVOOUyM/9/qioAADIzJP9U1TjlMjPaAKoqAAAyM9oAqio45QAAJP///wAAMjMk////AAAAACT///845TIzJP///zjl//8k//+/OOXLzP9/AAA45f///38AADjly8wk//+/OOX//9oAAAA45cvM2gAAAP//AAAAAAAAAAD//wAAAAAAAAAAAAAAAP////8AAAAAAAD//9oAAAA45cvM2gAAAAAAy8zaAAAAOOX//9oAAAA45QAA2gD+fwAAMjPaAP5/OOUyM9oA/n8AAAAA2gD+f/+//3//fwAA/7//f/9/AAD/v/9//7//f/9/////f////3////9/////f////z//f/8//3//f////3/+//9//v//f////3////9/////f///VNWqKqqqqaqqqqmqqqqpqqqqqapU1aoqVNWqKlTVqipU1aoqVNWqKlRVVVVUVVVVVFVVVVRVVVWqKlTVqipU1aoqVNWqKlTVqipU1aoqVNVU1aoqqqqqqlTVqiqqqqqqVNWqKlTVqipUVVRVqipU1VRVVFWqKlTVVFVUVVRVVFX///9/////f////3////9//3/+//8//3//P/9//3/+//8//3//P/9/////f////3////9/////f/9//3//f/9//3//f/9//3//f////3////9/////f///")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_gek1g")
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_450d3"]
+points = PackedVector3Array(0.0343949, 0.03232484, 0.60382164, -0.003821656, -0.028821655, -0.60382164, 0.0343949, -0.028821655, -0.60382164, -0.003821656, -0.028821655, 0.60382164, -0.003821656, 0.03232484, -0.60382164, 0.0343949, 0.03232484, -0.60382164, 0.0343949, -0.028821655, 0.60382164, -0.003821656, 0.03232484, 0.60382164)
+
+[node name="WallHanger" type="Node3D" unique_id=1840999902]
+transform = Transform3D(1.7, 0, 0, 0, 1.7, 0, 0, 0, 1.7, 0, 0, 0)
+
+[node name="wall hanger" type="MeshInstance3D" parent="." unique_id=126490502]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.015000105, 0.024999976, 0)
+mesh = SubResource("ArrayMesh_unswc")
+
+[node name="wall hanger_col" type="StaticBody3D" parent="wall hanger" unique_id=314336915]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="wall hanger/wall hanger_col" unique_id=912329142]
+shape = SubResource("ConvexPolygonShape3D_450d3")

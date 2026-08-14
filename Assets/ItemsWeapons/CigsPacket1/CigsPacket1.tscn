@@ -1,0 +1,55 @@
+[gd_scene format=4]
+
+[ext_resource type="Texture2D" path="res://Assets/ItemsWeapons/CigsPacket1/CigsPacket1_cigs_packet_1.png" id="1_fmrd1"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dokl3"]
+resource_name = "cigs_packet_1"
+cull_mode = 2
+albedo_texture = ExtResource("1_fmrd1")
+texture_filter = 2
+metadata/_gltf_primary_texture_coord = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_3x523"]
+_surfaces = [{
+"aabb": AABB(-0.081000015, -2.1686208e-11, -0.04860097, 0.16200003, 0.04212, 0.09720194),
+"format": 34896613377,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAACAAEAAwAEAAEABQAAAAIAAwAAAAUABAAGAAIABQACAAYAAwAHAAQAAwAFAAcABwAGAAQABwAFAAYA"),
+"name": "cigs_packet_1",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("AAAAAP//AAAAAP//AAAAAAAA/////wAAAAAAAAAAAAD+////AAAAAP//AAD+/wAA//////7/AAD//wAAAAAAAA==")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_dvqmk"]
+resource_name = "CigsPacket1_cigs_packet_1_001"
+_surfaces = [{
+"aabb": AABB(-0.081000015, -2.1686208e-11, -0.04860097, 0.16200003, 0.04212, 0.09720194),
+"attribute_data": PackedByteArray("/3///wAAJ8T/fyfEAAD/////AAD/vyfE/78AAP//J8T/vyfE//8AAP//J8T/vwAA//8nxP9//////////38nxP9/J8QAAAAA/38AAAAAJ8QAAAAA/38nxAAAJ8T/fwAA"),
+"format": 34896613399,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
+"material": SubResource("StandardMaterial3D_dokl3"),
+"name": "cigs_packet_1",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("AAAAAP///78AAP//AAD/vwAA//////+/AAAAAAAA/7///wAA/v//vwAA//////+///////7//78AAAAA////vwAAAAAAAP///v///wAA//8AAP//AAD/////AAAAAP////8AAAAA/z///////v//P/7///8AAP8///8AAP7//z8AAAAAAABU1f//AAD+/1TV//8AAAAAVNUAAAAA//9U1f7///8AAFTVAAD/////VNUAAP//AABU1f/////+/1TV/3////9/////f////3////9//3//f/9//3//f/9//3//v/+//7//v/+//7//v/+//38AAP9/AAD/fwAA/38AAFRVVFVVVVRVVVVUVVRVVFWqqqqqqqqpqqqqqaqqqqqq")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_3x523")
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_e6w44"]
+points = PackedVector3Array(0.079331875, 0.04164396, 0.0486, -0.07744539, -3.469447e-18, -0.046936136, -0.08017583, 0.04186813, -0.0486, 0.08017583, 0.04186813, -0.0486, -0.079331875, 0.04164396, 0.0486, 0.07744539, -3.469447e-18, 0.04745042, 0.07744539, -3.469447e-18, -0.046936136, -0.07744539, -3.469447e-18, 0.04745042)
+
+[node name="CigsPacket1" type="Node3D" unique_id=1298678184]
+
+[node name="cigs_packet_1" type="MeshInstance3D" parent="." unique_id=1465201241]
+mesh = SubResource("ArrayMesh_dvqmk")
+
+[node name="cigs_packet_1_col" type="StaticBody3D" parent="cigs_packet_1" unique_id=292983462]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="cigs_packet_1/cigs_packet_1_col" unique_id=1321100555]
+shape = SubResource("ConvexPolygonShape3D_e6w44")

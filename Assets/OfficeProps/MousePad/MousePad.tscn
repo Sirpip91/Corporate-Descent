@@ -1,0 +1,58 @@
+[gd_scene format=4]
+
+[ext_resource type="Texture2D" path="res://Assets/OfficeProps/MousePad/MousePad_computer.png" id="1_8emaa"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dl1ys"]
+resource_name = "computer"
+cull_mode = 2
+albedo_texture = ExtResource("1_8emaa")
+roughness = 0.5
+texture_filter = 2
+metadata/_gltf_primary_texture_coord = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_tnuat"]
+_surfaces = [{
+"aabb": AABB(-0.10718483, -9.982365e-09, -0.10718483, 0.21436965, 0.002809551, 0.21436965),
+"format": 34896613377,
+"index_count": 108,
+"index_data": PackedByteArray("AAALAAwAAAAMAA0ACwAGAAwADQAMAAYAAAAOAAsADgACAAsADgABAAIAAgAPAAsACwAPAAYAAQADAAIAAgADAA8AAQAEAAMADgAEAAEADwADAAQADgAFAAQADwAEAAUAAAAFAA4ABQAGAA8AAAAQAAUABQAQAAYAAAARABAAEQAGABAAAAASABEAAAANABIAEQATAAYADQAGABMAEwARAAgAEgAIABEABwANABMAEgANAAcAEwAIAAoABwATAAoAEgAJAAgAEgAHAAkACQAKAAgACQAHAAoA"),
+"lods": [0.018538153, PackedByteArray("AAABAAIAAQADAAIAAQAEAAMAAQAFAAQAAwAEAAUAAAAFAAEAAgADAAYABQAGAAMAAAACAAcABwACAAYAAAAIAAUACAAGAAUAAAAHAAkAAAAJAAgABwAGAAoACQAHAAoACAAKAAYACQAKAAgA")],
+"name": "computer",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 20,
+"vertex_data": PackedByteArray("/38AAAAAAAD//wAAKg0AAP////8qDQAA/////9TyAAD//wAA1PIAANTyAAD//wAA/3//////AAAAAP//Kg0AAAAAAADU8gAAAAAAACoNAAAAAP//1PIAANTy//8AAAAA/3///wAAAAAqDf//AAAAANTyAAAAAAAA1PL/////AAD/fwAA//8AACoNAAD//wAAKg0AAAAAAAAqDf////8AAA==")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_mhi1g"]
+resource_name = "MousePad_Cube_019"
+_surfaces = [{
+"aabb": AABB(-0.10718483, -9.982365e-09, -0.10718483, 0.21436965, 0.002809551, 0.21436965),
+"attribute_data": PackedByteArray("z+Pahs/jiFYG5YhWBuWIVs/jiFYI43/dP+RWij/kf90I41aKUjE4XFIxb12UKm9d/wA4XFIxb11SMThcClJcGs9QrgMKUukEFUaXGwpS6QQKUlwa7FhsTcQFbE3/ABMf7FhsTcQFbE0I43/dP+RWigjjVoo/5H/dBuVGXQbl2oYG5UZdz+NGXc/jRl2UKjhc/wBuXZQqb12UKjhcz1CXGxVGrgPPUK4Dz1CXG/8Ap0ixXadIsV0TH7Fdp0j/AKdI"),
+"format": 34896613399,
+"index_count": 108,
+"index_data": PackedByteArray("AAAeAB8AAAAfACAAAAAhAB4AIQACAB4AIQABAAIAAAAgACIAIgAgAAMAIgADAAQABQAGAAcABQAIAAYAIwAKAAsAIwAJAAoACwAMACMACwAkAAwAJQAMACQAJQAmAAwAJgAlAA0AJgANAA4AJwARAA8AJwAQABEAEgAQACcAEgAoABAAEgApACgAEgAqACkAKgATACkAKgAUABMAFQArACwAFQAWACsALAArABcALAAXAC0ALgAtABcALgAXAC8AGAAuAC8AGAAvABkAGgAbABwAGgAdABsA"),
+"lods": [0.018538153, PackedByteArray("AAABAAIAAAACAAMAAAADAAQABQAGAAcABQAIAAYACQAKAAsACwAMAAkADQAMAAsADQAOAAwADwAQABEAEgAQAA8AEgATABAAEgAUABMAFQAWABcAGAAVABcAGAAXABkAGgAbABwAGgAdABsA")],
+"material": SubResource("StandardMaterial3D_dl1ys"),
+"name": "computer",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 48,
+"vertex_data": PackedByteArray("/38AAAAAAAD//wAAKg0Z3/////8qDRnfAAD//yoN5SAAAAAAKg3lIP//AAAqDRnf/////9TyyMz/////Kg0Z3///AADU8sjM/////9Ty/6///wAA1PL/r9TyAAD///+P/3//////AAAAAAAA1PIAAAAA///U8gAA//8AACoN/7/U8gAA////v///AADU8v+//38AAAAAAAAAAAAA1PIAAAAAAAAqDQAA/////yoNVNX/////1PJU1f9//////6oqAAD//yoNqioAAP//1PKqKgAAAAAqDeUgAAD//9TyNjMAAAAA1PI2MwAA//8qDeUg1PL//wAAuPT/f///AAAAACoN//8AAEYL1PIAAAAAuPQqDQAAAABGC9Ty//////+P/38AAP//AAAqDQAA//8AACoN/////wAA1PIAAAAA/7//fwAA//8AACoNAAD//wAAKg0AAAAAAADU8v////9U1dTy//8AAFTV/3///wAAqioqDf//AACqKioN/////6oq/7//v/gv+C/4L/gvBtAG0AbQBtD4L/gvmySbJPgv+C+bJJsk/38AAP9/AAD/fwAA/3//f7pM/3+6TP9/AAD/fwAA/38AAP9//3//P/9//z//v///VNWqKlTVqipU1aoqVNWqKlTVqioG0AbQY9tj22PbY9sG0AbQNTo1Ov+//7/JxcnFNTo1OsnFycX/fwAA/3//f8Jq/3/Cav9/AAD/f/9//z//f/8//3//P1TVqipU1aoqVNWqKlTVqipU1aoq")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_tnuat")
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_we4hh"]
+points = PackedVector3Array(0.0986894, 0.0051047616, 0.10890158, -0.0986894, -0.0017009211, -0.10890158, -0.10890158, -0.0017009211, -0.0986894, -0.0986894, 0.0051047616, -0.10890158, 0.10890158, -0.0017009211, -0.0986894, -0.0986894, -0.0017009211, 0.10890158, -0.10890158, 0.0051047616, 0.0986894, 0.0986894, 0.0051047616, -0.10890158, 0.10890158, -0.0017009211, 0.0986894, 0.10890158, 0.0051047616, -0.0986894, -0.10890158, 0.0051047616, -0.0986894, -0.10890158, -0.0017009211, 0.0986894, 0.0986894, -0.0017009211, -0.10890158, -0.0986894, 0.0051047616, 0.10890158, 0.0986894, -0.0017009211, 0.10890158, 0.10890158, 0.0051047616, 0.0986894)
+
+[node name="MousePad" type="Node3D" unique_id=2096620702]
+
+[node name="mouse pad" type="MeshInstance3D" parent="." unique_id=1682071136]
+mesh = SubResource("ArrayMesh_mhi1g")
+
+[node name="mouse pad_col" type="StaticBody3D" parent="mouse pad" unique_id=1424623835]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="mouse pad/mouse pad_col" unique_id=1207934541]
+shape = SubResource("ConvexPolygonShape3D_we4hh")

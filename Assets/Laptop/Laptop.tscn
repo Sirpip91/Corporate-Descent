@@ -1,0 +1,196 @@
+[gd_scene format=4]
+
+[ext_resource type="Texture2D" path="res://Assets/Laptop/Laptop_electronics.png" id="1_gm5lq"]
+[ext_resource type="Texture2D" path="res://Assets/Laptop/Laptop_laptop-display.png" id="2_rc24q"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_q1q4t"]
+resource_name = "electronics"
+cull_mode = 2
+albedo_texture = ExtResource("1_gm5lq")
+roughness = 0.5
+texture_filter = 2
+metadata/_gltf_primary_texture_coord = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_rbtfd"]
+_surfaces = [{
+"aabb": AABB(-0.164465, 1.8626451e-09, -0.11400001, 0.32893, 0.021951903, 0.2283),
+"format": 34896613377,
+"index_count": 60,
+"index_data": PackedByteArray("BQAIAAkABQAJAAoABQAHAAgABwAFAAMABQAKAAMABwADAAQACAAHAAQAAwALAAQACAAEAAsAAwAKAAsAAAAJAAgAAAAKAAkAAAAIAAYAAAACAAoACAALAAEACAABAAYAAQALAAoAAAAGAAEAAQAKAAIAAAABAAIA"),
+"lods": [5.948634e-05, PackedByteArray("AAABAAIAAQADAAIAAAACAAMAAQAEAAMAAAADAAUAAAAGAAEABwADAAQABwAFAAMABwAEAAEAAAAFAAcABwABAAYAAAAHAAYA")],
+"name": "electronics",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 12,
+"vertex_data": PackedByteArray("Jf4AAJsFAAD///////8AAP////8AAAAAAAD//wAAAAAAAP////8AANkBAACbBQAAJf4AAP76AADZAQAA/voAAP9/AAD++gAA/38AAJsFAAD/f///AAAAAP9//////wAA")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_mfh4x"]
+resource_name = "Laptop_Cube_001"
+_surfaces = [{
+"aabb": AABB(-0.164465, 1.8626451e-09, -0.11400001, 0.32893, 0.021951903, 0.2283),
+"attribute_data": PackedByteArray("oThQnmEB25jhOduYewJQnv5XUApkj8UP5FbFDySOUAqLXrJcPw0yJIteMiQ/DbJcDD/DIAw/sAUMP7AFDD/DIP8ACFyRBp9c/wAIXJEGn1ySflgBKX/hBpJ+WAEpf+EGFFOwBRRTwyCRBvkz/wD5M4NWWAGDVuEG5TWyXOU1MiQ="),
+"format": 34896613399,
+"index_count": 60,
+"index_data": PackedByteArray("DwAYABkADwANABgADAAZABgADAAYAA4AEgAaABEAEgAbABoAEAAaABsAEAATABoAHAAXAB0AHAAUABcAHAAdABUAHAAVABYAAAABAAIAAAADAAEABAAFAAYABAAHAAUACQAeAAsACQAfAB4ACAAeAB8ACAAfAAoA"),
+"lods": [5.948634e-05, PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA")],
+"material": SubResource("StandardMaterial3D_q1q4t"),
+"name": "electronics",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 32,
+"vertex_data": PackedByteArray("Jf4AAJsFHcD///////8dwP////8AAB3AJf4AAP76HcDZAQAA/vrj/AAA//8AAOP8AAD/////4/zZAQAAmwXj/P////////+/AAD//wAA/7//////AAD/vwAA//////+/Jf4AAJsFAADZAQAA/vr/vyX+AAD++gAA2QEAAJsF/78l/gAAmwVyBgAA//8AAIz52QEAAJsFjPn/////AAByBtkBAAD++v//////////1Hcl/gAA/vrUdwAA/////////38AAP76AAD/fwAAmwUAAP9///8AAHIG/38AAJsFcgb/fwAA/vrUd/9//////9R3/3///////7//f///AAD/v8J5egzCeXoMwnl6DMJ5egyuQaF8rkGhfK5BoXyuQaF8/v//f////3/+//9/////f/9//z8AAP9//3//PwAA/39nQ2dDZ0NnQ2dDZ0NnQ2dD/39NdAAA/38AAP9//39NdP9//z//f/8/Z0NnQ2dDZ0MAAP9/AAD/f/7//3/+//9/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_rbtfd")
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_c0gda"]
+points = PackedVector3Array(-0.1671111, 0.0235, -0.11661111, -0.1671111, 0.0235, 0.11838888, 0.1671111, 0.0235, -0.11661111, 0.1671111, -0.0026085563, 0.11314417, -0.1671111, -0.0026085563, 0.11314417, 0.1671111, -0.0026085563, -0.1113664, 0.1671111, 0.0235, 0.11838888, -0.1671111, -0.0026085563, -0.1113664)
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_uosqn"]
+_surfaces = [{
+"aabb": AABB(-0.16446501, -1.2416762e-08, -0.01009904, 0.32893002, 0.22860003, 0.010099078),
+"format": 34896613377,
+"index_count": 84,
+"index_data": PackedByteArray("DgACAA8AEAAPAAIAAAAOAA8AAwAPABAAAAAPAAMAEAACAAQADgABAAIABAACAAEAAQAOAAcAAAAHAA4AAQAHAAgAAAAJAAcACwAJAAAABAABAAYABgABAAgABgAQAAQABgAIAAoABgAKAAwABgARABAABgAMABEADQAMAAsADQARAAwACwAAAA0AEQAFABAAEQANAAUABQANAAAAAwAQAAUABQAAAAMA"),
+"lods": [4.1884243e-05, PackedByteArray("AAABAAIAAAACAAMAAwACAAQABAACAAEAAwAEAAUABQAAAAMABAABAAYABgAFAAQAAQAAAAcAAQAHAAgABgABAAgAAAAJAAcABgAIAAoACwAJAAAABgAKAAwADQAMAAsADQAGAAwACwAAAA0ABgANAAUABQANAAAA")],
+"name": "electronics",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 18,
+"vertex_data": PackedByteArray("AAAAAP7/AAD//wAA/v8AAEv8UwcAAAAAswNTBwAAAABL/AL1AAAAALMDAvUAAAAA/v////7/AAD/fxAa/v8AAI/yEBr+/wAABQwQGv7/AACP8vfk/v8AAAUM9+T+/wAA/3/35P7/AAAAAP7///8AAP9/AAD+/wAA/39TBwAAAAD/fwL1AAAAAP9//v/+/wAA")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_f7roa"]
+resource_name = "Laptop_Cube_006"
+_surfaces = [{
+"aabb": AABB(-0.16446501, -1.2416762e-08, -0.01009904, 0.32893002, 0.22860003, 0.010099078),
+"attribute_data": PackedByteArray("r7+KaB9ts2gjb2Zmsb1EZh9tXi+qvSsyG29NMq2/NS+t+uMrBfXcUwX1FTCt+tV7HcPjKwX1FHj7yBUw+8gUePvI3FMdw9V7G29NMh9ts2gfbV4vI29mZrG9RGYbb00yqr0rMiNvZmaqvSsyr7+KaLG9RGatvzUvcJZyaW6WamZclpouXpYmMq363FMdw9xTXpYmMm6WamY="),
+"format": 34896613399,
+"index_count": 84,
+"index_data": PackedByteArray("HgACAB8AHgABAAIAAAAeAB8AAAAfAAMAIAAFACEAIAAHAAUABAAgACEABAAhAAYACAAJAAoACAAiAAkADAAIAAoACwAJACIADAAKAA4ACwANAAkADAAOABAADwANAAsADAAQACMADwALABEAEQAjABAAEQAQAA8AEgATABQAEgAVABMAJAAZABcAJAAlABkAFgAlACQAFgAkABgAGgAbABwAGgAdABsA"),
+"lods": [4.1884243e-05, PackedByteArray("AAABAAIAAAACAAMABAAFAAYABAAHAAUACAAJAAoACAALAAkADAAIAAoACwANAAkADAAKAA4ADwANAAsADAAOABAADwALABEAEQAMABAAEQAQAA8AEgATABQAEgAVABMAFgAXABgAFgAZABcAGgAbABwAGgAdABsA")],
+"material": SubResource("StandardMaterial3D_q1q4t"),
+"name": "electronics",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 38,
+"vertex_data": PackedByteArray("AAAAAP7/4f///wAA/v+J/0v8UwcAAI3/swNTBwAA5v/+/////v/o/7MDAvUAALv/S/wC9QAA6/8AAP7///+4////AAD+//+//38QGv7//7+P8hAa/v//vwAAAAD+//+//v////7//78FDBAa/v//v4/y9+T+//+/BQz35P7//7//f/fk/v//vwAA/v////+/S/wC9QAAGNL//wAA/v9E0v7////+/xzSS/xTBwAAU9KzA1MHAAD//0v8AvUAAP//swMC9QAA//9L/FMHAAD//7MDAvUAAB3SAAAAAP7/PdKzA1MHAABM0gAA/v///yLS/38AAP7/zP//f1MHAADL//9//v/+/9z//38C9QAA3P//fwAA/v//v/9//v/+//+//38C9QAA////f1MHAAD//8FSwP8Hf7YtEH+wLchSy/8zpkAAvIBy2SymNQDFgGzZ/3//f/9//3//f/9//3//f/9//3//f/9//3//f/9//3//f/9//3//fz9xBglXjC0Ug3B5CT+NpxXff97/vn++/wiA9v/nf+f/gXZ78HyTEvT6lCjzD3bA76NSkv+iUpH/S6ZhAEymYgD/f/9//3//f+N/4//jf+P/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_uosqn")
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_dnqv1"]
+points = PackedVector3Array(-0.16187662, 0.0026560798, -0.01271111, 0.1671111, 0.23238888, 0.002954022, 0.1671111, -0.0025881156, 0.002954022, -0.1671111, 0.23238888, 0.002954022, 0.16187662, 0.22190048, -0.01271111, -0.1671111, -0.0025881156, 0.002954022, 0.16187662, 0.0026560798, -0.01271111, -0.16187662, 0.22190048, -0.01271111)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wj4df"]
+resource_name = "electronics reflective"
+cull_mode = 2
+albedo_texture = ExtResource("1_gm5lq")
+metallic = 0.1
+roughness = 0.1
+texture_filter = 2
+metadata/_gltf_primary_texture_coord = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_a58qf"]
+_surfaces = [{
+"aabb": AABB(-0.14901802, 0.023276132, -1.5790393e-08, 0.29621875, 0.18118882, 1e-05),
+"format": 34359742465,
+"index_count": 12,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAACAAEABAAFAAIA"),
+"name": "electronics reflective",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 6,
+"vertex_data": PackedByteArray("LZgYvpatvjyFsKcympmEskJfUT6cmYQyfYXxsJytvjyAhfEwLpgYvkFfUT7kmA4zyLsWPkNfUT5oERGxybsWPqKtvjxxo4ey")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_mxiee"]
+resource_name = "Laptop_Cube_010"
+_surfaces = [{
+"aabb": AABB(-0.14901802, 0.023276132, -1.5790393e-08, 0.29621875, 0.18118882, 1e-05),
+"attribute_data": PackedByteArray("TgZ1P3wp8D5o/Eg/KLmnPk4GdT8ouac+aPxIP3wp8D5p/Eg/+FVAPk4GdT/sVUA+"),
+"format": 34359742487,
+"index_count": 12,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAACAAEABAAFAAIA"),
+"material": SubResource("StandardMaterial3D_wj4df"),
+"name": "electronics reflective",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 6,
+"vertex_data": PackedByteArray("LZgYvpatvjyFsKcympmEskJfUT6cmYQyfYXxsJytvjyAhfEwLpgYvkFfUT7kmA4zyLsWPkNfUT5oERGxybsWPqKtvjxxo4ey/3//f/9/AID/f/9//38AgP9//3//fwCA/3//f/9/AID/f/9//38AgP9//3//fwCA")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_a58qf")
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_cry6m"]
+points = PackedVector3Array(-0.1513508, 0.020986006, -0.0023507937, 0.1495508, 0.20899428, 0.0023507937, 0.1495508, 0.20899428, -0.0023507937, -0.1513508, 0.20899428, 0.0023507937, 0.1495508, 0.020986006, 0.0023507937, 0.1495508, 0.020986006, -0.0023507937, -0.1513508, 0.20899428, -0.0023507937, -0.1513508, 0.020986006, 0.0023507937)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_520jw"]
+resource_name = "laptop display"
+cull_mode = 2
+albedo_texture = ExtResource("2_rc24q")
+roughness = 0.5
+emission_enabled = true
+emission = Color(1, 1, 1, 1)
+emission_operator = 1
+emission_texture = ExtResource("2_rc24q")
+texture_filter = 2
+metadata/_gltf_primary_texture_coord = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_tsg50"]
+_surfaces = [{
+"aabb": AABB(-0.14901802, 0.023276132, -1.5790393e-08, 0.29621875, 0.18118882, 1e-05),
+"format": 34359742465,
+"index_count": 6,
+"index_data": PackedByteArray("AAABAAIAAAADAAEA"),
+"name": "laptop display",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray("yLsWPkNfUT5oERGxLZgYvpatvjyFsKcyLpgYvkFfUT7kmA4zybsWPqKtvjxxo4ey")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_c7xq0"]
+resource_name = "Laptop_Cube_011"
+_surfaces = [{
+"aabb": AABB(-0.14901802, 0.023276132, -1.5790393e-08, 0.29621875, 0.18118882, 1e-05),
+"attribute_data": PackedByteArray("5nKAPwCwZDqAzWW71sZ/P4DNZbsA0GQ65nKAP9LGfz8="),
+"format": 34359742487,
+"index_count": 6,
+"index_data": PackedByteArray("AAABAAIAAAADAAEA"),
+"material": SubResource("StandardMaterial3D_520jw"),
+"name": "laptop display",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray("yLsWPkNfUT5oERGxLZgYvpatvjyFsKcyLpgYvkFfUT7kmA4zybsWPqKtvjxxo4ey/3//f////7//f/9//v//v/9//3/+//+//3//f////78=")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_tsg50")
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_4mda6"]
+points = PackedVector3Array(-0.1513508, 0.020986006, -0.0023507937, 0.1495508, 0.20899428, 0.0023507937, 0.1495508, 0.20899428, -0.0023507937, -0.1513508, 0.20899428, 0.0023507937, 0.1495508, 0.020986006, 0.0023507937, 0.1495508, 0.020986006, -0.0023507937, -0.1513508, 0.20899428, -0.0023507937, -0.1513508, 0.020986006, 0.0023507937)
+
+[node name="Laptop" type="Node3D" unique_id=1140259069]
+transform = Transform3D(1.7, 0, 0, 0, 1.7, 0, 0, 0, 1.7, 0, 0, 0)
+
+[node name="laptop" type="MeshInstance3D" parent="." unique_id=1035714957]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.004899524)
+mesh = SubResource("ArrayMesh_mfh4x")
+
+[node name="laptop display" type="MeshInstance3D" parent="." unique_id=1113386481]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.021951914, -0.10910048)
+mesh = SubResource("ArrayMesh_f7roa")
+
+[node name="laptop display off" type="MeshInstance3D" parent="." unique_id=427924504]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.021951914, -0.10910048)
+mesh = SubResource("ArrayMesh_mxiee")
+
+[node name="laptop display on" type="MeshInstance3D" parent="." unique_id=312461476]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.021951914, -0.10910048)
+mesh = SubResource("ArrayMesh_c7xq0")

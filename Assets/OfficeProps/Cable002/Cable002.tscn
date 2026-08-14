@@ -1,0 +1,53 @@
+[gd_scene format=4]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pwg8l"]
+resource_name = "cable beige"
+cull_mode = 2
+albedo_color = Color(0.86275315, 0.8509885, 0.8274577, 1)
+roughness = 0.5
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_kh2b7"]
+_surfaces = [{
+"aabb": AABB(-0.14842217, -0.029880233, -0.13368455, 0.44723696, 0.17980304, 0.43340722),
+"format": 34896613377,
+"index_count": 60,
+"index_data": PackedByteArray("AAABAAIAAgABAAMAAAAEAAEABQAEAAAABQAGAAQAAgADAAcABwADAAgABwAIAAkACQAIAAoACQAKAAsACwAKAAwACwAMAA0ADQAMAA4ADQAOAA8ADwAOABAADwAQABEAEQAQABIAEQASABMAEwASABQAEwAUABUA"),
+"name": "cable beige",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 22,
+"vertex_data": PackedByteArray("5QIAABzCAACYBwAAy30AAB0KAAATfgAA8xqIAZJGAABbAAAAHMIAAIkCuAj//wAAAAC4CP//AABVHYgBKUgAANhASQb5IAAAe0JJBvoiAABvZwYLMA8AAMRoBgtiEQAAl5TkIbQBAAAzleQhPgQAAGfIKXkAAAAAf8cpeXICAACB8TXW8QoAALzvNdbRDAAAPPso9wUSAAAi+Sj3KxMAAP////9FGwAAdv3//zkbAAA=")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_wqrn4"]
+resource_name = "Cable002_Plane_006"
+_surfaces = [{
+"aabb": AABB(-0.14842217, -0.029880233, -0.13368455, 0.44723696, 0.17980304, 0.43340722),
+"attribute_data": PackedByteArray("3QNZ/UYFEvk3Bcr2GAaP5+oDpP+BArT9jgL//wMGZ+UnBk7FFAbTw8MFb6KwBTuhJwWieRYFFnk4BNJKLgSjSygDsCUkA0knxQLmHMQCzR6BApoYhwLkGg=="),
+"format": 34896613399,
+"index_count": 60,
+"index_data": PackedByteArray("AAABAAIAAgABAAMAAAAEAAEABQAEAAAABQAGAAQAAgADAAcABwADAAgABwAIAAkACQAIAAoACQAKAAsACwAKAAwACwAMAA0ADQAMAA4ADQAOAA8ADwAOABAADwAQABEAEQAQABIAEQASABMAEwASABQAEwAUABUA"),
+"material": SubResource("StandardMaterial3D_pwg8l"),
+"name": "cable beige",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 22,
+"vertex_data": PackedByteArray("5QIAABzC/CmYBwAAy325Kh0KAAATfrwq8xqIAZJGxSpbAAAAHMLvKYkCuAj//0MpAAC4CP//QylVHYgBKUjFKthASQb5IJYqe0JJBvoikSpvZwYLMA98KcRoBgtiETQpl5TkIbQBliIzleQhPgQPImfIKXkAAAgTf8cpeXICyhOB8TXW8QrqCrzvNdbRDBcLPPso9wUS/hUi+Sj3KxNoE/////9FG48fdv3//zkbhR/s1Awrb9WbKnXVmSr91ZQq5NQUK3/UeSt/1Hkr/dWUKpPWsyqa1rYq29h2K4DZrSuk4GAwGeG8MFfguzOg4LwyStiINOLYtjM91MYySNT1MmXSCjBb0vsv")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_kh2b7")
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_pqp2e"]
+points = PackedVector3Array(-0.14523254, -0.02884157, 0.14993584, 0.16694427, 0.03235101, -0.13475472, 0.10936956, -0.0065438943, -0.12879758, -0.14312145, -0.024615265, 0.29978865, 0.29141036, 0.15045659, -0.09255943, -0.102966845, -0.026728414, -0.016590908, -0.02287753, -0.024615265, -0.086221635, 0.20274475, 0.053429242, -0.12841691, 0.2998547, 0.14834344, -0.086221635, 0.027744543, -0.024615265, -0.09885469, -0.14945471, -0.022502117, 0.28494376, -0.13674422, -0.02884157, 0.07626424, 0.28714418, 0.14621253, -0.10310826, 0.12683363, 0.0006892681, -0.12629014, -0.14312145, -0.030954719, 0.2132713, -0.09667757, -0.030954719, -0.0060420856, -0.04816658, -0.024615265, -0.06933501, 0.22807778, 0.08294232, -0.12841691, 0.09521133, -0.011954121, -0.12629014, -0.14945471, -0.022502117, 0.29978865, -0.14312145, -0.026728414, 0.28711307, 0.042522144, -0.018293574, -0.11365707, 0.27236658, 0.11669946, -0.117868096, 0.044677213, -0.022502117, -0.1051925, 0.20274475, 0.059750937, -0.13475472, -0.035544045, -0.024615265, -0.07988383, 0.29352143, 0.15045659, -0.086221635, 0.28296602, 0.13779545, -0.10940352, 0.20067765, 0.051333852, -0.13475472, 0.025633458, -0.024615265, -0.1051925, 0.086723, -0.011954121, -0.12629014, 0.18801114, 0.042899005, -0.12841691)
+
+[node name="Cable002" type="Node3D" unique_id=216921766]
+
+[node name="cable_002" type="MeshInstance3D" parent="." unique_id=72564329]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.075196326, 0.029880226, -0.08301906)
+mesh = SubResource("ArrayMesh_wqrn4")
+
+[node name="cable_002_col" type="StaticBody3D" parent="cable_002" unique_id=2047754143]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="cable_002/cable_002_col" unique_id=79540997]
+shape = SubResource("ConvexPolygonShape3D_pqp2e")

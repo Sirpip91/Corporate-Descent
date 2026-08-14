@@ -1,0 +1,92 @@
+[gd_scene format=4]
+
+[ext_resource type="Texture2D" path="res://Assets/OfficeProps/GlassWallNarrow/GlassWallNarrow_metal.png" id="1_3txgq"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6y64b"]
+resource_name = "metal"
+cull_mode = 2
+albedo_texture = ExtResource("1_3txgq")
+metallic = 0.122727275
+roughness = 0.040909093
+texture_filter = 2
+metadata/_gltf_primary_texture_coord = 0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_uiom4"]
+resource_name = "glass"
+cull_mode = 2
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_sr7r0"]
+_surfaces = [{
+"aabb": AABB(-0.020000204, 0, -0.28997093, 0.040000115, 2.5, 0.5798464),
+"format": 34896613377,
+"index_count": 108,
+"index_data": PackedByteArray("AAABAAIAAQADAAIAAQAEAAMABAAFAAMABAAGAAUABgAHAAUABgAIAAcACQAAAAIAAAAKAAEACgALAAEACQACAAwADAANAAsADAAOAA0ADgAPAA0ADgAQAA8AEAARAA8AEAASABEAEwAMAAsAEwAJAAwACgATAAsAEwAUAAkACgAVABMAEwAVABQAFQARABIAFQASABQAFAASAAcAFgARABUACgAWABUAFgAIABEAAAAWAAoAFwAHAAgAFAAHABcAFwAIABYAAAAXABYACQAUABcACQAXAAAA"),
+"name": "metal",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("AADs/D4NAAAAAAAAxAEAAAAA///EAQAAChf//wAAAAAKFwAAAAAAAGXm//8AAAAAZeYAAAAAAAD/////xAEAAP//AADEAQAAAADs/MDyAAAAABIDPg0AAAAAAAA6/gAAAAD//zr+AACZGQAA//8AAJkZ/////wAA9OgAAP//AAD06P////8AAP7/AAA6/gAA/v///zr+AAAAABIDwPIAAP7/7PzA8gAA/v8SA8DyAAD+/xIDPg0AAP7/7Pw+DQAA")
+}, {
+"aabb": AABB(1.7174528e-08, 0.029999971, -0.2599709, 1e-05, 2.4400003, 0.5200001),
+"format": 34896613377,
+"index_count": 6,
+"index_data": PackedByteArray("AAABAAIAAAADAAEA"),
+"name": "glass",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray("AAAAAP//AAC/A///AAAAAL8DAAAAAAAAAAD/////AAA=")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_xk0ne"]
+resource_name = "GlassWallNarrow_Cube_104"
+_surfaces = [{
+"aabb": AABB(-0.020000204, 0, -0.28997093, 0.040000115, 2.5, 0.5798464),
+"attribute_data": PackedByteArray("Kzzp/XM/dFJzP///KzyJVFtbJI2jXvlmo145j1tbDmlIA4lUAAD//wAAdFJIA+n9u0Lp/XM/dFK7QolUcz///1tbTpGjXnm3W1tktaNeOY+ee4lU537//5576f3nfnRSS3///+d+dFJLf3RS537//ziHdFKoh///OIf//6iHdFKoh55WCIz//6iH//8IjJ5WaZD//wiMnlZpkJ5WCIz//8mU6dtpkNO3yZTTt2mQ6dtpkOnbyZT//2mQ///JlOnbHxkWv9cV65gfGQCb1xUrwR8ZwHLXFeuY1xWrcB8Z1pZHg///14J0UkeDdFLXgv//14L//0t/dFLXgnRSS3///6yDdFI4h///rIP//ziHdFJHg3RSrIP//0eD//+sg3RS"),
+"format": 34896613399,
+"index_count": 108,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUAGAAZABoAGAAbABkAHAAdAB4AHAAfAB0AIAAhACIAIAAjACEAJAAlACYAJAAnACUAKAApACoAKAArACkALAAtAC4ALAAvAC0AMAAxADIAMAAzADEANAA1ADYANAA3ADUAOAA5ADoAOAA7ADkAPAA9AD4APAA/AD0AQABBAEIAQABDAEEARABFAEYARABHAEUA"),
+"material": SubResource("StandardMaterial3D_6y64b"),
+"name": "metal",
+"primitive": 3,
+"uv_scale": Vector4(3.1197414, 4.917965, 0, 0),
+"vertex_count": 72,
+"vertex_data": PackedByteArray("AADs/D4N//8AAAAAxAH//wAA///EAf//AAASAz4N//8AABIDPg250gAAAAA6/h/YAAAAAMQBltIAABIDwPKD2AAAEgPA8v//AAD//zr+//8AAAAAOv7//wAA7PzA8v///v/s/D4N/////wAAxAH///7/EgM+Df///////8QB///+/xIDPg0J2P7/AAA6/qTS/v8SA8DySNL//wAAxAEu2P7/EgPA8v///v///zr+///+/+z8wPL///7/AAA6/v//9Oj////////+/wAAOv7///ToAAD//////v///zr+//9l5gAAAAD////////EAf//Zeb//wAA/////wAAxAH//wAAEgPA8v///v/s/MDy//8AAOz8wPL///7/EgPA8v//AADs/D4N///+/xIDPg3//wAAEgM+Df///v/s/D4N//8AABIDPg3///7/EgPA8v//AAASA8Dy///+/xIDPg3//wAA7PzA8v+//v/s/D4N/78AAOz8Pg3/v/7/7PzA8v+//v/s/MDyCdj/////xAGk0v7/7Pw+DUjS/v///zr+LtgAAOz8wPK50gAA///EAR/YAAD//zr+ltIAAOz8Pg2D2AAA//86/v//mRkAAP////8AAAAAOv7//5kZ////////mRn////////06AAA/////5kZAAD/////9Oj///////8KFwAAAAD//2Xm//8AAP//Chf//wAA//9l5gAAAAD//wAAAADEAf//Chf//wAA//8AAP//xAH//woXAAAAAP///z//f/8//3//P/9//z//f/hW8a20U2inD1cernxT+Kb/P/9/////v/8//3////+//7//f/+//3//v/9//7//fz6sfVj4qPJRu6h4UVOsp1j/v/9//7//f/+//3//v/9/cKf/f3Cn/39wp/9/cKf/f4Ha/3+B2v9/gdr/f4Ha/3////9/////f////3////9//3//f/9//3//f/9//3//f/9//7//f/+//3//v/9//78AAP9/AAD/fwAA/38AAP9/Pqx9WPio8lG7qHhRU6ynWPhW8a20U2inD1cernxT+KaCWv9/glr/f4Ja/3+CWv9//3//f/9//3//f/9//3//f////3////9/////f////3///3Cn//9wp///cKf//3Cn")
+}, {
+"aabb": AABB(1.7174528e-08, 0.029999971, -0.2599709, 1e-05, 2.4400003, 0.5200001),
+"attribute_data": PackedByteArray("4mBxnxyfjYDiYI2AHJ9xnw=="),
+"format": 34896613399,
+"index_count": 6,
+"index_data": PackedByteArray("AAABAAIAAAADAAEA"),
+"material": SubResource("StandardMaterial3D_uiom4"),
+"name": "glass",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray("AAAAAP//qiq/A///AACqKr8DAAAAAKoqAAD/////qiqqKqoqqiqqKqoqqiqqKqoq")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_sr7r0")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tm8mn"]
+transparency = 1
+albedo_color = Color(0.75, 0.85, 0.9, 0.25)
+metallic = 0.1
+roughness = 0.05
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_4js4t"]
+points = PackedVector3Array(0.016397707, 2.5, 0.28987545, 0.019995995, 2.5, 0.28584558, -0.016002543, 2.5, 0.28987545, 0.016397707, 0, 0.28987545, 0.01999991, 2.5, -0.28599784, 0.019995995, 0, 0.28584558, -0.020000204, 2.5, 0.28584558, -0.016002543, 0, 0.28987545, 0.01599833, 2.5, -0.28997093, 0.01999991, 0, -0.28599784, -0.020000204, 2.5, -0.28599784, -0.020000204, 0, 0.28584558, -0.016401917, 2.5, -0.28997093, 0.01599833, 0, -0.28997093, -0.020000204, 0, -0.28599784, -0.016401917, 0, -0.28997093)
+
+[node name="GlassWallNarrow" type="Node3D" unique_id=517706456]
+transform = Transform3D(1.7, 0, 0, 0, 1.7, 0, 0, 0, 1.7, 0, 0, 0)
+
+[node name="glass wall narrow" type="MeshInstance3D" parent="." unique_id=1326767288]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4714897e-07, 0, 4.7683716e-05)
+mesh = SubResource("ArrayMesh_xk0ne")
+surface_material_override/1 = SubResource("StandardMaterial3D_tm8mn")
+
+[node name="glass wall narrow_col" type="StaticBody3D" parent="glass wall narrow" unique_id=985379387]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="glass wall narrow/glass wall narrow_col" unique_id=965433800]
+shape = SubResource("ConvexPolygonShape3D_4js4t")

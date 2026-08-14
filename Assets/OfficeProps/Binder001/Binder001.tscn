@@ -1,0 +1,86 @@
+[gd_scene format=4]
+
+[ext_resource type="Texture2D" path="res://Assets/OfficeProps/Binder001/Binder001_files.png" id="1_ausxa"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dakq3"]
+resource_name = "files"
+cull_mode = 2
+albedo_texture = ExtResource("1_ausxa")
+roughness = 0.5
+texture_filter = 2
+metadata/_gltf_primary_texture_coord = 0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2e203"]
+resource_name = "files-blue"
+cull_mode = 2
+albedo_texture = ExtResource("1_ausxa")
+roughness = 0.5
+texture_filter = 2
+metadata/_gltf_primary_texture_coord = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_dab4s"]
+_surfaces = [{
+"aabb": AABB(-0.0215, 0, -0.1325, 0.043, 0.32, 0.265),
+"format": 34896613377,
+"index_count": 24,
+"index_data": PackedByteArray("AAABAAIAAQADAAIAAQAEAAMAAAAFAAEAAAAGAAUAAAAHAAYACAAJAAoACAALAAkA"),
+"name": "files",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 12,
+"vertex_data": PackedByteArray("ghUAAAAAAAB86v//AAAAAIIV//8AAAAAAAD/////AAD///////8AAHzqAAAAAAAA//8AAP//AAAAAAAA//8AAOLPkGX//wAAqiIvlv//AADizy+W//8AAKoikGX//wAA")
+}, {
+"aabb": AABB(-0.0215, 0, -0.1325, 0.043, 0.32, 0.265),
+"format": 34896613377,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAADAAAABQADAAQABAAAAAYABQAEAAcACAAGAAAACAAFAAcACAAJAAYACAAHAAkACgAFAAgACgAIAAsA"),
+"name": "files-blue",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 12,
+"vertex_data": PackedByteArray("AAD/////AACCFQAAAAAAAIIV//8AAAAAAAAAAP//AACqIpBl//8AAP//AAD//wAAqiIvlv//AADiz5Bl//8AAP///////wAA4s8vlv//AAB86gAAAAAAAHzq//8AAAAA")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_j8gnj"]
+resource_name = "Binder001_Cube_030"
+_surfaces = [{
+"aabb": AABB(-0.0215, 0, -0.1325, 0.043, 0.32, 0.265),
+"attribute_data": PackedByteArray("KgaQTjinjjw4p5BOKgaOPI/1pgMvcHkXb/WoFS9w1QEMpPG3gJQJmNSj7pe4lAy4rvWoFS9w1QGP9aYDL3B5Fw=="),
+"format": 34896613399,
+"index_count": 24,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0A"),
+"material": SubResource("StandardMaterial3D_dakq3"),
+"name": "files",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 16,
+"vertex_data": PackedByteArray("ghUAAAAA//986v//AAD//4IV//8AAP//fOoAAAAA//+CFQAAAACqKv//AAD//6oqfOoAAAAAqioAAAAA//+qKuLPkGX//0aAqiIvlv//RoDizy+W//9GgKoikGX//0aAfOr//wAAVNUAAP////9U1YIV//8AAFTV////////VNX/v/+//7//v/+//7//v/+/VFVVVVRVVVVUVVVVVFVVVf9//3//f/9//3//f/9//39U1aoqVNWqKlTVqipU1aoq")
+}, {
+"aabb": AABB(-0.0215, 0, -0.1325, 0.043, 0.32, 0.265),
+"attribute_data": PackedByteArray("1o1iUoIG5ftcBVZT/Y7x+pynO1KAlAmY9pBiUtSj7pe4lAy4DKTxtxyS8frCqMr6dAYu/NKNtFJYBZ9T745D+w=="),
+"format": 34896613399,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAGAAUABAAJAAcACAAKAAYABAALAAkACwAKAAgACwAIAAkADAANAA4ADAAPAA0A"),
+"material": SubResource("StandardMaterial3D_2e203"),
+"name": "files-blue",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 16,
+"vertex_data": PackedByteArray("AAD/////jcCCFQAAAACNwIIV//8AAI3AAAAAAP//jcD///////9GgKoiL5b//0aAAAD/////RoDizy+W//9GgKoikGX//0aA4s+QZf//RoAAAAAA//9GgP//AAD//0aAfOoAAAAAMAD///////8wAHzq//8AADAA//8AAP//MACQfyL/kH8i/5B/Iv+QfyL//3//f/9//3//f/9//3//f/9//3//f/9//3//f/9//39TwMl/U8DJf1PAyX9TwMl/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_dab4s")
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_cov81"]
+points = PackedVector3Array(-0.01796686, 0.0064703547, -0.12757824, -0.024039682, 0.3225397, 0.13416667, -0.024039682, -0.0025396794, 0.13416667, 0.021317462, -2.7755576e-17, 0.13206351, 0.021674603, 0.32250786, -0.13503967, 0.021674603, -0.0025396794, -0.13503967, -0.01796686, 0.31352964, -0.12757824, -0.024039682, -0.0025396794, -0.058831297, -0.024039682, 0.3225397, -0.058831297, 0.021321865, 0.32, 0.13208944)
+
+[node name="Binder001" type="Node3D" unique_id=844429139]
+
+[node name="binder_001" type="MeshInstance3D" parent="." unique_id=200802405]
+mesh = SubResource("ArrayMesh_j8gnj")
+
+[node name="binder_001_col" type="StaticBody3D" parent="binder_001" unique_id=1410779197]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="binder_001/binder_001_col" unique_id=785437247]
+shape = SubResource("ConvexPolygonShape3D_cov81")

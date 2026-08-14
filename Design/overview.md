@@ -2,20 +2,29 @@
 
 Quick-reference doc — the flow (what playing it actually feels like
 moment to moment) and the reason (why this game exists, what it's
-about). Fill in as the rewrite takes shape. Deeper story content goes
-in `story.md`, level-by-level breakdown in `levels.md` — this file
+about). Deeper story content goes in `story.md`, systems in
+`mechanics.md`, level-by-level breakdown in `levels.md` — this file
 stays a one-page summary, not the full bible.
 
 ---
 
 ## What This Is
 
-_Placeholder — one or two sentences, the pitch._
+You've worked the same corporate job for fifteen years. This morning
+you resign, and it's accepted in ninety seconds — which deactivates
+your badge. Every door in the building reads a badge, including the way
+out.
+
+Your mother's funeral is at six, four hours away. You are standing
+inside a building that no longer has any record of you.
 
 ## Genre & Tone
 
-_Placeholder — confirm if this is still first-person psychological
-horror like the original, or something else now._
+First-person psychological horror carried by inner monologue, sound
+design and subtitles. Corporate resentment turned into dread. Nothing
+supernatural is ever confirmed — everything stays legible as burnout
+and dissociation, which is worse, because the player can't file it
+under "ghosts" and stop recognising their own job in it.
 
 ## Core Loop (the flow)
 
@@ -24,18 +33,45 @@ Systems already built and staying (see `CLAUDE.md`):
 - Interact/examine system (press F, pick things up, inspect, read notes)
 - Pause menu with settings
 
-_Placeholder — what does the player actually spend their time doing?
-What's the moment-to-moment loop across a level?_
+Every elevator and stairwell in the building reads a badge and yours is
+dead. So each floor becomes the same question in a different shape:
+**what else goes through a floor?** Freight elevators, service
+corridors, elevator shafts, renovation gaps, chutes. Find the route,
+then make it usable — power it, clear it, open it, reach it. One route
+per floor, never repeated.
+
+Feeding that: reading the building and the people in it. Maintenance
+clipboards, breaker panels, notes, and terminals you open by examining
+a stranger's desk closely enough to guess their password — the boat
+photo and the sales plaque give you `SecondWind2021`.
+
+No combat, no timer. Full breakdown in `mechanics.md`.
 
 ## Story / Premise (the reason)
 
-_Placeholder — the rewrite. How much of the original carries over
-(descending a corporate tower, a time-loop structure, a "Supervisor"
-threat, badge/keycard progression) vs. what's new is still open._
+The building doesn't attack him — it stops registering him, and the
+longer he's unregistered the less he's there. Coworkers stop reacting.
+His reflection stops appearing. The HUD degrades. The monologue drifts
+from *"I need to get out"* to *"he needs to get out."* The people still
+working are the ones who exist; he's the one who stopped, which inverts
+the resentment the opening spent an hour building.
+
+The real lock isn't the turnstile. It's the internal arithmetic that
+gets louder near every exit — rent, savings, fifteen years of
+experience in something nobody outside this building does.
+
+And the lobby turnstiles only read badges on the way **in.** They never
+needed one to let you out. In fifteen years he never once tried to
+leave without permission.
+
+Full narrative in `story.md`.
 
 ## Setting
 
-_Placeholder._
+Cold open at the company Christmas party. Tutorial in the protagonist's
+apartment (Japanese-style, small, neglected). The rest of the game is a
+single office tower, descended one-way — you can always go down, never
+back up.
 
 ## Art Direction
 
@@ -56,8 +92,17 @@ _Placeholder._
 
 ## Open Questions
 
-- [ ] Story direction — what carries over from the original, what's new
-- [ ] Protagonist — who, what do they want
-- [ ] Antagonist / core threat
-- [ ] Level list and progression
-- [ ] What the player should feel by the end
+- [x] Story direction — resign successfully, get locked in by your own
+	  offboarding, race a clock you can't win by asking permission
+- [x] Protagonist — fifteen-year employee; wants to reach his mother's
+	  funeral
+- [x] Core threat — administrative erasure, never confirmed as
+	  supernatural
+- [x] Core mechanic — find the unofficial route down, one per floor
+- [ ] Floors 8 and below — nothing designed past Floor 9
+- [ ] Fail state — the old heat system was cut with badge farming and
+	  nothing replaced it
+- [ ] The abandoned thing (camera / guitar / knife roll) — pick one
+- [ ] Where the surveillance-metrics documents surface
+- [ ] Whether there's a predecessor who tried this before
+- [ ] Cast beyond Halloran and Denise

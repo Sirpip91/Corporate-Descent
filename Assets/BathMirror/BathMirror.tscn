@@ -1,0 +1,59 @@
+[gd_scene format=4]
+
+[ext_resource type="Texture2D" path="res://Assets/BathMirror/BathMirror_bath.png" id="1_cr0yj"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_crqec"]
+resource_name = "bath reflective"
+cull_mode = 2
+albedo_texture = ExtResource("1_cr0yj")
+metallic = 0.1
+roughness = 0.0
+texture_filter = 2
+metadata/_gltf_primary_texture_coord = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_bfdhb"]
+_surfaces = [{
+"aabb": AABB(-0.15000008, -0.24999997, -8.4946544e-07, 0.30000016, 0.9999999, 0.01000002),
+"format": 34896613377,
+"index_count": 48,
+"index_data": PackedByteArray("AAABAAIAAwACAAEAAAAEAAEAAwABAAUABAAFAAEABgAEAAAABAAGAAUABgAAAAcABgAHAAgACQAFAAYABgAIAAkAAwAFAAoACQAKAAUACAAKAAkAAwAKAAsACAALAAoA"),
+"name": "bath reflective",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 12,
+"vertex_data": PackedByteArray("//8AAAAAAAD///////8AAP////8AAAAA/3///wAAAAD//wAA//8AAP9////+/wAA/38AAP7/AAD/fwAAAAAAAAAAAAAAAAAAAAAAAP7/AAAAAP///v8AAAAA//8AAAAA")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_8aov2"]
+resource_name = "BathMirror_Cube_117"
+_surfaces = [{
+"aabb": AABB(-0.15000008, -0.24999997, -8.4946544e-07, 0.30000016, 0.9999999, 0.01000002),
+"attribute_data": PackedByteArray("rpV+Oc+WQKqulUCqz5Z+OSmnfjnPll44KadeOM+WfjnPll44z5Z+OSmnYavPlkCqKadAqs+WYavPlkCqz5Zhq8+Wfjkpp0Cqz5ZAqimnfjnPln45z5ZAqq6VfjnPlkCqz5Z+Oa6VQKo="),
+"format": 34896613399,
+"index_count": 48,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUABAAGAAgABAAIAAkACgALAAwACgANAAsACgAMAA4ACgAOAA8AEAARABIAEAATABEAFAARABMAFAAVABEAFgAXABgAFgAZABcA"),
+"material": SubResource("StandardMaterial3D_crqec"),
+"name": "bath reflective",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 26,
+"vertex_data": PackedByteArray("//8AAAAA//////////////////8AAP////8AAP//////fwAA/v//P///AAAAAP///38AAAAA/z///wAA/////wAAAAAAAP8/AAAAAP7//z//f///AAD/P////////////3////7//z//////AAD//wAA///+//8/AAD//wAA/z///wAA//////9////+//5/////////////fwAA/v/+fwAAAAD+//5/AAD///7//n8AAAAAAAD/PwAA///+//8/AAAAAP7//z8AAP//AAD/P/+//3//v/9//7//f/+//38AAP9//3//PwAA/3//f/8/AAD/fwAA/3////9//3//v////3//f/+/////f////3//f/9//3////9//3//f////3////9/////f////3////9/////f///")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_bfdhb")
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_s6lt3"]
+points = PackedVector3Array(0.15952381, 0.75793654, 0.023809524, -0.15793648, -0.25783712, -0.007933402, -0.15793648, -0.25783712, 0.023809524, -0.15793648, 0.75793654, -0.007933402, 0.15952381, -0.25783712, -0.007933402, 0.15952381, -0.25783712, 0.023809524, -0.15793648, 0.75793654, 0.023809524, 0.15952381, 0.75793654, -0.007933402)
+
+[node name="BathMirror" type="Node3D" unique_id=955874411]
+transform = Transform3D(1.7, 0, 0, 0, 1.7, 0, 0, 0, 1.7, 0, 0, 0)
+
+[node name="bath mirror" type="MeshInstance3D" parent="." unique_id=1008985164]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.25, -0.0049991608)
+mesh = SubResource("ArrayMesh_8aov2")
+
+[node name="bath mirror_col" type="StaticBody3D" parent="bath mirror" unique_id=1389988278]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="bath mirror/bath mirror_col" unique_id=315893273]
+shape = SubResource("ConvexPolygonShape3D_s6lt3")

@@ -1,0 +1,54 @@
+[gd_scene format=4]
+
+[ext_resource type="Texture2D" path="res://Assets/ElectronicsMisc/LightSwitch11/LightSwitch11_light_switches_mp_1.png" id="1_7bad2"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ktifv"]
+roughness = 0.5
+resource_name = "light_switches_mp_1"
+cull_mode = 2
+albedo_texture = ExtResource("1_7bad2")
+texture_filter = 2
+metadata/_gltf_primary_texture_coord = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_ihxl5"]
+_surfaces = [{
+"aabb": AABB(-0.054001667, -0.05699992, 0, 0.11000142, 0.112999916, 0.019999452),
+"format": 34896613377,
+"index_count": 114,
+"index_data": PackedByteArray("AAABAAIAAAAEAAEABAAFAAEAAgAMAAAABAAAAAwAAgADAAwABAANAAUABAAMAA0ADQAGAAUADgAMAAMADQAMAA4ADgADAAgADQAPAAYADQAOAA8ABwAOAAgADwAOAAcABwAIAAkABgAPAAoADwAHAAoACgAHAAkABgAKAAsACgAJAAsAEAARABIAEAATABEAFAATABAAEgARABUAEwAVABEAEgAVABYAFAAXABMAEwAXABUAGAAXABQAFgAVABkAFwAZABUAFgAZABoAGAAbABcAFwAbABkAGgAbABgAGgAZABsA"),
+"lods": [0.025799638, PackedByteArray("AAABAAIAAgADAAAAAAAEAAEABAAFAAEABAAGAAUABwAAAAMABAAAAAcABwADAAgABwAIAAkABAAHAAoABAAKAAYACgAHAAkABgAKAAsACgAJAAsA")],
+"name": "light_switches_mp_1",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 28,
+"vertex_data": PackedByteArray("+wYAAM2MAAAD+QAAAAAAAPsGAAAAAAAAAADLBgAAAAAD+QAAzYwAAP//ywYAAAAA//8z+QAAAAD7Bv//zYwAAAAAM/kAAAAA+wb//wAAAAAD+f//zYwAAAP5//8AAAAAAADLBs2MAAD//8sGzYwAAAAAM/nNjAAA//8z+c2MAABKlZqqzYwAAPhvmqoxswAA+G+aqs2MAABKlZqqMbMAAEqV3X7NjAAA+G/dfv6/AAD4b91+zYwAAEqV3X7+vwAASpVqVc2MAAD4b/FZ//8AAPhvalXNjAAASpXxWf//AAA=")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_6j4qe"]
+resource_name = "LightSwitch11_light_switch_1_1_001"
+_surfaces = [{
+"aabb": AABB(-0.054001667, -0.05699992, 0, 0.11000142, 0.112999916, 0.019999452),
+"attribute_data": PackedByteArray("/3+p+lSNVIVUjan6/39Uhf9//39UjVSFVI3/f1SNqfr/f///VI3///9/qfpUjVSFVI2p+v9/VIX/f///VI1UhVSNqfpUjf///3//f1SN/3+ZfP//ZgP/f5l8/39lA/7//39Uhf9/qfr/f6n6/39Uhf9/ZYMAAGWD/3+Z/AAAmfyqSqmu/zepqv83qa6qSqmq5zqksm4//8fnOv/HTD6ksqpKqar/N/+//zepqqpK/7+qSv+//zf/z/83/7+qSv/P/zeVtqpKqaqqSpW2/zepquc+TMpuQ/+35z4DuBhJ/8fnOv/HTD6ksuc6pLJuP//H5z4DuBhJ/8fnPkzKbkP/tw=="),
+"format": 34896613399,
+"index_count": 114,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAYAAUAGAAHAAUAGAAZAAcACQAHABkACQAZAAgACgALAAwACgANAAsAGgAPABAADgAaABAADgAQABEAGgAbAA8ADwAbABIADwASABMAHAAVABYAHAAdABUAHgAdABwAHgAfAB0AFAAfAB4AFAAXAB8AIAAhACIAIAAjACEAJAAlACYAJAAnACUAKAApACoAKAArACkALAAtAC4ALAAvAC0AMAAxADIAMAAzADEANAA1ADYANAA3ADUAOAA5ADoAOAA7ADkAPAA9AD4APAA/AD0A"),
+"lods": [0.025799638, PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUABAAIAAcACQAHAAgACgALAAwACgANAAsADgAPABAADgAQABEADgASAA8ADwASABMAFAAVABYAFAAXABUA")],
+"material": SubResource("StandardMaterial3D_ktifv"),
+"name": "light_switches_mp_1",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 64,
+"vertex_data": PackedByteArray("+wYAAM2MGt8D+QAAAADIzPsGAAAAABrfA/kAAM2MyMz7Bv//zYzmIAAAM/kAAEcL+wb//wAA5iAAAMsGAABGC/sGAADNjOQg+wYAAAAA5CAD+f//zYzIzPsG//8AABjfA/n//wAAyMz7Bv//zYwY3wP5AADNjMjM//8z+QAAjMH//8sGAACMwQP5AAAAAMjMA/n//82MyMwD+f//AADIzAP5AADNjACA+wb//82MAIAD+f//zYwAgPsGAADNjACAAAAz+c2MRwsAAMsGzYxGC///ywbNjIzB//8z+c2MjMH//zP5zYwAgAAAM/nNjACA///LBs2MAIAAAMsGzYwAgEqVmqrNjP8/+G+aqjGz/z/4b5qqzYz/P0qVmqoxs/8/+G+aqs2M/7/4b91+/r//v/hv3X7NjP+/+G+aqjGz/79KlZqqMbMagvhv3X7+vxqC+G+aqjGzGoJKld1+/r8agkqV3X7+vyCM+G/xWf//IIz4b91+/r8gjEqV8Vn//yCM+G9qVc2MFrdKlfFZ//8Wt0qValXNjBa3+G/xWf//FrdKlWpVzYzgAEqV3X7+v1wASpXdfs2MHABKlfFZ//8GAUqV3X7NjAAASpWaqjGzAABKlZqqzYwAAEqV3X7+vwAA+G/dfs2M/7/4b/FZ//8BwPhvalXNjALA+G/dfv6//78GUPJfZFs2SQZQ8l9kWzZJ8N/4L2n0NTrw3/gvyUVrdAZQ8l8GUPJfNsmbJPDf+C82yZsk8N/4L2RbNkltpDYSyG1tJGRbNkk2yZskNsmbJP9/////f////3////9///9p9DU6yUVrdMhtbSRtpDYS/3////9/////f////3///////3////9/////f////3//f////3////9/////f///////f////3////9/////f////3////9/////f////38AAP9/AAD/fwAA/38AAP9/g78Hf8y/mX/vv+B/br/efv+//3//v/9//7//f/+//38lf0r+J35P/Oh90PvAf4D/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_ihxl5")
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_u5n0b"]
+points = PackedVector3Array(0.05630953, 0.05509896, 0.011658029, -0.054896824, -0.05609896, -0.0008968245, -0.053100716, -0.057896826, -0.0008968245, -0.0058999998, -0.017015718, 0.019776063, -0.054896824, 0.05509896, 0.011658029, 0.05630953, -0.05609896, -0.0008968245, -0.053100716, 0.056896824, -0.0008968245, 0.05630953, 0.05509896, -0.0008968245, 0.05451342, -0.057896826, 0.011658029, -0.054896824, -0.05609896, 0.011658029, 0.0101, -0.016179718, 0.019274384, 0.05451342, 0.056896824, 0.011658029, 0.05630953, -0.05609896, 0.011658029, -0.053100716, 0.056896824, 0.011658029, -0.053100716, -0.057896826, 0.011658029, -0.054896824, 0.05509896, -0.0008968245, 0.05451342, 0.056896824, -0.0008968245, 0.05451342, -0.057896826, -0.0008968245)
+
+[node name="LightSwitch11" type="Node3D" unique_id=349372570]
+
+[node name="light_switch_1_1" type="MeshInstance3D" parent="." unique_id=510294468]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0009994507, 0.05699992, -0.009999722)
+mesh = SubResource("ArrayMesh_6j4qe")

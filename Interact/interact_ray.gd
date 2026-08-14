@@ -9,6 +9,14 @@ var _dwell_target = null
 var _dwell_time: float = 0.0
 
 func _physics_process(delta):
+	if ExamineController.active:
+		# the held item sits right in the ray's path — Examinable already
+		# shows its own name, so don't also show the interact prompt for it
+		clear_text()
+		_dwell_target = null
+		_dwell_time = 0.0
+		return
+
 	if is_colliding():
 		var target = get_collider()
 

@@ -1,0 +1,53 @@
+[gd_scene format=4]
+
+[ext_resource type="Texture2D" path="res://Assets/KitchenProducts/Ramen003/Ramen003_products.png" id="1_2i4rs"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_p51gj"]
+resource_name = "products"
+cull_mode = 2
+albedo_texture = ExtResource("1_2i4rs")
+roughness = 0.5
+texture_filter = 2
+metadata/_gltf_primary_texture_coord = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_xkoe5"]
+_surfaces = [{
+"aabb": AABB(-0.06368683, -3.0733645e-08, -0.08039789, 0.12737365, 0.0200001, 0.1608619),
+"format": 34896613377,
+"index_count": 84,
+"index_data": PackedByteArray("AAABAAIAAQADAAIAAQAEAAMABQACAAMABAABAAYAAgAFAAcAAgAHAAAAAAAHAAgAAAAIAAkAAAAKAAEAAAAJAAoACgAGAAEACQALAAoACgALAAYADAAHAAUADQAHAAwADAAFAA4ADwAOAAUADgAPABAABgARABAADgAQABEAEQAGAAsAEgAMAA4AEgAOABEAEgANAAwAEQALABIAEgATAA0AEgALABMA"),
+"name": "products",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 20,
+"vertex_data": PackedByteArray("dxL+/58OAACH7f7/X/EAAHcS/v9f8QAAAAD/f///AAD///9//v8AADsJ/3+Z5QAAw/b/f5nlAAA7Cf9/ByMAAAAA/38AAAAA/v//fwAAAACH7f//nw4AAMP2/38HIwAAdxIAAJ8OAAAAAP9/AAAAAHcSAABf8QAAAAD/f/7/AAD+//9//v8AAIftAABf8QAAh+0AAJ8OAAD+//9/AAAAAA==")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_jx0wy"]
+resource_name = "Ramen003_Plane_043"
+_surfaces = [{
+"aabb": AABB(-0.06368683, -3.0733645e-08, -0.08039789, 0.12737365, 0.0200001, 0.1608619),
+"attribute_data": PackedByteArray("TGw/94yvlMqMrz/3TGyUyg6sE/uMrz/34rMc/UxsP/dZchP79mcc/YyvP/dZchP7TGw/9w6sE/tMbJTKDqzAxoyvlMpZcsDGTGw/9/Znt8RMbJTK9mcc/YyvlMrisxz9jK8/9+Kzt8T2Z7fEWXLAxkxslMris7fEjK+Uyg6swMZMbD/3jK+UyoyvP/dMbJTKDqwT+4yvP/fisxz9TGw/91lyE/v2Zxz9jK8/91lyE/tMbD/3DqwT+0xslMoOrMDGjK+UyllywMZMbD/39me3xExslMr2Zxz9jK+UyuKzHP2Mrz/34rO3xPZnt8RZcsDGTGyUyuKzt8SMr5TKDqzAxg=="),
+"format": 34896613399,
+"index_count": 84,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABwAIAAkACgALAAwACgANAAsADgAPABAADgARAA8AEgATABQAEgAVABMAFgAXABgAFgAZABcAGgAbABwAHQAeAB8AIAAhACIAIAAjACEAJAAlACYAJwAoACkAKgArACwAKgAtACsALgAvADAALgAxAC8AMgAzADQAMgA1ADMANgA3ADgANgA5ADcAOgA7ADwAPQA+AD8A"),
+"material": SubResource("StandardMaterial3D_p51gj"),
+"name": "products",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 64,
+"vertex_data": PackedByteArray("dxL+/58OVNWH7f7/X/FU1XcS/v9f8VTVh+3//58OVNU7Cf9/meW+yncS/v9f8b7KAAD/f///vsp3Ev7/nw5NvzsJ/38HI02/AAD/fwAATb93Ev7/X/HbwTsJ/38HI9vBdxL+/58O28E7Cf9/meXbwYft//+fDqPzw/b/f5nlo/OH7f7/X/Gj88P2/38HI6PzdxL+/58Oye3+//9/AADy54ft//+fDkrnAAD/fwAALO6H7f7/X/GxzgAA/3///1O7dxL+/1/x3bj///9//v/gz/7//38AAHDpw/b/fwcjcOmH7f//nw5w6f///3/+/wr1h+3+/1/xCvXD9v9/meUK9YftAACfDlTVdxIAAF/xVNWH7QAAX/FU1XcSAACfDlTVw/b/f5nlCvWH7QAAX/EK9f7//3/+/wr1h+0AAJ8OcOnD9v9/ByNw6f7//38AAHDph+0AAF/xovPD9v9/ByOi84ftAACfDqLzw/b/f5nlovN3EgAAnw7bwTsJ/3+Z5dvBdxIAAF/x28E7Cf9/ByPbwYftAACfDjroAAD/fwAAJe53EgAAnw4K7/7//38AAO3ndxIAAF/xWrz+//9//v/Kz4ftAABf8XXSAAD/f/7/P7sAAP9/AABNvzsJ/38HI02/dxIAAJ8OTb8AAP9//v++yncSAABf8b7KOwn/f5nlvsqqqqqqqqqqqqqqqqqqqqmqjJ960YyfetGMn3rRJ5T5yieU+conlPnKeZMK2XmTCtl5kwrZeZMK2bC5nYywuZ2MsLmdjLC5nYyprT+7zL7qrj/BJq2urPO7vpaCne2iF5ropImZH5avnQ21Qo4NtUKODbVCjqW5UZaluVGWpblRlqoqVNWqKlTVqipU1aoqVNVSFlnGUhZZxlIWWcZDDvHKQw7xykMO8cqeDE7GngxOxp4MTsaeDE7GDFmF7AxZhewMWYXsDFmF7KIvMMLnOz7TfT1y1dwuHsFQGtndrB3T6Q4eMusUGgHd+UrW6/lK1uv5Stbre1Fy4HtRcuB7UXLg")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_xkoe5")
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_f6o5p"]
+points = PackedVector3Array(-0.050919488, -1.7347235e-18, -0.06577096, 0.06195008, 0.01142457, 0.07760404, 0.062093504, 0.011427375, -0.07768402, -0.05730308, 0.02170873, -0.073998585, -0.062100228, 0.0114333425, 0.07816694, 0.0512179, -1.7347235e-18, 0.06587096, 0.05760149, 0.02170873, 0.07409859, 0.05760149, 0.02170873, -0.073998585, -0.05730308, 0.02170873, 0.07409859, -0.050919488, -1.7347235e-18, 0.06587096, 0.0512179, -1.7347235e-18, -0.06577096, -0.06031482, 0.006661951, -0.07582643, 0.060033765, 0.0066960105, 0.075199254, -0.062191997, 0.011435138, -0.0781821, -0.060166992, 0.00667064, 0.07574092, 0.06023084, 0.006684427, -0.07534656)
+
+[node name="Ramen003" type="Node3D" unique_id=1266025388]
+transform = Transform3D(1.7, 0, 0, 0, 1.7, 0, 0, 0, 1.7, 0, 0, 0)
+
+[node name="ramen_003" type="MeshInstance3D" parent="." unique_id=1518794124]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -3.3140182e-05)
+mesh = SubResource("ArrayMesh_jx0wy")

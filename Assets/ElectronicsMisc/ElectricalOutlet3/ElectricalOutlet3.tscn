@@ -1,0 +1,52 @@
+[gd_scene format=4]
+
+[ext_resource type="Texture2D" path="res://Assets/ElectronicsMisc/ElectricalOutlet3/ElectricalOutlet3_electrical_outlets_1.png" id="1_hte8t"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ohl2e"]
+roughness = 0.5
+resource_name = "electrical_outlets_1"
+cull_mode = 2
+albedo_texture = ExtResource("1_hte8t")
+texture_filter = 2
+metadata/_gltf_primary_texture_coord = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_q6ouc"]
+_surfaces = [{
+"aabb": AABB(-0.05566277, -0.05561196, -2.357865e-10, 0.11132554, 0.111223854, 0.004000006),
+"format": 34359742465,
+"index_count": 66,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAAAAIAAwAAAAQABAACAAUAAwAGAAEABwAEAAUAAwAEAAcABwAFAAgACQAHAAgAAwAHAAkACQAIAAoAAwALAAYAAwAJAAsADAAGAAsACgANAAkACwAJAA0ACgAOAA0ADAALAA8ADwAOAAwACwANAA8ADwANAA4A"),
+"name": "electrical_outlets_1",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 16,
+"vertex_data": PackedByteArray("PiA/vUzJYz16EoM7bf1jvR3sPj0UEfIxPiA/vUzJYz2qCwQyiP1jvR3sPj14EoM7PiA/PUzJYz16EoM7PiA/PUzJYz2qCwQybf1jvSvsPr2A8N4viP1jPR3sPj14EoM7bf1jPR3sPj0UEfIxpf5jPS/sPr1uEoM7bf1jPSvsPr3Q7t4vpf5jvS/sPr1uEoM7PiA/vVrJY70wdYGvkCE/PV7JY71uEoM7PiA/PVrJY70AoIGvkSE/vV7JY71uEoM7")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_sdmoa"]
+resource_name = "ElectricalOutlet3_electrical_outlet_3_001"
+_surfaces = [{
+"aabb": AABB(-0.05566277, -0.05561196, -2.357865e-10, 0.11132554, 0.111223854, 0.004000006),
+"attribute_data": PackedByteArray("q6qqPQAAWj8AAAAAAABgP6uqqj0AAGA/AAAAAAAAWj+rqmo/AABaP6uqaj8AAGA/q6pqPwAAYD+rqmo/AABaP6uqqj0AAGA/q6qqPQAAWj+rqqo9AABaP6uqqj0AAGA/q6qqPQAAYD8AAAAAAABaP6uqqj0AAFo/AAAAAAAAYD+rqmo/AABaP6uqqj0AAGA/q6pqPwAAYD+rqqo9AABaP6uqqj0AAFo/q6pqPwAAYD+rqqo9AABgP6uqaj8AAFo/q6qqPQAAWj+rqmo/AABgP6uqqj0AAGA/q6pqPwAAWj+rqmo/AABaP6uqqj0AAGA/q6pqPwAAYD+rqqo9AABaP1gAAD+khc8+iqZ1PwAAwD6p/38/pIXPPnZZCj8AAMA++P9/P7AmOD8IAAA/sCY4P+imdT+B6T8/F1kKP4HpPz8="),
+"format": 34359742487,
+"index_count": 66,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUAGAAZABoAGAAbABkAHAAdAB4AHAAfAB0AIAAhACIAIAAjACEAIAAiACQAIAAkACUAJQAkACYAJQAmACcA"),
+"material": SubResource("StandardMaterial3D_ohl2e"),
+"name": "electrical_outlets_1",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 40,
+"vertex_data": PackedByteArray("PiA/vUzJYz16EoM7bf1jvR3sPj0UEfIxPiA/vUzJYz2qCwQyiP1jvR3sPj14EoM7iP1jPR3sPj14EoM7PiA/PUzJYz2qCwQybf1jPR3sPj0UEfIxPiA/PUzJYz16EoM7PiA/vVrJY70wdYGvpf5jvS/sPr1uEoM7kSE/vV7JY71uEoM7bf1jvSvsPr2A8N4vbf1jPSvsPr3Q7t4vkCE/PV7JY71uEoM7pf5jPS/sPr1uEoM7PiA/PVrJY70AoIGviP1jvR3sPj14EoM7bf1jvSvsPr2A8N4vbf1jvR3sPj0UEfIxpf5jvS/sPr1uEoM7kSE/vV7JY71uEoM7PiA/PVrJY70AoIGvPiA/vVrJY70wdYGvkCE/PV7JY71uEoM7pf5jPS/sPr1uEoM7bf1jPR3sPj0UEfIxbf1jPSvsPr3Q7t4viP1jPR3sPj14EoM7PiA/PUzJYz16EoM7PiA/vUzJYz2qCwQyPiA/PUzJYz2qCwQyPiA/vUzJYz16EoM7iP1jvR3sPj14EoM7PiA/PUzJYz16EoM7iP1jPR3sPj14EoM7PiA/vUzJYz16EoM7pf5jPS/sPr1uEoM7pf5jvS/sPr1uEoM7kCE/PV7JY71uEoM7kSE/vV7JY71uEoM7/z//v/+//x//P/+//7//H/8//7//v/8f/z//v/+//x//v/+/////v/+//7////+//7//v////7//v/+/////v/0//T////+//T/9P////7/9P/0/////v/0//T////+/AcD9P/+//98BwP0//7//3wHA/T//v//fAcD9P/+//98AAAaA/38AAAAABoD/fwAAAAAGgP9/AAAAAAaA/38AAP9/AAD///+//38AAP///7//fwAA////v/9/AAD///+///8GgP9//////waA/3//////BoD/f/////8GgP9/////f///////P/9///////8//3///////z//f///////P/9//3////+//3//f////7//f/9/////v/9//3////+//3//f////7//f/9/////v/9//3////+//3//f////78=")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_q6ouc")
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_bfk05"]
+points = PackedVector3Array(-0.04773316, -0.05648412, -0.0008841269, 0.04773316, 0.056684125, 0.004420635, 0.056584124, 0.047833163, 0.004420635, -0.056584124, -0.04763316, 0.004420635, -0.04773316, 0.056684125, -0.0008841269, 0.056584124, -0.04763316, -0.0008841269, 0.04773316, -0.05648412, 0.004420635, 0.056584124, 0.047833163, -0.0008841269, -0.056584124, 0.047833163, 0.004420635, -0.056584124, 0.047833163, -0.0008841269, 0.056584124, -0.04763316, 0.004420635, -0.04773316, 0.056684125, 0.004420635, 0.04773316, 0.056684125, -0.0008841269, 0.04773316, -0.05648412, -0.0008841269, -0.04773316, -0.05648412, 0.004420635, -0.056584124, -0.04763316, -0.0008841269)
+
+[node name="ElectricalOutlet3" type="Node3D" unique_id=1735998366]
+
+[node name="electrical_outlet_3" type="MeshInstance3D" parent="." unique_id=96394817]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.055611968, -0.0020000003)
+mesh = SubResource("ArrayMesh_sdmoa")

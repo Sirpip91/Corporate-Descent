@@ -1,0 +1,54 @@
+[gd_scene format=4]
+
+[ext_resource type="Texture2D" path="res://Assets/ShowerRug/ShowerRug_bath.png" id="1_sccpn"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tvjjl"]
+resource_name = "bath"
+cull_mode = 2
+albedo_texture = ExtResource("1_sccpn")
+roughness = 0.5
+texture_filter = 2
+metadata/_gltf_primary_texture_coord = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_pvbw8"]
+_surfaces = [{
+"aabb": AABB(-0.3, 0, -0.2, 0.6, 0.012478053, 0.4),
+"format": 34896613377,
+"index_count": 60,
+"index_data": PackedByteArray("CAACAAkACAAAAAIAAgAKAAkAAAABAAIAAgABAAoAAAAEAAEACAAEAAAACwABAAQACwAKAAEACAALAAQAAwAJAAoACAAJAAMACwAHAAoAAwAKAAcACAAGAAsACwAGAAcACAADAAUACAAFAAYABQADAAcABQAHAAYA"),
+"lods": [8.3711544e-05, PackedByteArray("AAABAAIAAwACAAEAAAACAAMAAAAEAAEAAAADAAUAAAAGAAQAAAAFAAYABQADAAcAAwABAAcABQAHAAYABAAHAAEABAAGAAcA")],
+"name": "bath",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 12,
+"vertex_data": PackedByteArray("//8AAP//AACb+v//0QYAAP//AAAAAAAAAAAAAAAAAACb+v//LfkAAAAAAAD//wAAYwX//y35AABjBf//0QYAAP9/AAD//wAA/38AAAAAAAD/f///0QYAAP9///8t+QAA")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_trhpj"]
+resource_name = "ShowerRug_Plane_001"
+_surfaces = [{
+"aabb": AABB(-0.3, 0, -0.2, 0.6, 0.012478053, 0.4),
+"attribute_data": PackedByteArray("t8eR0a3JSf33x8z+b8kP0xviwUw74jQ2G+LBTDviNDZvyQ/TrclJ/a3JSf1vyQ/Tt8eR0W/JD9NvyQ/Tt8eR0bfHkdGtyUn9b8kP0/fHzP73x8z+rclJ/a3JSf33x8z+BfPZTCXzTDaA6dTSxOkf/Xvp+NCA6dTSxOkf/crp/P4="),
+"format": 34896613399,
+"index_count": 60,
+"index_data": PackedByteArray("GAAHABkAGAAEAAcAGAAZAAUAGAAFAAYAGgAKAAgAGgAbAAoAGgAJABsAGgALAAkAHAAOAAwAHAAdAA4AHAANAB0AHAAPAA0AAAABAAIAAAADAAEAFwAeAB8AFwAVAB4AFAAfAB4AFAAeABYAEAARABIAEAATABEA"),
+"lods": [8.3711544e-05, PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA")],
+"material": SubResource("StandardMaterial3D_tvjjl"),
+"name": "bath",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 32,
+"vertex_data": PackedByteArray("//8AAP//se2b+v//0QbW5f//AAAAAKnlm/r//y35EO7//wAA///W/wAAAAAAAP8/AAAAAP///z///wAAAADW/5v6//8t+cr/YwX//9EG/z+b+v//0QbT/2MF//8t+f8///8AAP//LP9jBf//LfkwY5v6//8t+TD/AAAAAP//L2MAAAAA///zO2MF///RBtU3YwX//y35HDwAAAAAAAC5NwAAAAAAAMwcm/r//9EG6P9jBf//0QbMHP//AAAAAOv//38AAP///z//fwAAAAD/P/9///8t+f8//3///9EG/z//fwAA//8yY/9///8t+TJj/3///9EGzBz/fwAAAADMHCMyxxhkOH4SijhXEt0xDhnSfxZAtAClf7QApX/SfxZAHMA5AJ//QH8XwC8Ai/8Zf5rdXgCy/ix7md1cAKz+F3u43aS6pOjKuDHdu7rh6L+4pv+Gf7OiSACb/3Z/raJAALQApX+0AKV/mf80f63/W3+F/z5+jv9dfoz/U4CD/1mA")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_pvbw8")
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_3l3ca"]
+points = PackedVector3Array(0.2952157, 0.014285713, 0.2047619, -0.3047619, -0.0047619045, -0.2047619, -0.3047619, -0.0047619045, 0.2047619, 0.3047619, -0.0047619045, -0.2047619, -0.2952157, 0.014285713, -0.2047619, 0.3047619, -0.0047619045, 0.2047619, -0.2952157, 0.014285713, 0.2047619, 0.2952157, 0.014285713, -0.2047619)
+
+[node name="ShowerRug" type="Node3D" unique_id=1158351218]
+transform = Transform3D(1.7, 0, 0, 0, 1.7, 0, 0, 0, 1.7, 0, 0, 0)
+
+[node name="shower rug" type="MeshInstance3D" parent="." unique_id=1353066300]
+mesh = SubResource("ArrayMesh_trhpj")

@@ -52,7 +52,7 @@ That means:
 
 | Name | File | Purpose |
 |------|------|---------|
-| `GameState` | `Scripts/game_state.gd` | Settings (`mouse_sensitivity`, `master_volume`) + bare `inventory` array. Add floor/story state here as real levels need it. |
+| `GameState` | `Scripts/game_state.gd` | Settings (`mouse_sensitivity`, `master_volume`, `volumetric_fog_enabled`) + bare `inventory` array. `apply_graphics_settings()` re-derives the active level's `WorldEnvironment` fog from (level's own authored value) AND (player's preference) — downgrade-only, never turns an effect on for a level that wasn't built with it. Add floor/story state here as real levels need it. |
 | `UI` | `UI/hud.gd` | Crosshair (`hide_crosshair(reason)` / `show_crosshair(reason)`), examine hints (`show_examine_hints`/`hide_examine_hints`), FPS counter (`set_fps_visible`). No dialogue system yet — add one here when the new story needs it, don't hack dialogue into a level script. |
 | `Dev` | `UI/dev_console.gd` | `Dev.msg("[color=yellow]text[/color]")` — never use raw `print()` in gameplay scripts. Backtick key to open in-game. |
 | `ExamineController` | `Scripts/examine_controller.gd` | `begin(Node3D)`, `end(bool collect)`, `rotate(Vector2)`, `is_collectible()` — drives the pick-up/hold/rotate/zoom/drop behavior for `Examinable`. |
@@ -72,6 +72,12 @@ That means:
 
 - Player is always in the `"player"` group →
   `get_tree().get_first_node_in_group("player")`.
+- Every level's `WorldEnvironment` runs `Scripts/world_environment.gd`,
+  which joins the `"world_environment"` group and caches the level's
+  authored settings (e.g. `base_volumetric_fog`) as node metadata before
+  any runtime override touches them — same lookup pattern as the player
+  group, used by both `GameState.apply_graphics_settings()` and the dev
+  console's fullbright toggle.
 - `movement_locked = true` on the player → do NOT call `move_and_slide()`
   anywhere else while it's true; physics will push the locked player.
 - Before reparenting any object to camera space (see `ExamineController`),

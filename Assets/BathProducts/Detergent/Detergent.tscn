@@ -1,0 +1,53 @@
+[gd_scene format=4]
+
+[ext_resource type="Texture2D" path="res://Assets/BathProducts/Detergent/Detergent_bathroom.png" id="1_uncs8"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_66ny8"]
+resource_name = "bathroom"
+cull_mode = 2
+albedo_texture = ExtResource("1_uncs8")
+roughness = 0.5
+texture_filter = 2
+metadata/_gltf_primary_texture_coord = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_taici"]
+_surfaces = [{
+"aabb": AABB(-0.05521097, -0.100000024, -0.100000024, 0.110210985, 0.20000005, 0.20028377),
+"format": 34896613377,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAwACAAEAAwAEAAIAAAAFAAEABQADAAEABQAAAAYABwAEAAMABQAHAAMABwAGAAQABQAGAAcACAAJAAoACAALAAkA"),
+"name": "bathroom",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 12,
+"vertex_data": PackedByteArray("fQAAAKL/AAB9AP//AAAAAH0A//+i/wAA/////wAAAAD/////ov8AAH0AAAAAAAAA//8AAKL/AAD//wAAAAAAAIH/AAD//wAAAAD/////AACB//////8AAAAAAAD//wAA")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_5150s"]
+resource_name = "Detergent_Cube_024"
+_surfaces = [{
+"aabb": AABB(-0.05521097, -0.100000024, -0.100000024, 0.110210985, 0.20000005, 0.20028377),
+"attribute_data": PackedByteArray("1vvmuQ23GMsNt+a51vsYy9b7GMsNt43UDbcYy9b7jdTW++m2Dbe3pdb7t6UNt+m2driVYj/9C2x2uAtsP/2VYtb7t6UNt0Kc1vtCnA23t6XW+xjLDbeN1A23GMvW+43U"),
+"format": 34896613399,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
+"material": SubResource("StandardMaterial3D_66ny8"),
+"name": "bathroom",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("fQAAAKL/VNV9AP//AABU1X0A//+i/1TVfQAAAAAAVNV9AAAAAAD///////8AAP//fQD//wAA/////wAAAAD/////AAAAAP+//////6L//7//////AAD/v///AACi//+/fQAAAAAAVNX//wAAov9U1f//AAAAAFTVfQAAAKL/VNX/////AABU1X0A//+i/1TVfQD//wAAVNX/////ov9U1YH/AAD///+/AAD//////7+B////////vwAAAAD///+/VVWqqlVVqqpUVaqqVVWqqv8//7//P/+//z//v/8//7//fwAA/38AAP9/AAD/fwAAqipU1aoqVNWqKlTVqipU1VTVqipU1aoqVNWqKlTVqir/f/9//3//f/9//3//f/9/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_taici")
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_oiqo7"]
+points = PackedVector3Array(-0.055, -0.09840802, -0.09840802, 0.055, 0.09714754, 0.09714754, 0.055, 0.09714754, -0.096847534, -0.055, 0.098708026, 0.098708026, 0.055, -0.096847534, 0.09714754, -0.055, 0.098708026, -0.09840802, -0.055, -0.09840802, 0.098708026, 0.055, -0.096847534, -0.096847534)
+
+[node name="Detergent" type="Node3D" unique_id=292213613]
+transform = Transform3D(1.7, 0, 0, 0, 1.7, 0, 0, 0, 1.7, 0, 0, 0)
+
+[node name="detergent" type="MeshInstance3D" parent="." unique_id=1702027712]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00010547042, 0.100000024, -0.00014209747)
+mesh = SubResource("ArrayMesh_5150s")

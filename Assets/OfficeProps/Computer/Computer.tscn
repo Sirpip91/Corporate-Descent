@@ -1,0 +1,85 @@
+[gd_scene format=4]
+
+[ext_resource type="Texture2D" path="res://Assets/OfficeProps/Computer/Computer_computer.png" id="1_w4rbk"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xssjh"]
+resource_name = "computer"
+cull_mode = 2
+albedo_texture = ExtResource("1_w4rbk")
+roughness = 0.5
+texture_filter = 2
+metadata/_gltf_primary_texture_coord = 0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lcot5"]
+resource_name = "cable black"
+cull_mode = 2
+albedo_color = Color(0.10564259, 0.10564259, 0.10564259, 1)
+roughness = 0.5
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_0bj5b"]
+_surfaces = [{
+"aabb": AABB(-0.076200016, 1.4901161e-08, -0.13715999, 0.15240003, 0.34999996, 0.27431998),
+"format": 34896613377,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAACAAEAAwAEAAEABQADAAAAAwAFAAQABQAAAAYABgAAAAIABgAEAAUABAAHAAIABgACAAcABgAHAAQA"),
+"name": "computer",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("AAD/////AAD+////AAAAAP7//////wAAAAD//wAAAAD//wAAAAAAAAAAAAAAAAAAAAAAAP//AAD//wAA//8AAA==")
+}, {
+"aabb": AABB(0.039076302, 0.14936063, -0.15551333, 0.019886248, 0.071303785, 0.018632248),
+"format": 34896613377,
+"index_count": 90,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAACAAEAAwAAAAUABQAAAAIAAwAFAAYABAAHAAIABQACAAcABgAHAAQABgAFAAcACAAJAAoACAALAAkADAAKAAkACwAIAA0ADQAIAAoACwANAA4ADAAPAAoADQAKAA8ADgAPAAwADgANAA8AEAARABIAEAATABEAFAASABEAEwAQABUAFQAQABIAEwAVABYAFAAXABIAFQASABcAFgAXABQAFgAVABcA"),
+"name": "cable black",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("AAAckDUKAAAAAPdV//8AAAAA91U1CgAAAAAckP//AACkTvdV//8AAKROHJA1CgAApE4ckP//AACkTvdVNQoAAAAAJDo1CgAAAAAAAP//AAAAAAAANQoAAAAAJDr//wAApE4AAP//AACkTiQ6NQoAAKROJDr//wAApE4AADUKAABqtkD8AAAAAFqx2sX//wAAaraYyQAAAABasf////8AAP//2sX//wAA7vpA/AAAAAD///////8AAO76mMkAAAAA")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_q3iqu"]
+resource_name = "Computer_Cube_010"
+_surfaces = [{
+"aabb": AABB(-0.076200016, 1.4901161e-08, -0.13715999, 0.15240003, 0.34999996, 0.27431998),
+"attribute_data": PackedByteArray("iJj/AAfoKi2ImCotB+j/AEvWpjAhqhSWIaqmMEvWFJYhqv/+S9aQmUvW//4hqpCZK5T//qtEkJkrlJCZq0T//iuU//6rRJCZq0T//iuUkJmImP8AB+gqLQfo/wCImCot"),
+"format": 34896613399,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
+"material": SubResource("StandardMaterial3D_xssjh"),
+"name": "computer",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("AAD/////VNX+////AABU1f7//////1TVAAD//wAAVNUAAP//AAD/////AAAAAP///v///wAA//8AAAAAAAD//wAAAAD//wCA/v//////AID//wAA//8AgAAA/////wCA//8AAAAA/7/+////////v/7///8AAP+///8AAP///78AAAAAAAAAAAAA/////wAAAAAAAP//AAAAAP//AAAAAAAAAAD//6oq//8AAAAAqioAAAAAAACqKv//AAD//6oqVNWqKlTVqipU1aoqVNWqKv9/////f////3////9/////f////3////9/////f////38AAP9/AAD/fwAA/38AAP8//3//P/9//z//f/8//39UVVRVVFVUVVRVVFVUVVRV")
+}, {
+"aabb": AABB(0.039076302, 0.14936063, -0.15551333, 0.019886248, 0.071303785, 0.018632248),
+"attribute_data": PackedByteArray("GNqFqjK0YtQytIWqGNpi1MzL//+y8SHWsvH//8zLIdYytL6o5aXYgjK02ILlpb6oTYli1JmXh6qZl2LUTYmHqpmXq4BNiYeqTYmrgJmXh6oY2qiAMrSFqjK0qIAY2oWqGNpi1P//har+/2LUGNqFquWlvqiZl9iC5aXYgpmXvqgY2oWqZOiqgGTohaoY2qqAsPaqgGTohapk6KqAsPaFqnCC///lpWLUdaP///9/YtTMy2LUVqj//+WlYtRbyf//J/4m97LxIdYn/iHWsvEm9+WlYtRGs76oMrRi1NGmvqjlpb6ohZhi1JmXvqj6pGLU"),
+"format": 34896613399,
+"index_count": 90,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUAGAAZABoAGAAbABkAHAAdAB4AHAAfAB0AIAAhACIAIAAjACEAJAAlACYAJAAnACUAKAApACoAKAArACkALAAtAC4ALAAvAC0AMAAxADIAMAAzADEANAA1ADYANAA3ADUAOAA5ADoAOAA7ADkA"),
+"material": SubResource("StandardMaterial3D_lcot5"),
+"name": "cable black",
+"primitive": 3,
+"uv_scale": Vector4(2.0000002, 2, 0, 0),
+"vertex_count": 60,
+"vertex_data": PackedByteArray("AAAckDUKVNUAAPdV//9U1QAA91U1ClTVAAAckP//VNWkThyQ//9U1aRO91U1ClTVpE73Vf//VNWkThyQNQpU1aROHJA1Cv//AAD3VTUK//+kTvdVNQr//wAAHJA1Cv//AAAckP///7+kThyQNQr/v6ROHJD///+/AAAckDUK/7+kTvdV////vwAA91U1Cv+/AAD3Vf///7+kTvdVNQr/vwAAJDo1ClTVAAAAAP//VNUAAAAANQpU1QAAJDr//1TVpE4kOv//VNWkTgAANQpU1aROAAD//1TVpE4kOjUKVNWkTiQ6NQr//wAAAAA1Cv//pE4AADUK//8AACQ6NQr//wAAJDr///+/pE4kOjUK/7+kTiQ6////vwAAJDo1Cv+/pE4AAP///78AAAAANQr/vwAAAAD///+/pE4AADUK/79qtkD8AADU1Vqx2sX//9TVaraYyQAA1NVasf/////U1f///////9TV7vqYyQAA1NX//9rF///U1e76QPwAANTV7vpA/AAA//9qtpjJAAD//+76mMkAAP//arZA/AAA//9asf////9Gwu76QPwAAEbC////////RsJqtkD8AABGwv//2sX//0bCaraYyQAARsJasdrF//9Gwu76mMkAAEbCVNVU1VTVVNVU1VTVVNVU1aqqVFWqqlRVqqpUVaqqVFX///9/////f////3////9/////f////3////9/////fwAA/38AAP9/AAD/fwAA/39U1VTVVNVU1VTVVNVU1VTVqqpUVaqqVFWqqlRVqqpUVf///3////9/////f////3////9/////f////3////9/AAD/fwAA/38AAP9/AAD/fwhV9qoIVfaqCFX2qghV9qr3Kvcq9yr3Kvcq9yr3Kvcq////f////3////9/////f////3////9/////f////38AAP9/AAD/fwAA/38AAP9/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_0bj5b")
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_o3ofn"]
+points = PackedVector3Array(0.07422971, 0.3474181, 0.1372, 0.074008785, 0.34691313, -0.1372, -0.0762, 0.34642845, 0.13636498, 0.07422971, 0.0025818998, 0.1372, -0.0762, 0.003571554, -0.13683653, -0.0762, 0.34642845, -0.13683653, -0.0762, 0.003571554, 0.13636498, 0.074008785, 0.0030868726, -0.1372, 0.04493242, 0.1494, -0.14671296, 0.0541796, 0.22026645, -0.1442309)
+
+[node name="Computer" type="Node3D" unique_id=686033485]
+
+[node name="computer" type="MeshInstance3D" parent="." unique_id=630686226]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.0091766715)
+mesh = SubResource("ArrayMesh_q3iqu")
+
+[node name="computer_col" type="StaticBody3D" parent="computer" unique_id=600266738]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="computer/computer_col" unique_id=1856429976]
+shape = SubResource("ConvexPolygonShape3D_o3ofn")

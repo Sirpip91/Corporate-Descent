@@ -1,0 +1,58 @@
+[gd_scene format=4]
+
+[ext_resource type="Texture2D" path="res://Assets/Media/MangaStack/MangaStack_media.png" id="1_ta4ug"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8ol6f"]
+resource_name = "media"
+cull_mode = 2
+albedo_texture = ExtResource("1_ta4ug")
+roughness = 0.5
+texture_filter = 2
+metadata/_gltf_primary_texture_coord = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_l6rvu"]
+_surfaces = [{
+"aabb": AABB(-0.07000011, -0.030000009, -0.100000024, 0.13, 0.41000003, 0.19000003),
+"format": 34896613377,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAACAAEAAwAEAAEABQAAAAIAAwAAAAUABAAGAAIABQACAAYAAwAHAAQAAwAFAAcABwAGAAQABwAFAAYA"),
+"name": "media",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("AAAAAP//AAAAAP//AAAAAAAA///+/wAAAAAAAAAAAAD/////AAAAAP//AAD//wAA//////7/AAD//wAAAAAAAA==")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_t7wcs"]
+resource_name = "MangaStack_Cube_040"
+_surfaces = [{
+"aabb": AABB(-0.07000011, -0.030000009, -0.100000024, 0.13, 0.41000003, 0.19000003),
+"attribute_data": PackedByteArray("VCjdUeYESGLmBN1RVChIYqRVqVU2MuVgNjKpVaRV5WCvOyq3hVwF/q87Bf6FXCq3mEhKlLwBwqq8AUqUmEjCqgDf79uIyMX8iMjv2wDfxfxb2LWx5MGL0uTBtbFb2IvS"),
+"format": 34896613399,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
+"material": SubResource("StandardMaterial3D_8ol6f"),
+"name": "media",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("AAAAAP//VNUAAP//AABU1QAA///+/1TVAAAAAAAAVNUAAAAAAAD///////8AAP//AAD//wAA/////wAAAAD/////AAAAAP////////7/////////AAD/////AAD///////8AAP///78AAP///v//v//////+//+/AAAAAP///78AAAAAAAD/////AAD///////8AAAAA//8AAAAA//////////8AAP+/AAD///7//78AAP//AAD/v//////+//+/VFWqqlRVqqpUVaqqVFWqqv8//7//P/+//z//v/8//7//v/9//7//f/+//3//v/9//3//f/9//3//f/9//3//f/9//z//f/8//3//P/9//z////9/////f////3////9/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_l6rvu")
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_0u8nu"]
+points = PackedVector3Array(-0.07, -0.023337139, -0.09860545, 0.06, 0.3728534, 0.08710884, -0.07, 0.37333715, 0.08733561, -0.07, 0.37333715, -0.09860545, -0.07, -0.023337139, 0.08733561, 0.06, -0.022853365, -0.09837868, 0.06, 0.3728534, -0.09837868, 0.06, -0.022853365, 0.08710884)
+
+[node name="MangaStack" type="Node3D" unique_id=1163247687]
+transform = Transform3D(1.7, 0, 0, 0, 1.7, 0, 0, 0, 1.7, 0, 0, 0)
+
+[node name="manga stack" type="MeshInstance3D" parent="." unique_id=107989940]
+transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, 0.0050001144, 0.100000024, 0.17500001)
+mesh = SubResource("ArrayMesh_t7wcs")
+
+[node name="manga stack_col" type="StaticBody3D" parent="manga stack" unique_id=1306798433]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="manga stack/manga stack_col" unique_id=2140927248]
+shape = SubResource("ConvexPolygonShape3D_0u8nu")

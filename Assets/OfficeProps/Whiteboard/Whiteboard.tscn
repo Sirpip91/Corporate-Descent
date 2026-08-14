@@ -1,0 +1,57 @@
+[gd_scene format=4]
+
+[ext_resource type="Texture2D" path="res://Assets/OfficeProps/Whiteboard/Whiteboard_whiteboard.png" id="1_tcorj"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ig2d8"]
+resource_name = "whiteboard"
+cull_mode = 2
+albedo_texture = ExtResource("1_tcorj")
+roughness = 0.2
+texture_filter = 2
+metadata/_gltf_primary_texture_coord = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_1k6sv"]
+_surfaces = [{
+"aabb": AABB(-0.6, -0.45, 5.0963543e-08, 1.2, 0.9, 0.020000357),
+"format": 34896613377,
+"index_count": 30,
+"index_data": PackedByteArray("AAABAAIAAwACAAEAAwAEAAIAAAAFAAEABQADAAEABQAAAAYABwAEAAMABQAHAAMABwAGAAQABQAGAAcA"),
+"name": "whiteboard",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("//8AAAAAAAD///////8AAP////8AAAAAAAD///7/AAAAAP//AAAAAP//AAD//wAAAAAAAAAAAAAAAAAA/v8AAA==")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_hien5"]
+resource_name = "Whiteboard_Cube_042"
+_surfaces = [{
+"aabb": AABB(-0.6, -0.45, 5.0963543e-08, 1.2, 0.9, 0.020000357),
+"attribute_data": PackedByteArray("P78bJH8BUih/ARskP79SKH7+f/5/Ab9Afv6/QH8Bf/4/v44afwHGHn8Bjho/v8Yef/4zN38BajuAATM3f/5qO38B3jF//qctfv7eMX8Bpy0="),
+"format": 34896613399,
+"index_count": 30,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEA"),
+"material": SubResource("StandardMaterial3D_ig2d8"),
+"name": "whiteboard",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 20,
+"vertex_data": PackedByteArray("//8AAAAAVNX///////9U1f////8AAFTV//8AAP//VNX//wAA//8AgAAA///+/wCA////////AIAAAAAA/v8AgAAAAAD+/1TVAAD//wAAVNUAAP///v9U1QAAAAAAAFTV//8AAP///78AAAAAAAD/vwAAAAD+//+///8AAAAA/78AAP///v//v/////8AAP+//////////78AAP//AAD/v6qqVFWqqlRVqqpUVaqqVFX/f////3////9/////f///VFWqqlRVqqpUVaqqVFWqqgAA/38AAP9/AAD/fwAA/3/+//9/////f////3/+//9/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_1k6sv")
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_5ab4h"]
+points = PackedVector3Array(-0.6095238, -0.4595238, -0.009523809, 0.6095238, 0.45476186, 0.028571427, 0.6095238, 0.45476186, -0.009523809, -0.6095238, 0.45476186, 0.028571427, 0.6095238, -0.4595238, 0.028571427, 0.6095238, -0.4595238, -0.009523809, -0.6095238, 0.45476186, -0.009523809, -0.6095238, -0.4595238, 0.028571427)
+
+[node name="Whiteboard" type="Node3D" unique_id=1308412801]
+
+[node name="whiteboard" type="MeshInstance3D" parent="." unique_id=13342293]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.45, -0.010000229)
+mesh = SubResource("ArrayMesh_hien5")
+
+[node name="whiteboard_col" type="StaticBody3D" parent="whiteboard" unique_id=1922759669]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="whiteboard/whiteboard_col" unique_id=2108837377]
+shape = SubResource("ConvexPolygonShape3D_5ab4h")

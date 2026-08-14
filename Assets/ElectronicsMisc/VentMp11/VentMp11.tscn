@@ -1,0 +1,52 @@
+[gd_scene format=4]
+
+[ext_resource type="Texture2D" path="res://Assets/ElectronicsMisc/VentMp11/VentMp11_vents_mp_1.png" id="1_dkarg"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_44irr"]
+roughness = 0.5
+resource_name = "vents_mp_1"
+cull_mode = 2
+albedo_texture = ExtResource("1_dkarg")
+texture_filter = 2
+metadata/_gltf_primary_texture_coord = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_hi2w7"]
+_surfaces = [{
+"aabb": AABB(-0.16499566, -0.10000037, -9.645769e-07, 0.32999992, 0.20000076, 0.019000256),
+"format": 34896613377,
+"index_count": 126,
+"index_data": PackedByteArray("AAABAAIAAgABAAMAAgADAAQAAAAFAAEABgAFAAAABAAHAAYABgAHAAUABAADAAcACAABAAUACQADAAEACQABAAgACgAHAAMACgADAAkACwAFAAcACwAHAAoACAAFAAsACQAMAAoACAANAAkACQANAAwACwAOAAgACAAOAA0ACgAPAAsACgAMAA8ACwAPAA4AEAAMAA0AEQAPAAwAEQAMABAAEgAOAA8AEgAPABEAEwANAA4AEwAOABIAEAANABMAEgAUABMAEAAVABEAEQAWABIAEgAWABQAEQAVABYAEwAUABcAEwAXABAAFgAXABQAEAAXABUAFgAVABcA"),
+"name": "vents_mp_1",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("/////wAAAAAAAP//obwAAAAA//8AAAAAAAAAAKG8AAAAAAAAAAAAAP////+hvAAA//8AAAAAAAD//wAAobwAAPYN9OihvAAA9g0KF6G8AAAI8goXobwAAAjy9OihvAAACPIKF///AAD2DQoX/v8AAPYN9Oj+/wAACPL06P7/AABb5oon/v8AAFvmUdb+/wAAUBhR1v7/AABQGIon/v8AAFAYiiehvAAAW+ZR1qG8AABQGFHWobwAAFvmiiehvAAA")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_1aftd"]
+resource_name = "VentMp11_vent_mp_1_1_001"
+_surfaces = [{
+"aabb": AABB(-0.16499566, -0.10000037, -9.645769e-07, 0.32999992, 0.20000076, 0.019000256),
+"attribute_data": PackedByteArray("/////wAAA/cAAP////8D9wAA+oj///9////6iAAA/39lZvqI/v//f/7/+ohlZv9/mZn6iAAA/38AAPqImZn/fwcCzIP//y+A///MgwcCL4D2DXn0AAD/f/YNhIv///9/AAD//wjyhIsI8nn0/////6h6L4Cd8MyDnfAvgKh6zIOGb8yDMf0vgDH9zIOGby+AMf3Mg4ZvL4CGb8yDMf0vgP//zIMHAi+ABwLMg///L4BQGDns9g2Ei1AY1pT2DXn0W+Y57AjyefRb5taUWuY57AjyhItQGNaUW+bWlFAY1pRa5jnsUBg57Fvm1pSd8C+AqHrMg6h6L4Cd8MyD/vIvgI0NzIONDS+A/vLMg40NL4D+8syD/vIvgI0NzIM="),
+"format": 34896613399,
+"index_count": 126,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFgAVABcAFAAYABUAFgAXABkAGgAYABQAGQAXABsAGgAbABgAGQAbABoAHAAdAB4AHAAfAB0AIAAhACIAIAAjACEAJAAlACYAJAAnACUAKAApACoAKAArACkALAAtAC4ALAAvAC0AMAAvACwAMAAxAC8AMgAxADMAMgA0ADEANQAtADQANQA0ADYANwA4ADkANwA6ADgAOwA8AD0AOwA+ADwAPwBAAEEAPwBCAEAAQwBEAEUAQwBGAEQA"),
+"material": SubResource("StandardMaterial3D_44irr"),
+"name": "vents_mp_1",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 71,
+"vertex_data": PackedByteArray("/////wAA/z8AAP//obz/PwAA//8AAP8//////6G8/z8AAAAAAAD/v///AAChvP+///8AAAAA/78AAAAAobz/v///AAAAAFTV/////6G8VNX/////AABU1f//AAChvFTVAAD//wAAqioAAAAAobyqKgAAAAAAAKoqAAD//6G8qir2DQoXobz/vwjyChf///+/CPIKF6G8/7/2DQoX/v//v/YNChehvACAAAD//6G8AID2DfToobwAgP////+hvACAAAAAAKG8AIAI8vToobwAgAjyChehvACA//8AAKG8AIBb5oon/v+qKlvmUdahvKoqW+ZR1v7/qipb5oonobyqKgjyChehvFTVCPL06P7/VNUI8vToobxU1QjyChf//1TV9g306KG8qir2DQoX/v+qKvYNChehvKoq9g306P7/qioI8vToobz/P/YN9Oj+//8/9g306KG8/z8I8vTo/v//P1AYiif+/wCA9g306P7/AIBQGFHW/v8AgPYNChf+/wCAW+aKJ/7/AIAI8goX//8AgFvmUdb+/wCAW+aKJ/7/AIAI8vTo/v8AgFAYUdb+/wCAW+ZR1v7/AIBQGFHWobwAgFvmiiehvACAUBiKJ6G8AIBb5lHWobwAgFAYUdb+/1TVUBiKJ6G8VNVQGIon/v9U1VAYUdahvFTVW+ZR1v7//79QGFHWobz/v1AYUdb+//+/W+ZR1qG8/79QGIon/v//P1vmiiehvP8/W+aKJ/7//z9QGIonobz/P////3////9/////f////38AAP9/AAD/fwAA/38AAP9/qiqqKqoqqiqqKqoqqiqqKlTVVNVU1VTVVNVU1VTVVNUAAP9/AAD/fwAA/38AAP9//3////9/////f////3////9/////f////3////9///9U1VTVVNVU1VTVVNVU1VTVqiqqKqoqqiqqKqoqqiqqKlTVVNVU1VTVVNVU1VTVVNX///9/////f////3////9//3////9/////f////3////9/////f////3////9/////f////3////9/////f////3////9/////f///qiqqKqoqqiqqKqoqqiqqKgAA/38AAP9/AAD/fwAA/3////9//v//f/7//3////9/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_hi2w7")
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_5lb83"]
+points = PackedVector3Array(-0.15190065, -0.08688169, 0.023571428, 0.16761903, 0.10166666, 0.018331282, 0.16761903, 0.10166666, -0.0026190467, 0.16761903, -0.10261905, 0.018331282, -0.16761903, -0.10261905, -0.0026190467, -0.16761903, 0.10166666, -0.0026190467, -0.15190065, 0.085949294, 0.023571428, 0.16761903, -0.10261905, -0.0026190467, 0.15190065, -0.08688169, 0.023571428, 0.15190065, 0.085949294, 0.023571428, -0.16761903, -0.10261905, 0.018331282, -0.16761903, 0.10166666, 0.018331282)
+
+[node name="VentMp11" type="Node3D" unique_id=1599119133]
+
+[node name="vent_mp_1_1" type="MeshInstance3D" parent="." unique_id=1124447852]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.722046e-06, 0.10000038, -0.009499162)
+mesh = SubResource("ArrayMesh_1aftd")

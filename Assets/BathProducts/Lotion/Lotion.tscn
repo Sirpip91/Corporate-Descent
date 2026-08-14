@@ -1,0 +1,53 @@
+[gd_scene format=4]
+
+[ext_resource type="Texture2D" path="res://Assets/BathProducts/Lotion/Lotion_bathroom.png" id="1_1i1dx"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_trqd7"]
+resource_name = "bathroom"
+cull_mode = 2
+albedo_texture = ExtResource("1_1i1dx")
+roughness = 0.5
+texture_filter = 2
+metadata/_gltf_primary_texture_coord = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_gerxr"]
+_surfaces = [{
+"aabb": AABB(-0.02499998, -7.450581e-09, -0.02500028, 0.04999996, 0.21000004, 0.050000556),
+"format": 34896613377,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAACAAEAAwAEAAEABQAAAAIAAwAAAAUABAAGAAIABQACAAYAAwAHAAQAAwAFAAcABwAGAAQABwAFAAYA"),
+"name": "bathroom",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("AAAAAP//AAAAAP//AAAAAAAA/////wAAAAAAAAAAAAD/////AAAAAP//AAD//wAA////////AAD//wAAAAAAAA==")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_s3gmu"]
+resource_name = "Lotion_Cube_012"
+_surfaces = [{
+"aabb": AABB(-0.02499998, -7.450581e-09, -0.02500028, 0.04999996, 0.21000004, 0.050000556),
+"attribute_data": PackedByteArray("pPyK/njnT+ik/E/oeOeK/p/8iv5z50/on/xP6HPniv6y/Ir+hudP6LL8T+iG54r+pPyK/njnT+ik/E/oeOeK/ui0Uz4Xv8c7F79TPui0xzvqtFM+Gb/HOxm/Uz7qtMc7"),
+"format": 34896613399,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
+"material": SubResource("StandardMaterial3D_trqd7"),
+"name": "bathroom",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("AAAAAP///78AAP//AAD/vwAA//////+/AAAAAAAA/78AAAAAAAD///////8AAP//AAD//wAA/////wAAAAD/////AAAAAP+//////////7//////AAD/v///AAD///+///8AAP//AIAAAP////8AgP///////wCAAAAAAP//AIAAAAAAAAD/v///AAD///+///8AAAAA/78AAAAA////v/////8AAP//AAD///////8AAP//AAD//////////////3////9/////f////3////9/////f////3////9/////fwAA/38AAP9/AAD/fwAA/3////9/////f////3///wAA/38AAP9/AAD/fwAA/3//f/+//3//v/9//7//f/+/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_gerxr")
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_2jc00"]
+points = PackedVector3Array(0.024999999, 0.20499998, 0.024999999, -0.024999999, 0.0050000097, -0.024999999, -0.024999999, 0.0050000097, 0.024999999, -0.024999999, 0.20499998, -0.024999999, 0.024999999, 0.0050000097, -0.024999999, 0.024999999, 0.0050000097, 0.024999999, -0.024999999, 0.20499998, 0.024999999, 0.024999999, 0.20499998, -0.024999999)
+
+[node name="Lotion" type="Node3D" unique_id=1995614215]
+transform = Transform3D(1.7, 0, 0, 0, 1.7, 0, 0, 0, 1.7, 0, 0, 0)
+
+[node name="lotion" type="MeshInstance3D" parent="." unique_id=23963966]
+transform = Transform3D(-1, 0, -1.509958e-07, 0, 1, 0, 1.509958e-07, 0, -1, 0, 0, 0)
+mesh = SubResource("ArrayMesh_s3gmu")

@@ -1,0 +1,58 @@
+[gd_scene format=4]
+
+[ext_resource type="Texture2D" path="res://Assets/ItemsWeapons/Cash12/Cash12_money_1.png" id="1_yesqg"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gqstn"]
+resource_name = "money_1"
+cull_mode = 2
+albedo_texture = ExtResource("1_yesqg")
+texture_filter = 2
+metadata/_gltf_primary_texture_coord = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_ms4ro"]
+_surfaces = [{
+"aabb": AABB(-0.052321605, 2.1243094e-09, -0.11404803, 0.1050656, 0.036363196, 0.22809604),
+"format": 34896613377,
+"index_count": 84,
+"index_data": PackedByteArray("AAAJAAIAAwAAAAIAAwACAAUAAwAKAAAAAAAKAAkACwADAAUAAwALAAoAAgAMAAUAAgAJAAwACwAFAAwACQAIAAwACwAMAAgACQANAAgACQAKAA0ACwAIAA4ADQAOAAgADgAHAAsACgAPAA0ADQAPAA4ACgAEAA8ADwAGAA4ADgAGAAcADwAEAAYACwAHAAEACwABAAoAAQAHAAYACgABAAQAAQAGAAQA"),
+"lods": [0.0070893946, PackedByteArray("AAABAAIAAwABAAAAAwAAAAIAAQAEAAIAAwACAAUAAQAGAAQAAwAHAAEAAQAHAAYAAwAFAAgAAgAIAAUACAAHAAMAAgAEAAgACAAGAAcABAAGAAgA")],
+"name": "money_1",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 16,
+"vertex_data": PackedByteArray("//8AAAAAAAD//wAA//8AAP///v/OAgAAAAAAAAAAAAD/////MP0AAAAA/v/OAgAAAAD//zD9AAAAAAAA//8AAG8Cy9z/fwAAj/1l7v8/AACP/QAA/38AAG8CAAD/fwAAbwJl7v8/AACP/cvc/38AAG8CZe7/vwAAj/1l7v+/AAA=")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_1ly76"]
+resource_name = "Cash12_cash_1_2_001"
+_surfaces = [{
+"aabb": AABB(-0.052321605, 2.1243094e-09, -0.11404803, 0.1050656, 0.036363196, 0.22809604),
+"attribute_data": PackedByteArray("/3//f/8//3//f/9t/z//bRsl////P//t/yT/7f8/////P////yT/7f8//+0bJf///z//N/8/AAD/XwAA/3//N/9/AAD/P/81/3//Nf9//2n/P/9p/3//f/9//23/X/9t/z//f/8//23/b/9t/1//f/9f/23/T/9t/0//N/9PAAD/X/83/2//N/9vAAD/X/9//2//bf9P/23/X/81/1//aQ=="),
+"format": 34896613399,
+"index_count": 84,
+"index_data": PackedByteArray("AAAaAAIAAAAbABoAGgAbABwAGwAdABwAGwADAB0AGwABAAMABAAFAAYABAAHAAUACAAJAAoACAALAAkAHgANAB8AHgAMAA0AIAAeAB8AIAAfAA4AIQAgAA4AIQAOACIADwAhACIADwAiABAAIwAWACQAIwAVABYAIwAkABcAIwAXACUAJQAYACMAJQAZABgAJgATACcAJgASABMAEQAmACcAEQAnABQA"),
+"lods": [0.0070893946, PackedByteArray("AAABAAIAAQADAAIABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADwAMAA4ADwAOABAAEQASABMAEQATABQAFQAWABcAFwAYABUAFwAZABgA")],
+"material": SubResource("StandardMaterial3D_gqstn"),
+"name": "money_1",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 40,
+"vertex_data": PackedByteArray("//8AAAAAhr///wAA//98wP///v/OAoq//////zD9fMAAAAAAAADMAv///v/OAswCAAD+/84CzAL//wAAAADMAv//AAD//8uCAAD//zD9y4L/////MP3LggAAAAD//8uC/////zD91dYAAP//MP1C1m8Cy9z/f1TV///+/84CF9QAAP7/zgK01AAAAAAAAFfVAAAAAP//idX//wAA//9X1f//AAAAAInVAAAAAAAARAAAAP7/zgJ9AG8Cy9z/fwAAAAAAAP//kgAAAP//MP0KAY/9Ze7/P5e/j/0AAP9//7+P/cvc/3//v4/9Ze7/v2zAj/1l7v+/edZvAmXu/78u1o/9y9z/f1TVj/1l7v8/D9RvAmXu/z9f1G8CAAD/fy8AbwJl7v8/igFvAmXu/781AG8CAAD/fzjVj/0AAP9/ONVSfD4BK4GVAF96OQItgRMB////f////3////9/////f////3////9/////f////39q1MoqyNSCK1TVqioV1jQqvNV+KawqWNXKKpTVrCpY1coqlNWy/3c/8f+XP/8//389QDqBf0C+gQ9+dgBogGkA/38AAEKDiQWk1DIr1dSQK1TVqioZ1kgq7NXrKf7//7/Q/ufADEC9gJkqMtWZKjLV")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_ms4ro")
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_ogmdk"]
+points = PackedVector3Array(-0.052297946, 0.026837908, -0.11192293, 0.052698858, 0.026845992, 0.11202643, 0.04953699, -3.469447e-18, 0.105282426, 0.054461904, 0.037999995, -0.11216001, -0.05410952, 0.037999995, 0.11216001, -0.049184605, 0, -0.105282426, -0.049184605, 0, 0.105282426, 0.04953699, 3.469447e-18, -0.105282426, -0.05410952, 0.037999995, -0.11216001, 0.054461904, 0.037999995, 0.11216001, 0.052697573, 0.026845777, -0.11202369, -0.052295633, 0.026837522, 0.11191798)
+
+[node name="Cash12" type="Node3D" unique_id=1750461371]
+
+[node name="cash_1_2" type="MeshInstance3D" parent="." unique_id=1460397847]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00021362305, 0, 0)
+mesh = SubResource("ArrayMesh_1ly76")
+
+[node name="cash_1_2_col" type="StaticBody3D" parent="cash_1_2" unique_id=417936099]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="cash_1_2/cash_1_2_col" unique_id=1201068867]
+shape = SubResource("ConvexPolygonShape3D_ogmdk")

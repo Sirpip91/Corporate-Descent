@@ -1,0 +1,135 @@
+[gd_scene format=4]
+
+[ext_resource type="Texture2D" path="res://Assets/ToiletSink/ToiletSink_bath.png" id="1_dikcb"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_adwjb"]
+resource_name = "bath reflective"
+cull_mode = 2
+albedo_texture = ExtResource("1_dikcb")
+metallic = 0.1
+roughness = 0.0
+texture_filter = 2
+metadata/_gltf_primary_texture_coord = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_q83tg"]
+_surfaces = [{
+"aabb": AABB(-0.14999999, -0.19999997, -6.444752e-07, 0.29999998, 0.39999995, 0.0100000035),
+"format": 34896613377,
+"index_count": 48,
+"index_data": PackedByteArray("AAABAAIAAAADAAEAAAAEAAMAAQAFAAIAAQAGAAUABwAAAAIAAAAHAAQABwACAAUACAAFAAYABwAFAAkACAAJAAUACgAEAAcABwAJAAoACgAJAAgACgALAAQACgAIAAsA"),
+"name": "bath reflective",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 12,
+"vertex_data": PackedByteArray("AAAAAP7/AAAAAP//AAAAAAAA///+/wAAAAAAAAAAAAD/fwAAAAAAAP9////+/wAA/3///wAAAAD/fwAA/v8AAP////8AAAAA////////AAD//wAA//8AAP//AAAAAAAA")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_8wq68"]
+resource_name = "ToiletSink_Cube_085"
+_surfaces = [{
+"aabb": AABB(-0.14999999, -0.19999997, -6.444752e-07, 0.29999998, 0.39999995, 0.0100000035),
+"attribute_data": PackedByteArray("3y2OIBgCpyEYAo4g3y2nId8tIxAYAo4gGAIjEN8tjiAYAo4g3y2OIP8AjiAYAiMQGAKOIP8AIxD/AI4gGAKOIN8tjiAYAqch3y2nIRgCjiDfLY4g9y4jEN8tIxD3Lo4g3y2OIPcujiA="),
+"format": 34896613399,
+"index_count": 48,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUABAAGAAgABAAIAAkACgALAAwACgANAAsADgALAA0ADgAPAAsAEAARABIAEAATABEAFAAVABYAFAAXABUAGAAWABUAGAAVABkA"),
+"material": SubResource("StandardMaterial3D_adwjb"),
+"name": "bath reflective",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 26,
+"vertex_data": PackedByteArray("AAAAAP7/VNUAAP//AABU1QAA///+/1TVAAAAAAAAVNX/fwAA/v//PwAA///+//+//3////7//z8AAAAA/v//v/////////8///8AAP///z8AAP//AABU1f9////+/6oqAAD///7/VNX/f///AACqKv////8AAKoq////////qir//wAA//+qKv////8AAKoq//8AAAAAqir///////+qKv//AAD//6oq/38AAAAAVNX/fwAA/v9U1f//AAAAAKoqAAAAAP7/VNUAAAAAAABU1VRVqqpUVaqqVFWqqlRVqqr/f/9//3//f/9//3//f/9//3//f/9//3+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqlRVqqpUVaqqVFWqqlRVVFVUVVRVVFVUVVRVVFVUVVRVVFVUVVRV")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_q83tg")
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_xgdhr"]
+points = PackedVector3Array(0.1515873, 0.20317459, 0.015873015, -0.1531746, -0.20317459, -0.003174603, -0.1531746, -0.20317459, 0.015873015, -0.1531746, 0.20317459, -0.003174603, 0.1515873, -0.20317459, -0.003174603, 0.1515873, -0.20317459, 0.015873015, -0.1531746, 0.20317459, 0.015873015, 0.1515873, 0.20317459, -0.003174603)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gq2wu"]
+resource_name = "bath"
+cull_mode = 2
+albedo_texture = ExtResource("1_dikcb")
+roughness = 0.5
+texture_filter = 2
+metadata/_gltf_primary_texture_coord = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_mo1er"]
+_surfaces = [{
+"aabb": AABB(2.9802306e-08, -0.0899999, -1.7366698e-07, 0.40999994, 0.24396332, 0.22000009),
+"format": 34896613377,
+"index_count": 75,
+"index_data": PackedByteArray("AAABAAIAAAADAAEAAwAAAAQAEgACAAEAEwACABIAEgABABQAEwAGAAIAFQATABIAFQAGABMAFQASABQAFAABAAUAFAAFABUAAwAFAAEAFQAFAAYACQAGAAUACQAIAAYAAwAHAAUABwAJAAUABwAIAAkAAwAEAAcABwAEAAgACgALAAwACgANAAsADgAPABAADgARAA8A"),
+"lods": [0.0358398, PackedByteArray("AAABAAIAAAADAAEAAwAAAAQABQACAAEAAwAFAAEABQAGAAIAAwAEAAcAAwAHAAUABwAEAAgACQAGAAUABwAJAAUACQAIAAYABwAIAAkACgALAAwACgANAAsADgAPABAADgARAA8A")],
+"name": "bath",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 22,
+"vertex_data": PackedByteArray("/v8AAAAAAAD//3Be/v8AAP7/cF4AAAAA//8AAP7/AAAAAAAAAAAAAPMxcF7+/wAA8zFwXgAAAAAAAAAA//8AAAAAcF4AAAAAAABwXv//AABOJf//RZcAAHwM//+5aAAATiX//7loAAB8DP//RZcAAE4laK5zkQAAqF1orotuAABOJWiui24AAKhdaK5zkQAAC93XPF42AADnVNc8XjYAAAvd1zygyQAA51TXPKDJAAA=")
+}, {
+"aabb": AABB(0.020000068, -4.0978193e-08, 0.08999976, 0.14999977, 0.15396346, 0.040000297),
+"format": 34896613377,
+"index_count": 78,
+"index_data": PackedByteArray("AAABAAIAAAADAAEAAgAEAAAABQABAAMAAgAGAAQABQADAAcABgAHAAQABgAFAAcACAAJAAoACgAJAAsACgALAAwACAANAAkADQALAAkADgANAAgADAALAA8ADAAPAA4ADQAPAAsADgAPAA0AEAARABIAEAATABEAEgARABQAEwAUABEAEgAUABUAEwAWABQAFQAUABYAFQAWABcA"),
+"name": "bath reflective",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("1kP///7/AADWQwAAAAAAANZDAAD+/wAA1kP//wAAAAAAAP////8AAAAAAAAAAAAAAAAAAP//AAAAAP//AAAAANZDIuz/XwAAu7vJ8v9fAADWQ8ny/18AALu7yfL/nwAA1kPJ8v+fAAC7uyLs/18AANZDIuz/nwAAu7si7P+fAADWQ7d+ACAAAP7/mbAAIAAA1kOZsAAgAADc3bd+ACAAAP//mbD/3wAA1kOZsP/fAADc3bd+/98AANZDt37/3wAA")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_g0y78"]
+resource_name = "ToiletSink_Cube_086"
+_surfaces = [{
+"aabb": AABB(2.9802306e-08, -0.0899999, -1.7366698e-07, 0.40999994, 0.24396332, 0.22000009),
+"attribute_data": PackedByteArray("sHIWOhiLE0SwchNEGIsWOn0uDCV9LggvnSUIL/8ADCUAAQgveTgIL30ucUd9LggveThxR9H0tLOc6Pac0fT2nJzotLPP5RSY1cu6cc/lj3HWy/eXfS4IL50lcUedJQgvfS5xR10y5w3GNlgSXTJYEsY25w2Iei4DjISCBoh6ggaMhC4D6t8ZkcrRlnjw35J4xdEUkQ=="),
+"format": 34896613399,
+"index_count": 75,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABwAEAAYABwAGAAgACQAKAAsACQAMAAoADQAOAA8ADQAQAA4AIQAiACMAIgATACMAIwATABEAIwARACEAIgASABMAIQARABQAJAASACIAIQAkACIAJAAUABIAIQAUACQAFQAWABcAFQAYABYAGQAaABsAGQAcABoAHQAeAB8AHQAgAB4A"),
+"lods": [0.0358398, PackedByteArray("AAABAAIAAAADAAEABAAFAAYABwAEAAYABwAGAAgACQAKAAsACQAMAAoADQAOAA8ADQAQAA4AEQASABMAEQAUABIAFQAWABcAFQAYABYAGQAaABsAGQAcABoAHQAeAB8AHQAgAB4A")],
+"material": SubResource("StandardMaterial3D_gq2wu"),
+"name": "bath",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 37,
+"vertex_data": PackedByteArray("/v8AAAAA/////3Be/v////7/cF4AAP////8AAP7///8AAAAA/////wAAcF7/////8zFwXv7//////wAA/v//////cF7+////AAAAAP//VNUAAHBeAABU1QAAcF7//1TVAAAAAAAAVNX//wAA/v9U1QAAAAAAAFTVAAAAAP//VNX+/wAAAABU1fMxcF7+/4zj/v9wXgAAbcj//3Be/v/51fMxcF4AAFPWAABwXv/////zMXBeAAD///MxcF7+////AABwXgAA//9OJf//RZf//3wM//+5aP//TiX//7lo//98DP//RZf//04laK5zkf+/qF1orotuaMJOJWiui27/v6hdaK5zkWjC51TXPKDJL98L3dc8XjYSywvd1zygyefW51TXPF42ytT/v/9//7//f/+//3//v/9//3//f/9//3//f/9//3//f/9//39UVaqqVFWqqlRVqqpUVaqqqipU1aoqVNWqKlTVqipU1Sqyr6a6oNSvjKpxtyCrvp3/f/+//3//v/9//7//f/+//3//v/9//7//f/+//3//vwAA/39gFT5VAAD/f2AVPlUTsTaoUqTorDarn7Mjqo2h")
+}, {
+"aabb": AABB(0.020000068, -4.0978193e-08, 0.08999976, 0.14999977, 0.15396346, 0.040000297),
+"attribute_data": PackedByteArray("8N/5EQXxiQ0F8fkR8N+JDQXx+RHw32IW8N/5EQXxYhYF8SAJ8N+JDfDfIAkF8YkNBfFiFvDf0hrw32IWBfHSGsW3VWU3uIpdN7hVZcW3il03uBhdU7mKXTe4il1TuRhdN7hVZVO5il1TuVVlN7iKXVO5VWXFuYpdxblVZVO5il3/ACRTHAJZSxwCJFP/AFlLZ/RQdrz3FWq891B2Z/RNbDb4E6k2/L+lNvwTqTb4v6W891B2EPsVahD7UHa89xVqEPtQdmT+TWxk/lB2EPsVag=="),
+"format": 34896613399,
+"index_count": 78,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUAGAAZABoAGAAbABkAHAAdAB4AHAAfAB0AIAAhACIAIAAjACEAJAAlACYAJAAnACUAKAApACoAKAArACkALAAtAC4ALAAvAC0AMAAxADIAMAAzADEA"),
+"material": SubResource("StandardMaterial3D_adwjb"),
+"name": "bath reflective",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 52,
+"vertex_data": PackedByteArray("1kP///7/VNXWQwAAAABU1dZDAAD+/1TV1kP//wAAVNXWQwAA/v//vwAA//////+/1kP///7//78AAAAA////vwAAAAAAAP//1kP//wAA//8AAP//AAD//9ZDAAAAAP//AAAAAP//VNUAAP//AABU1QAA/////1TVAAAAAAAAVNXWQyLs/1///7u7yfL/X///1kPJ8v9f//+7uyLs/1///7u7Iuz/X///u7vJ8v+f//+7u8ny/1///7u7Iuz/n///1kPJ8v9fVNW7u8ny/59U1dZDyfL/n1TVu7vJ8v9fVNXWQ8ny/5//v7u7Iuz/n/+/1kMi7P+f/7+7u8ny/5//v9ZDIuz/n1TVu7si7P9fVNXWQyLs/19U1bu7Iuz/n1TV1kO3fgAg///+/5mwACD//9ZDmbAAIP//3N23fgAg///c3bd+ACBowv//mbD/3yXJ/v+ZsAAgJcnc3bd+/99owtZDmbAAIFTV//+ZsP/fVNXWQ5mw/99U1f7/mbAAIFTV1kOZsP/f/7/c3bd+/9//v9ZDt37/3/+///+ZsP/f/7+qqlRVqqpUVaqqVFWqqlRV/3//f/9//3//f/9//3//f/8//7//P/+//z//v/8//79UVaqqVFWqqlRVqqpUVaqq/7//v/+//7//v/+//7//v/+//3//v/9//7//f/+//3+qqqmqqqqqqqqqqaqqqqqq/3//f/9//3//f/9//3//f1VVVFVVVVRVVVVUVVRVVFX/v/+//7//v/+//7//v/+/YBU+VRYh0j0WIdI9YBU+Vaqqqaqqqqmqqqqpqqqqqar/f/9//3//f/9//3//f/9/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_mo1er")
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_foroq"]
+points = PackedVector3Array(-0.0032539964, -0.093253955, -0.0032539666, 0.061896726, 0.15404762, 0.13337703, 0.41325396, 0.0043740086, 0.22452381, 0.41325396, 0.0043740086, -0.0032539666, 0.0050181206, -0.08834238, 0.22, 0.41325396, -0.093253955, -0.0032539666, 0.40498185, -0.08834238, 0.22, -0.0032539964, 0.0043740086, -0.0032539666, -0.0032539964, 0.0043740086, 0.22452381, 0.13348913, 0.14753586, 0.100913785, 0.016274914, 0.15404762, 0.13337703, 0.061896726, 0.15404762, 0.087892815, 0.13348913, 0.14753586, 0.12035606, 0.033761322, 0.1425907, 0.089999996)
+
+[node name="ToiletSink" type="Node3D" unique_id=171413420]
+transform = Transform3D(1.7, 0, 0, 0, 1.7, 0, 0, 0, 1.7, 0, 0, 0)
+
+[node name="sink mirror" type="MeshInstance3D" parent="." unique_id=1626895538]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.034999877, 0.5899999, -0.109999515)
+mesh = SubResource("ArrayMesh_8wq68")
+
+[node name="sink mirror_col" type="StaticBody3D" parent="sink mirror" unique_id=247203377]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="sink mirror/sink mirror_col" unique_id=654913479]
+shape = SubResource("ConvexPolygonShape3D_xgdhr")
+
+[node name="toilet sink" type="MeshInstance3D" parent="." unique_id=332427633]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.205, 0.089999914, -0.10999975)
+mesh = SubResource("ArrayMesh_g0y78")
+
+[node name="toilet sink_col" type="StaticBody3D" parent="toilet sink" unique_id=1910415925]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="toilet sink/toilet sink_col" unique_id=983741810]
+shape = SubResource("ConvexPolygonShape3D_foroq")

@@ -1,0 +1,91 @@
+[gd_scene format=4]
+
+[ext_resource type="Texture2D" path="res://Assets/OfficeProps/TV/TV_TV.png" id="1_xlmjo"]
+[ext_resource type="Texture2D" path="res://Assets/OfficeProps/TV/TV_TV screen.png" id="2_vu81x"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_x40qp"]
+resource_name = "TV"
+cull_mode = 2
+albedo_texture = ExtResource("1_xlmjo")
+metallic = 0.122727275
+roughness = 0.02272728
+texture_filter = 2
+metadata/_gltf_primary_texture_coord = 0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lsoqh"]
+resource_name = "TV screen"
+cull_mode = 2
+albedo_texture = ExtResource("2_vu81x")
+roughness = 0.09545455
+texture_filter = 2
+metadata/_gltf_primary_texture_coord = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_vh26h"]
+_surfaces = [{
+"aabb": AABB(-0.61, -0.3, -4.1523847e-08, 1.22, 0.68, 0.08000009),
+"format": 34896613377,
+"index_count": 120,
+"index_data": PackedByteArray("EgABABMAEgAAAAEAAAADAAEAEwABAAMAEgATAAIAAAAGAAMAFAAAABIAFAAGAAAAEgACAAQAFAASAAQAEwAFAAIABAACAAUAEwADABUAEwAVAAUABgAKAAMAFQADAAoAFAAEAAgABAAFAAgAFQAJAAUACAAFAAkAFQAKABYAFQAWAAkACwAWAAoACwAJABYACwAKAAwACwANAAkADAAKAAcABgAHAAoADAAHAA4ADQARAAkACAAJABEADQAQABEAFwAIABEAEAAXABEADgAHABcAFwAHAAYADgAXAA8AEAAPABcAFwAUAAgAFwAGABQA"),
+"lods": [0.00027239305, PackedByteArray("AAABAAIAAgABAAMAAAADAAEAAAACAAQABAACAAUAAgADAAUAAAAGAAMABwAAAAQABwAGAAAABAAFAAgABwAEAAgAAwAJAAUACAAFAAkABgAKAAMABgAHAAoAAwAKAAkACwAJAAoACwAKAAwADAAKAAcACwANAAkADAAHAA4ADgAHAA8AEAAPAAcADQARAAkADQAQABEACAAJABEAEAAHABEABwAIABEA")],
+"name": "TV",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("Z/MAAAAAAABn82jpAAAAAJcMaOkAAAAA//////+/AACXDAAAAAAAAAAA////vwAA//8AAP+/AAD//wAA//8AAAAAAAD/vwAAAAD///7/AAD///////8AAP9/d/j+/wAAzPt3+P//AAAyBHf4/v8AAMz7hwf//wAA/3+HB/7/AAAyBIcH/v8AAAAAAAD+/wAA/38AAAAAAAD/f2jpAAAAAP9/AAD/vwAA/3////+/AAD/f////v8AAP9/AAD+/wAA")
+}, {
+"aabb": AABB(-0.59000003, -0.27999997, 0.07999995, 1.1800001, 0.64, 1e-05),
+"format": 34896613377,
+"index_count": 6,
+"index_data": PackedByteArray("AAABAAIAAAADAAEA"),
+"name": "TV screen",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray("//8AAEkCAAAAAP//AAAAAP////9JAgAAAAAAAAAAAAA=")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_drp0a"]
+resource_name = "TV_Cube_040"
+_surfaces = [{
+"aabb": AABB(-0.61, -0.3, -4.1523847e-08, 1.22, 0.68, 0.08000009),
+"attribute_data": PackedByteArray("yiL//soiLzfKIi83yiL//nIH//7/ANkjcgfZI/8A//7L12g6Pd5oOpPxv02T8b9NPd5oOsvXaDp0D9cbdA9lFXQPZRV0D9cbyiIvN8oiLzd0D9cbdA/XG8oi//5yB9kjyiIvN3IH//5T9dpAxftoOlP1//5T9dpAxftoOsgHpBF73DILCdakEVYBMgvsxf8AVgFyB8gH/wBWAXIHyAf/AHIH//7/ANkj/wD//nIH2SPKIv/+cgfZI3IH//7KIi83yAekEXvcMgtWATILCdakEQrU//4K1C83Pd7//pPx//7L1//+CtTXGwrUZRUK1C83CtTXG8X7//7sxXIH"),
+"format": 34896613399,
+"index_count": 120,
+"index_data": PackedByteArray("NAABADUANAAAAAEANAA1AAIANAACAAMABAAFAAYABAAHAAUANgAKADcANgA3AAsANgAJAAoANgALAAwAOAAJADYAOAA2AAwAOAAIAAkAOAAMAA0AOQAPADoAOQAOAA8AOQA6ABAAOQAQABEAOwAUADwAOwATABQAOwA8ABUAOwAVABIAFgAXABgAFgAZABcAGgA9ABwAGgAbAD0AHQAcAD0AHQA9AB4AHwAgACEAHwAiACAAIwAkACUAIwA+ACQAIwAmAD4AIwAnACYAKAApACoAKAArACkALAAtAC4ALAAvAC0AMAAxADIAMAAzADEA"),
+"lods": [0.00027239305, PackedByteArray("AAABAAIAAAACAAMABAAFAAYABAAHAAUACAAJAAoACAAKAAsACAALAAwACAAMAA0ADgAPABAADgAQABEAEgATABQAEgAUABUAFgAXABgAFgAZABcAGgAbABwAHQAcABsAHQAbAB4AHwAgACEAHwAiACAAIwAkACUAIwAmACQAIwAnACYAKAApACoAKAArACkALAAtAC4ALAAvAC0AMAAxADIAMAAzADEA")],
+"material": SubResource("StandardMaterial3D_x40qp"),
+"name": "TV",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 63,
+"vertex_data": PackedByteArray("Z/MAAAAA//9n82jpAAD//5cMaOkAAAAAlwwAAAAAAAD//wAA/7//v/////////+///////+//7///wAA////v///AAD//1TV//8AAP+/VNVn8wAAAABU1ZcMAAAAAKoqAAAAAP+/qioAAAAA/v+qKv//////v/////////////8AAP///v//PwAA////v/8/lwxo6QAA/x9n82jpAAD/////////v///AAD///+//x9n8wAAAAD/3///////v//fZ/No6QAA/9///wAA/7//38z7hwf///+///8AAP///7//f4cH/v//PzIEhwf+//8/AAAAAP7//z/M+3f4////v///AAD///+/zPuHB////7//////////v/9/d/j+//5////////////M+3f4/////wAA///+//5/MgR3+P7//n8AAAAA/78AAAAA///+/wAAAAAAAP7/AAAAAP///78AAJcMAAAAAAAAAAD///+/AAAAAAAA/78AAJcMaOkAAAAAMgR3+P7//z8AAAAA/v//PwAA///+//8/MgSHB/7//z//fwAAAAAAAP9/aOkAAAAA/38AAP+/qir/fwAAAACqKv9/AAD+/6oq/3////+//z//f////v//P/9/aOkAAP8f/3////+//x//fwAA/v//P/9////+//5//3////9///////9/////f/9/AAD/fwAA/38AAP9/AABUVVRVVFVVVVRVVVVVVVRVVVVUVVRVVFX/f/+//3//v/7//3/+//9//v//f/9/gdr/f4Ha/v//f/9/AAD/fwAA/38AAP9/AAD/f/9//3//f/9//3//f/9//3//f/9//3//f/9//3//f/9//3//f////3//f/9//3//f////3////8//3//P/9//z//f/8//3/+/4Ja//+CWv7/glr//3yl/3//f/9//3//f/9//3//f////3/+//9/VFVUVVRVVFVUVVRV/v//f/7//3/+//9//v//f/9//3//f///")
+}, {
+"aabb": AABB(-0.59000003, -0.27999997, 0.07999995, 1.1800001, 0.64, 1e-05),
+"attribute_data": PackedByteArray("MP9q/1wAlAAw/5QAXABq/w=="),
+"format": 34896613399,
+"index_count": 6,
+"index_data": PackedByteArray("AAABAAIAAAADAAEA"),
+"material": SubResource("StandardMaterial3D_lsoqh"),
+"name": "TV screen",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray("//8AAEkCAIAAAP//AAAAgP////9JAgCAAAAAAAAAAID/f////3////9/////f///")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_vh26h")
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_41f50"]
+points = PackedVector3Array(-0.56157213, -0.3096143, -0.009673066, 0.61968255, 0.3873921, 0.08714286, 0.61968255, -0.3096143, 0.08714286, -0.61968255, 0.3873921, 0.08714286, 0.56157213, 0.3486392, -0.009673066, -0.61968255, -0.3096143, 0.08714286, 0.56157213, -0.3096143, -0.009673066, -0.56157213, 0.3486392, -0.009673066, 0.60027194, 0.3873921, 0.029058991, -0.60027194, 0.3873921, 0.029058991, -0.5980641, -0.29745632, 0.0480641, 0.5980641, -0.29745632, 0.0480641)
+
+[node name="TV2" type="Node3D" unique_id=411952847]
+
+[node name="TV" type="MeshInstance3D" parent="." unique_id=307463786]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.3, -0.04)
+mesh = SubResource("ArrayMesh_drp0a")
+
+[node name="TV_col" type="StaticBody3D" parent="TV" unique_id=229676127]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="TV/TV_col" unique_id=1743098508]
+shape = SubResource("ConvexPolygonShape3D_41f50")

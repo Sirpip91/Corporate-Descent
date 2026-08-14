@@ -1,0 +1,58 @@
+[gd_scene format=4]
+
+[ext_resource type="Texture2D" path="res://Assets/ItemsWeapons/IdMp1/IdMp1_identification_mp_1.png" id="1_mr1c0"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bwgw7"]
+resource_name = "identification_mp_1"
+transparency = 4
+cull_mode = 2
+albedo_texture = ExtResource("1_mr1c0")
+texture_filter = 2
+texture_repeat = false
+metadata/_gltf_primary_texture_coord = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_q48e8"]
+_surfaces = [{
+"aabb": AABB(-0.068397135, 0, -0.04320021, 0.13199416, 0.0018000007, 0.08519993),
+"format": 34896613377,
+"index_count": 84,
+"index_data": PackedByteArray("AAABAAIAAwAAAAIAAwACAAQAAQAEAAIABQAAAAMABQADAAQAAAAGAAEAAAAHAAYABQAHAAAACAABAAYACAAGAAcABQAEAAkAAQAKAAQABAAKAAkACQALAAUACQAKAAsABwAFAAwADAAFAAsACAAHAA0ABwAMAA0ADgABAAgACgABAA4ACAANAA4ADwALAAoADwAMAAsACgAOAA8ADQAMAA8ADQAPAA4A"),
+"name": "identification_mp_1",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 16,
+"vertex_data": PackedByteArray("Lfr//wAAAADRBQAAAAAAAC36AAAAAAAA/////wMJAAD//wAAAwkAAP/////79gAA0QX//wAAAAAAAP//AwkAAAAAAAADCQAA//8AAPv2AAAt+gAA//8AAC36/////wAA0QX/////AAAAAP//+/YAAAAAAAD79gAA0QUAAP//AAA=")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_vr8ud"]
+resource_name = "IdMp1_id_mp_1_001"
+_surfaces = [{
+"aabb": AABB(-0.068397135, 0, -0.04320021, 0.13199416, 0.0018000007, 0.08519993),
+"attribute_data": PackedByteArray("/3uqSv8B40j/e+NI/wGqSv8Bqkr/e+NI/3uqSv8B40j/Y6pK/xnjSP9j40j/GapK64UASGj9fEWh+gBIofqaAGj9HgMkgx4DJIN8ReuFmgCWAh4DXQUASJYCfEXafHxFE3oASBN6mgBdBZoA2nweA/8Zqkr/FeNI/xnjSP8Vqkr/GapK/xXjSP8Z40j/FapK/2PjSP9pqkr/Y6pK/2njSP9j40j/aapK/2OqSv9p40j/GapK/2PjSP9jqkr/GeNI"),
+"format": 34896613399,
+"index_count": 84,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0ADQAPABAADwAMABEAEQAMABIADwARABMAFAAVABYAFAAXABUAFQAXABgAFwAUABkAGQAUABoAFwAZABsAHAAdAB4AHAAfAB0AIAAhACIAIAAjACEAJAAlACYAJAAnACUAKAApACoAKAArACkALAAtAC4ALAAvAC0A"),
+"material": SubResource("StandardMaterial3D_bwgw7"),
+"name": "identification_mp_1",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 48,
+"vertex_data": PackedByteArray("Lfr//wAA///RBQAAAAD//y36AAAAAP//0QX//wAA///RBQAA//8AgC36/////wCALfoAAP//AIDRBf////8AgP/////79v////8AAAMJ/////wAA+/b///////8DCf//LfoAAP////8AAAAA+/b//9EFAAD/////0QUAAAAA//8AAAAAAwn/////AAADCf////8AAPv2//8t+gAAAAD//wAA//8DCf+/0QX//////78AAP//+/b/v//////79v+/Lfr//////78t+v//AAD/v9EF//8AAP+//////wMJ/78AAAAAAwn/39EF//8AAP/fAAD//wMJ/9/RBQAAAAD/3/////8DCf//LfoAAAAA/////wAAAwn//y36//8AAP////8AAPv2//8t+v/////////////79v//LfoAAP////8AAP//+/b/n9EFAAD///+fAAAAAPv2/5/RBf//////nwAAAAADCf+/AAD///v2/78AAAAA+/b/vwAA//8DCf+/////f////3////9/////f/9/////f////3////9/////v/9//7//f/+//3//v/9//3//P/9//z//f/8//3//P/9//z//f/8//7////9//z////9//v//f/7//3////9/////f////3////9/////f/9/////f////3////9///+B2v9/gdr/f4Ha/3+B2v9/fKX/f3yl/398pf9/fKX/f/9/////f////3////9/////f////3////9/////f///")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_q48e8")
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_rdug2"]
+points = PackedVector3Array(0.062534325, 0.0031424467, 0.04375238, -0.067347445, -0.0010472089, -0.04424762, -0.06944761, -0.0010472089, -0.04214582, 0.064647615, -0.0010472089, 0.04165058, 0.062534325, 0.0031424467, -0.04424762, -0.06944761, 0.0031424467, 0.04165058, -0.067347445, -0.0010472089, 0.04375238, -0.067347445, 0.0031424467, -0.04424762, 0.062534325, -0.0010472089, -0.04424762, 0.064647615, 0.0031424467, -0.04214582, -0.067347445, 0.0031424467, 0.04375238, 0.062534325, -0.0010472089, 0.04375238, 0.064647615, -0.0010472089, -0.04214582, 0.064647615, 0.0031424467, 0.04165058, -0.06944761, 0.0031424467, -0.04214582, -0.06944761, -0.0010472089, 0.04165058)
+
+[node name="IdMp1" type="Node3D" unique_id=165915911]
+
+[node name="id_mp_1" type="MeshInstance3D" parent="." unique_id=1162781908]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0023994446, 0, 0.00059986115)
+mesh = SubResource("ArrayMesh_vr8ud")
+
+[node name="id_mp_1_col" type="StaticBody3D" parent="id_mp_1" unique_id=547320995]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="id_mp_1/id_mp_1_col" unique_id=234310572]
+shape = SubResource("ConvexPolygonShape3D_rdug2")

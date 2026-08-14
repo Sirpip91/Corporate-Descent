@@ -8,6 +8,10 @@ var _output: RichTextLabel
 var _input_line: LineEdit
 var _open: bool = false
 
+var _fullbright: bool = false
+var _cached_ambient_energy: float = 0.0
+var _cached_tonemap: int = 0
+
 
 func _ready() -> void:
 	layer = 100
@@ -61,6 +65,8 @@ func _input(event: InputEvent) -> void:
 			if not _open:
 				_input_line.release_focus()
 			get_viewport().set_input_as_handled()
+		elif event.physical_keycode == KEY_F9:
+			_toggle_fullbright()
 
 
 func _on_command(text: String) -> void:
@@ -75,8 +81,11 @@ func _on_command(text: String) -> void:
 	match cmd:
 		"inventory":
 			msg("[color=cyan]Inventory: %s[/color]" % str(GameState.inventory))
+		"fullbright":
+			_toggle_fullbright()
 		"help":
 			msg("[color=cyan]  inventory — show GameState.inventory[/color]")
+			msg("[color=cyan]  fullbright — crank ambient light for dev viewing (or press F9 anytime)[/color]")
 		_:
 			msg("[color=red]Unknown command '%s' — type help[/color]" % cmd)
 
@@ -86,3 +95,24 @@ func msg(text: String) -> void:
 	var re := RegEx.new()
 	re.compile("\\[.+?\\]")
 	_output.append_text(re.sub(text, "", true) + "\n")
+
+
+func _toggle_fullbright() -> void:
+	var world_env = get_tree().get_first_node_in_group("world_environment")
+	if not world_env or not world_env.environment:
+		msg("[color=red][Dev] No WorldEnvironment in this scene[/color]")
+		return
+
+	var env: Environment = world_env.environment
+	_fullbright = !_fullbright
+
+	if _fullbright:
+		_cached_ambient_energy = env.ambient_light_energy
+		_cached_tonemap = env.tonemap_mode
+		env.ambient_light_energy = 4.0
+		env.tonemap_mode = Environment.TONE_MAPPER_LINEAR
+	else:
+		env.ambient_light_energy = _cached_ambient_energy
+		env.tonemap_mode = _cached_tonemap
+
+	msg("[color=yellow][Dev] Fullbright %s[/color]" % ("ON" if _fullbright else "OFF"))

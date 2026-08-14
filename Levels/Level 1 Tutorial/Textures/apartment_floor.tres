@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://bndr7nkh4uyva"]
+
+[ext_resource type="Texture2D" uid="uid://c6foan3ivh667" path="res://Levels/Level 1 Tutorial/Textures/floor.png" id="1_floor"]
+
+[resource]
+resource_name = "ApartmentFloor"
+albedo_texture = ExtResource("1_floor")
+uv1_scale = Vector3(0.26, 0.26, 0.26)
+uv1_triplanar = true
+texture_filter = 0

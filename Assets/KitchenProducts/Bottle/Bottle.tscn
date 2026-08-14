@@ -1,0 +1,55 @@
+[gd_scene format=4]
+
+[ext_resource type="Texture2D" path="res://Assets/KitchenProducts/Bottle/Bottle_products.png" id="1_3cg2j"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cx36m"]
+resource_name = "products"
+cull_mode = 2
+albedo_texture = ExtResource("1_3cg2j")
+roughness = 0.5
+texture_filter = 2
+metadata/_gltf_primary_texture_coord = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_2j4xi"]
+_surfaces = [{
+"aabb": AABB(-0.020000104, 7.490814e-05, -0.01999985, 0.040000148, 0.16962667, 0.03999965),
+"format": 34896613377,
+"index_count": 84,
+"index_data": PackedByteArray("CQAKAAsAAAAJAAsABAAJAAAAAAALAAIAAgAEAAAABQAEAAIAAgALAAwAAgAMAAUABQANAAQABAANAAkABQAMAA0ACwAHAAwACwAKAAcADAAOAA0ADAAHAA4ADQAPAAkACQAPAAoADQAOAA8ACgAIAAcADgADAA8ADwABAAoACgABAAgADwADAAEABwAIAAYABwAGAA4AAQAGAAgADgAGAAMAAwAGAAEA"),
+"lods": [0.02731213, PackedByteArray("AAABAAIAAAADAAEAAgAEAAAABAADAAAABQAEAAIABAAGAAMABQAGAAQAAwAGAAEAAgAHAAUABQAHAAYAAgABAAcAAQAGAAgABwAIAAYAAQAIAAcA")],
+"name": "products",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 16,
+"vertex_data": PackedByteArray("AAAAAP7/AADLzP//zMwAAP7/AAD+/wAAMjP//8zMAAAAAAAAAAAAAP7/AAAAAAAAMjP//zMzAADMzAvGMjMAAMzM//8zMwAAAAARqf//AADLzAvGzMwAAP7/Ean//wAA//8RqQAAAAAAABGpAAAAADMzC8YyMwAAMjMLxszMAAA=")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_kdft4"]
+resource_name = "Bottle_Plane_002"
+_surfaces = [{
+"aabb": AABB(-0.020000104, 7.490814e-05, -0.01999985, 0.040000148, 0.16962667, 0.03999965),
+"attribute_data": PackedByteArray("A5TQfdqrGgLPsdB9+ZkaAgOU0H3aqxoCz7HQffmZGgIDlNB92qsaAs+x0H35mRse+ZkaAgOU0H3aqxsez7HQffmZGgLaqxoCXoqNFRSW1wkUlo0VCZaPFb69SQLbrisR265JAvOuSgIDlBss2qsbHs+xGyz5mRseA5QbLNqrGx7PsRss+ZkbHgOUGyzaqxsez7EbLAOUGyzPsRss+ZkbHg=="),
+"format": 34896613399,
+"index_count": 84,
+"index_data": PackedByteArray("GgAbABwAAAAaABwAAAAcAAIAGgAdABsAHQABABsAHQADAAEAHgAfACAABAAeACAABAAgAAYAHgAhAB8AIQAFAB8AIQAHAAUAIgAjACQACAAiACQACAAkAAoAIgALACMACwAJACMACwAMAAkAJQAOACYADQAlACYADQAmAA8AJQAnAA4AJwARAA4AJwAQABEAEgATABQAFQATABIAFgAXABgAGQAXABYA"),
+"lods": [0.02731213, PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkACwAMAAkADQAOAA8ADQAQAA4AEAARAA4AEgATABQAFQATABIAFgAXABgAGQAXABYA")],
+"material": SubResource("StandardMaterial3D_cx36m"),
+"name": "products",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 40,
+"vertex_data": PackedByteArray("AAAAAP7/AIDLzP//zMwAgP7/AAD+/wCAMjP//8zMAIAAAAAAAAD/vzIz///MzP+/AAAAAP7//78yM///MzP/v/7/AAAAAP//MjP//zMz//8AAAAAAAD//8zMC8YyM///zMz//zMz///+/wAA/v//v8zMC8YyM3vA/v8AAAAA/7/LzP//zMz/v8zM//8zM/+/y8z//8zMAwAyM///MzMFAMzM//8zM1TVMjP//8zMBQD+/wAA/v+oKgAAAAAAAKgqAAAAAP7//7/+/wAAAACoKgAAEan///aGy8wLxszM5Ij+/xGp///2hjIzC8bMzOSIAAARqQAAS8AyMwvGzMx7wAAAEan//0vAMzMLxjIze8D//xGpAAD//zMzC8YyM///AAARqQAA///+/xGp//9LwP//EakAAEvAy8wLxszMe8D/f////3////9/////f////3////9/////f////3////9/////f////3////9/WvP/f////38AAAKXgQv/fwAA/38AAP9/AAAAwAMAAcAEAFTVqioBwAQAqypX1asqV9UAAP9/qypX1f///3////9/////f////39ciUXtgYv76FyJRe2Bi/vo/3/l9f9/WvP/f+X1uJJcCbiSXAkCl4EL")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_2j4xi")
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_y41n1"]
+points = PackedVector3Array(0.01364605, 0.17104603, 0.01364605, -0.02, 0.00412228, -0.02, 0.02, 0.005646386, -0.019619048, -0.019619048, 0.005646386, 0.02, -0.012, 0.16294655, -0.012, 0.02, 0.005646386, 0.02, -0.019611137, 0.11211898, 0.019992089, 0.019992089, 0.11211898, -0.019611137, -0.019209277, 0.11399773, -0.019209277, 0.019992089, 0.11211898, 0.019992089, 0.01364605, 0.17104603, -0.013265098, -0.013265098, 0.17104603, 0.01364605)
+
+[node name="Bottle" type="Node3D" unique_id=1868409350]
+transform = Transform3D(1.7, 0, 0, 0, 1.7, 0, 0, 0, 1.7, 0, 0, 0)
+
+[node name="bottle" type="MeshInstance3D" parent="." unique_id=919478583]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -7.492304e-05, 0)
+mesh = SubResource("ArrayMesh_kdft4")

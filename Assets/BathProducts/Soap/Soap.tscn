@@ -1,0 +1,53 @@
+[gd_scene format=4]
+
+[ext_resource type="Texture2D" path="res://Assets/BathProducts/Soap/Soap_bathroom.png" id="1_wt48f"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0bmu2"]
+resource_name = "bathroom"
+cull_mode = 2
+albedo_texture = ExtResource("1_wt48f")
+roughness = 0.5
+texture_filter = 2
+metadata/_gltf_primary_texture_coord = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_h2i3r"]
+_surfaces = [{
+"aabb": AABB(-0.03454314, -3.7252903e-08, -0.02500028, 0.05954312, 0.22000006, 0.050000556),
+"format": 34896613377,
+"index_count": 114,
+"index_data": PackedByteArray("AAABAAIAAQADAAIAAgADAAQAAQAFAAMABgAEAAMABgADAAUABwAFAAEABwAGAAUACAAEAAYACAAGAAcAAgAEAAgACQAHAAEAAAAJAAEACgAIAAcACQAKAAcACwACAAgACwAAAAIACgALAAgADAAJAAAADQALAAoADgAKAAkADgANAAoADAAOAAkADQAPAAsADwAAAAsADgAPAA0ADwAMAAAADgAMAA8AEAARABIAEwASABEAEwAUABIAFQASABQAFQAQABIAFgATABEAEAAWABEAFgAQABUAFgAXABMAFgAVABcA"),
+"name": "bathroom",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("Bykfz///AAAFVBbdMzMAAAVUFt3MzAAABVT//8zMAAAA1f//zMwAAAVU//8zMwAAANX//zMzAAAA1RbdMzMAAADVFt3MzAAABykfzwAAAAD//x/PAAAAAP//H8///wAABykAAP//AAD//wAAAAAAAAcpAAAAAAAA//8AAP//AABfDc/3+osAAAAAMv0DdAAAAAAy/fqLAACVVjL9A3QAAJVWMv36iwAAlVbP9/qLAABfDc/3A3QAAJVWz/cDdAAA")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_f2xp6"]
+resource_name = "Soap_Cube_014"
+_surfaces = [{
+"aabb": AABB(-0.03454314, -3.7252903e-08, -0.02500028, 0.05954312, 0.22000006, 0.050000556),
+"attribute_data": PackedByteArray("tsQt5KK/ruFxw67hXb4t5LTEOeSgv7rhb8O64Vu+OeS1xDbkob+34XDDt+FcvjbkK9FS5BfM0+Hmz9Ph0spS5OXFdOx0yb/ndMl07OXFv+ehv7fhcMPQ2nDDt+Ghv9DaK9H//9LKUuQr0VLk0sr//7XE4/9cvjbktcQ25Fy+4/+0xOb/W7455LTEOeRbvub/tsTZ/12+LeS2xC3kXb7Z/wXGKuDUySDb1Mkq4AXGINuiv67hccPG2nHDruGiv8baF8zT4ebP69rmz9PhF8zr2qC/uuFvw9Lab8O64aC/0tpm/8nV//+41mb/uNb//8nV4Mj74krI1+VKyHXi4MjX5RvH1+Wyx3XissfX5RvH++KDxvviG8fX5YPG1+Ubx/viSsjX5bLHdeJKyHXissfX5Q=="),
+"format": 34896613399,
+"index_count": 114,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUAGAAZABoAGAAbABkAHAAdAB4AHAAfAB0AIAAhACIAIAAjACEAJAAlACYAJAAnACUAKAApACoAKAArACkALAAtAC4ALAAvAC0AMAAxADIAMAAzADEANAA1ADYANAA3ADUAOAA5ADoAOAA7ADkAPAA9AD4APAA/AD0AQABBAEIAQABDAEEARABFAEYARABHAEUASABJAEoASABLAEkA"),
+"material": SubResource("StandardMaterial3D_0bmu2"),
+"name": "bathroom",
+"primitive": 3,
+"uv_scale": Vector4(3.06626, 0.651515, 0, 0),
+"vertex_count": 76,
+"vertex_data": PackedByteArray("Bykfz///usQFVBbdMzO6xAVUFt3MzLrEBykfzwAAusQHKR/PAAD//wDVFt0zM///BVQW3TMz/////x/PAAD/////H88AALrEANUW3czMusQA1RbdMzO6xP//H8///7rE//8fz///TpwFVBbdzMxOnADVFt3MzE6cBykfz///TpwHKQAAAAD/v///AAD///+///8AAAAA/78HKQAA////vwDVFt3MzP+/ANX//zMz/78A1RbdMzP/vwDV///MzP+///8AAP//AIAHKR/P//8AgP//H8///wCABykAAP//AID//wAAAAD/v///H8////+///8fzwAA/7///wAA////vwcpAAAAAP////8fzwAA//8HKR/PAAD/////AAAAAP//BykAAP///78HKR/PAAD/vwcpH8////+/BykAAAAA/78A1f//MzP//wVU///MzP//BVT//zMz//8A1f//zMz//wVUFt0zM/+/BVT//8zM/78FVBbdzMz/vwVU//8zM/+/BVQW3czMAIAA1f//zMwAgADVFt3MzACABVT//8zMAIAA1RbdMzP//wVU//8zM///BVQW3TMz//8A1f//MzP//18Nz/f6ixLvAAAy/QN0Eu8AADL9+osS718Nz/cDdBLvXw3P9wN0//+VVjL9A3T//wAAMv0DdP//lVbP9wN0//+VVs/3+ov/vwAAMv36i/+/lVYy/fqL/79fDc/3+ov/v18Nz/cDdFTVlVbP9/qLVNWVVs/3A3RU1V8Nz/f6i1TVlVYy/QN0VNUAADL9+otU1QAAMv0DdFTVlVYy/fqLVNXgmjzK4Jo8yuCaPMrgmjzK/3/43f9/+N3/f/jd/3/43cG14RrBteEawbXhGsG14Rr///9//v//f////3/+//9/AAD/fwAA/38AAP9/AAD/f/9/AAD/fwAA/38AAP9/AAD/f////3////9/////f////38AAP9/AAD/fwAA/38AAP9/////f////3////9/////f////3/+//9//v//f////3//v/9//7//f/+//3//v/9/////f////3////9/////f////3////9/////f////3////9/////f////3///3ZIEW92SBFvdkgRb3ZIEW//v/8//7//P/+//z//P/+//////////////////////6oqVNWqKlTVqipU1aoqVNVU1aoqVNWqKlTVqipU1aoq")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_h2i3r")
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_x5nrn"]
+points = PackedVector3Array(0.015, 0.21570346, 0.014305116, -0.03624603, 0.21474549, -0.0022988515, -0.03624603, 0.21474549, 0.0046794643, -0.024999999, 0.0023492607, 0.024675088, 0.024515873, 0.005703709, -0.024999999, 0.024999999, 0.003982375, 0.024292327, -0.0243711, 0.005703709, -0.024999999, 0.0243833, 0.17813256, -0.024889521, -0.024437647, 0.17867482, 0.02397208, -0.024282727, 0.17813256, -0.024889521, 0.024555229, 0.17853372, 0.023921685, 0.0144449435, 0.21274287, -0.015, -0.015, 0.21865629, 0.01472025, -0.014445833, 0.21274287, -0.015, -0.03624603, 0.21824576, -0.0022988515, -0.03624603, 0.21824576, 0.0046794643)
+
+[node name="Soap" type="Node3D" unique_id=40451163]
+transform = Transform3D(1.7, 0, 0, 0, 1.7, 0, 0, 0, 1.7, 0, 0, 0)
+
+[node name="soap" type="MeshInstance3D" parent="." unique_id=1914712563]
+transform = Transform3D(-1, 0, -1.509958e-07, 0, 1, 0, 1.509958e-07, 0, -1, -0.0047715902, 0, 0)
+mesh = SubResource("ArrayMesh_f2xp6")

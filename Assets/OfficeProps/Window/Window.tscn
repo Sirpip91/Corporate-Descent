@@ -1,0 +1,91 @@
+[gd_scene format=4]
+
+[ext_resource type="Texture2D" path="res://Assets/OfficeProps/Window/Window_window frame.png" id="1_b3v7f"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_it5e3"]
+resource_name = "frame"
+cull_mode = 2
+albedo_texture = ExtResource("1_b3v7f")
+roughness = 0.5
+texture_filter = 2
+metadata/_gltf_primary_texture_coord = 0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pcthj"]
+resource_name = "window glass"
+cull_mode = 2
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_onath"]
+_surfaces = [{
+"aabb": AABB(-0.54999995, -0.95000005, 0, 1.1000001, 1.9000001, 1e-05),
+"format": 34359742465,
+"index_count": 24,
+"index_data": PackedByteArray("AAABAAIAAgABAAMAAAAEAAEAAgADAAUABgAEAAAABQADAAcABgAHAAQABQAHAAYA"),
+"name": "frame",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("EK4Hv3wUbr8AAACAzMwMvzQzcz8AAACAEq4Hv3oUbj8AAACA0MwMPzQzcz8AAACAzMwMvzQzc78AAACAEq4HP3oUbj8AAACAEK4HP3wUbr8AAACAzswMPzQzc78AAACA")
+}, {
+"aabb": AABB(-0.52999985, -0.93000007, 0, 1.0599997, 1.86, 1e-05),
+"format": 34359742465,
+"index_count": 6,
+"index_data": PackedByteArray("AAABAAIAAAADAAEA"),
+"name": "window glass",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray("EK4Hv3wUbr8AAACAEq4HP3oUbj8AAACAEK4HP3wUbr8AAACAEq4Hv3oUbj8AAACA")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_7w8lo"]
+resource_name = "Window_Cube_091"
+_surfaces = [{
+"aabb": AABB(-0.54999995, -0.95000005, 0, 1.1000001, 1.9000001, 1e-05),
+"attribute_data": PackedByteArray("F+83wrZofz96WzpCAJhSPAdrNkKgZ38/iN87wgDHUjwX7zfCt+g9QO5K5kDLwv0/LcfGQJzoPUCI3zvC+ML9P1HHxkBYaH8/iN87wvjC/T8T7zfCtmh/PwRL5kDLwv0/C2s2QgDHUjyI3zvCmNN4vxfvN8IArVI8els6QtzSeL8="),
+"format": 34359742487,
+"index_count": 24,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0A"),
+"material": SubResource("StandardMaterial3D_it5e3"),
+"name": "frame",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 16,
+"vertex_data": PackedByteArray("EK4Hv3wUbr8AAACAzMwMvzQzcz8AAACAEq4Hv3oUbj8AAACAzMwMvzQzc78AAACAEK4HP3wUbr8AAACAzMwMvzQzc78AAACAEK4Hv3wUbr8AAACAzswMPzQzc78AAACAEq4Hv3oUbj8AAACA0MwMPzQzcz8AAACAEq4HP3oUbj8AAACAzMwMvzQzcz8AAACAEq4HP3oUbj8AAACAzswMPzQzc78AAACAEK4HP3wUbr8AAACA0MwMPzQzcz8AAACA/3//f/9/////f/9//3////9//3//f////3//f/9/////f/9/AAD/v/9//38AAP+//3//fwAA/7//f/9/AAD/v/9//38AAP+//3//fwAA/7//f/9/AAD/v/9//38AAP+//3//f/9/AAD/f/9//38AAP9//3//fwAA/3//f/9/AAA=")
+}, {
+"aabb": AABB(-0.52999985, -0.93000007, 0, 1.0599997, 1.86, 1e-05),
+"attribute_data": PackedByteArray("Z6IJNAAAgD905BE/AACAM3TkET/+/38/AAAAAAAAQDQ="),
+"format": 34359742487,
+"index_count": 6,
+"index_data": PackedByteArray("AAABAAIAAAADAAEA"),
+"material": SubResource("StandardMaterial3D_pcthj"),
+"name": "window glass",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray("EK4Hv3wUbr8AAACAEq4HP3oUbj8AAACAEK4HP3wUbr8AAACAEq4Hv3oUbj8AAACA/3//f/7//7//f/9//v//v/9//3/+//+//3//f/7//78=")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_onath")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ign5f"]
+transparency = 1
+albedo_color = Color(0.75, 0.85, 0.9, 0.25)
+metallic = 0.1
+roughness = 0.05
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_lwg5m"]
+points = PackedVector3Array(-0.54999995, -0.95000005, 0, 0.54989254, -0.95000005, 0, -0.54999995, 0.9499999, 0, 0.5500002, 0.9499999, 0)
+
+[node name="Window" type="Node3D" unique_id=934645752]
+transform = Transform3D(1.7, 0, 0, 0, 1.7, 0, 0, 0, 1.7, 0, 0, 0)
+
+[node name="window" type="MeshInstance3D" parent="." unique_id=586693110]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.95000005, -5.2452087e-06)
+mesh = SubResource("ArrayMesh_7w8lo")
+surface_material_override/1 = SubResource("StandardMaterial3D_ign5f")
+
+[node name="window_col" type="StaticBody3D" parent="window" unique_id=570782924]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="window/window_col" unique_id=1963234390]
+shape = SubResource("ConvexPolygonShape3D_lwg5m")

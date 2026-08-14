@@ -1,0 +1,57 @@
+[gd_scene format=4]
+
+[ext_resource type="Texture2D" path="res://Assets/OfficeProps/DeskDrawer/DeskDrawer_desk.png" id="1_vsyr5"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gkyc8"]
+resource_name = "desk"
+cull_mode = 2
+albedo_texture = ExtResource("1_vsyr5")
+roughness = 0.5
+texture_filter = 2
+metadata/_gltf_primary_texture_coord = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_b05pj"]
+_surfaces = [{
+"aabb": AABB(-0.22500001, -0.035305202, -0.33191538, 0.45, 0.119999886, 0.6379172),
+"format": 34896613377,
+"index_count": 102,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAAAAIAAwAFAAEAAgABAAUABAACAAYAAgAFAAYABwAAAAQABwADAAAABwAEAAYAAwAHAAUABwAGAAUACAAJAAoACQALAAoACAAMAAkADQAMAAgACQAOAAsADQAPAAwADwAJAAwAEAAPAA0ADwARAAkAEAARAA8AEQAOAAkAEAASABEAEQASAA4AEAATABIAFAALAA4AFAAOABUAFgAUABUAFwAOABIAEwAXABIAFwAVAA4AEwAWABcAFgAVABcA"),
+"name": "desk",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("//8AAPj3AAD///////8AAP/////49wAA//8AAP//AAAAAAAA+PcAAAAA/////wAAAAD///j3AAAAAAAA//8AAL/yCCz49wAAv/Io0rYEAAC/8ijS+PcAAOT4KNL49wAAv/IILLYEAAA/DQgs+PcAAOT4KNIAAAAAPw0ILLYEAAA/DSjS+PcAAD8NKNK2BAAAGgco0gAAAAAaByjS+PcAAOT4dxX49wAA5Ph3FQAAAAAaB3cV+PcAABoHdxUAAAAA")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_2dwau"]
+resource_name = "DeskDrawer_Cube_022"
+_surfaces = [{
+"aabb": AABB(-0.22500001, -0.035305202, -0.33191538, 0.45, 0.119999886, 0.6379172),
+"attribute_data": PackedByteArray("fs9Unh/RGah+zxmoH9FUnnLUVJ4T1hmoctQZqBPWVJ6m4Rmoaut4g2rrGaim4XiDTD3mCsdYOhJMPToSx1jmCuf5//5G+F7a5/le2kb4//7/AOUVVzI8HAABPBxXMuUVsPElgFrrT1+w8U9fWuslgLd0c4uNlRtajZVzi7d0G1oAZ+QbqTWNFQBnjRWpNeQbS5g2H/9laib/ZTYfS5hqJnN5swLEik0Gc3lNBsSKswIH6LR4ttaGXwfohl+21rR4DbX+IlnnyhtZ5/4iDbXKG8Y+Szp9YFY5nF9LOuU9Vjmjm7wK+szbCfrMvAqumtsJYvWKxIH0PpJi9TOTgfSKxJRNlAfzKPMFlE3zBfMolAc="),
+"format": 34896613399,
+"index_count": 102,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUAGAAZABoAGAAbABkAHAAdAB4AHAAfAB0AIAAhACIAIAAjACEAJAAlACYAJAAnACUAKAApACoAKAArACkALAAtAC4ALAAvAC0AMAAxADIAMAAzADEANAA1ADYANAA3ADUAOAA5ADoAOAA7ADkAPAA9AD4APAA/AD0AQABBAEIAQABDAEEA"),
+"material": SubResource("StandardMaterial3D_gkyc8"),
+"name": "desk",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 68,
+"vertex_data": PackedByteArray("//8AAPj3///////////////////49/////8AAP////8AAAAA/////wAA///49///AAD///////8AAAAA+Pf/////AAD///+/AAD//////7//////////vwAAAAD///+/AAAAAPj3////////+Pf//wAA///49/////8AAPj3////////+PdU1QAA/////1TVAAD///j3VNX///////9U1b/yCCz49///v/Io0rYE//+/8ijS+Pf//7/yCCy2BP//Pw0ILLYE/7+/8ijStgT/v7/yCCy2BP+/Pw0o0rYE/78/DQgs+Pf/v7/yCCy2BP+/v/IILPj3/78/DQgstgT/vz8NKNL49///Pw0ILLYE//8/DQgs+Pf//z8NKNK2BP//5Ph3Ffj3///k+CjSAAD//+T4dxUAAP//5Pgo0vj3//8aB3cVAAD//+T4KNIAAP//Ggco0gAA///k+HcVAAD//xoHdxX49///5Ph3FQAA//8aB3cVAAD//+T4dxX49///Ggco0vj3//8aB3cVAAD//xoHKNIAAP//Ggd3Ffj3//8/DSjStgT/v+T4KNIAAP+/v/Io0rYE/78aByjSAAD/v7/yKNK2BFTV5Pgo0vj3VNW/8ijS+PdU1eT4KNIAAFTVPw0o0vj3/78aByjSAAD/vz8NKNK2BP+/Ggco0vj3/78AAAAA////////AAD49///AAAAAPj3/////wAA//////+//3//v/9//7//f/+//3//P/9//z//f/8//3//P/9//////////////////////////3////9/////f////39U1aoqVNWqKlTVqipU1aoq/z//f/8//3//P/9//z//f/9//3//f/9//3//f/9//3////9/////f////3////9//7//f/+//3//v/9//7//f/+//3//v/9//7//f/+//3////9/////f////3////9//3//P/9//z//f/8//3//P/8//3//P/9//z//f/8//3////9/////f////3////9/qqqqqqqqqqqqqqqqqqqqqv7//3/+//9//v//f////3//f/8//3//P/9//z//f/8/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_b05pj")
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_mfmps"]
+points = PackedVector3Array(-0.20021343, -0.0252, -0.3076076, 0.22553556, 0.09126746, 0.31099927, 0.20801426, -0.035299998, 0.28608012, -0.2300181, 0.09126746, 0.31099927, 0.21541116, 0.070999816, -0.33689928, -0.2300181, -0.040362693, 0.28062108, -0.2198937, 0.070999816, -0.33689928, 0.1957309, -0.0252, -0.3076076, 0.22553556, -0.040362693, 0.28062108, 0.22553556, 0.09126746, 0.28062108, -0.2300181, 0.09126746, 0.28062108, -0.2124968, -0.035299998, 0.28608012)
+
+[node name="DeskDrawer" type="Node3D" unique_id=2084282066]
+
+[node name="desk drawer" type="MeshInstance3D" parent="." unique_id=592920339]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.035305202, 0.012956753)
+mesh = SubResource("ArrayMesh_2dwau")
+
+[node name="desk drawer_col" type="StaticBody3D" parent="desk drawer" unique_id=652932480]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="desk drawer/desk drawer_col" unique_id=373252325]
+shape = SubResource("ConvexPolygonShape3D_mfmps")

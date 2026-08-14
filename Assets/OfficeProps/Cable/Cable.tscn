@@ -1,0 +1,53 @@
+[gd_scene format=4]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2kxns"]
+resource_name = "cable black"
+cull_mode = 2
+albedo_color = Color(0.10564259, 0.10564259, 0.10564259, 1)
+roughness = 0.5
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_4gyf6"]
+_surfaces = [{
+"aabb": AABB(-0.21294364, -0.0065793395, -0.041885197, 0.49488682, 0.211585, 0.18610033),
+"format": 34896613377,
+"index_count": 72,
+"index_data": PackedByteArray("AAABAAIAAgABAAMAAAAEAAEAAgADAAUABgAEAAAABQADAAcABgAIAAQACAAGAAkACAAJAAoABQAHAAsACwAHAAwACwAMAA0ADQAMAA4ADQAOAA8ADwAOABAADwAQABEAEQAQABIAEQASABMAEwASABQAEwAUABUAFQAUABYAFQAWABcAFwAWABgAFwAYABkA"),
+"name": "cable black",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 26,
+"vertex_data": PackedByteArray("MARweUzNAADJDDEx9YUAAOUOMTFUiAAA/x0mDBtLAADtAXB5WMwAAPQfJgyETwAASgJ+vLH6AACyPQAAuhwAAAAAfryx+gAASgIV2P//AAAAABXY//8AAM8+AAAQIgAA0GMAANgFAAC/ZAAAVwsAAKyYeSMAAAAAOZl5I+kFAADctkRZNQIAALq2RFkCCAAAfdBwihgIAACsz3CKyw0AAA3zJt03HwAAdPEm3ZYjAAAT/OX2fy8AAC365fYsMgAA/////4tKAAC0/f//b0oAAA==")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_wmqp7"]
+resource_name = "Cable_Plane_001"
+_surfaces = [{
+"aabb": AABB(-0.21294364, -0.0065793395, -0.041885197, 0.49488682, 0.211585, 0.18610033),
+"attribute_data": PackedByteArray("l7jk/QHmlvl544j4Q/z68Me6Bf/0+ADwXY/Z/v//IuFWkf7//3/Z/viB///B/JPgUvQUzhvxnM3b2KizrdVhs9/IkKQixqGkbbnAl/O2KJj7mniGBplEh8WN9YFdjOiCL4D/f/9/JIE="),
+"format": 34896613399,
+"index_count": 72,
+"index_data": PackedByteArray("AAABAAIAAgABAAMAAAAEAAEAAgADAAUABgAEAAAABQADAAcABgAIAAQACAAGAAkACAAJAAoABQAHAAsACwAHAAwACwAMAA0ADQAMAA4ADQAOAA8ADwAOABAADwAQABEAEQAQABIAEQASABMAEwASABQAEwAUABUAFQAUABYAFQAWABcAFwAWABgAFwAYABkA"),
+"material": SubResource("StandardMaterial3D_2kxns"),
+"name": "cable black",
+"primitive": 3,
+"uv_scale": Vector4(0.01957869, 2, 0, 0),
+"vertex_count": 26,
+"vertex_data": PackedByteArray("MARweUzNmBbJDDEx9YV0IOUOMTFUiEIh/x0mDBtLeyjtAXB5WMwtFvQfJgyETwUpSgJ+vLH6UguyPQAAuhzgKgAAfryx+hYLSgIV2P//0gQAABXY///SBM8+AAAQItcq0GMAANgF9Si/ZAAAVws0KKyYeSMAAFAiOZl5I+kFJyHctkRZNQIvGLq2RFkCCAgYfdBwihgI4g+sz3CKyw0yEA3zJt03H+oKdPEm3ZYjUAoT/OX2fy+VFi365fYsMtUU/////4tKwR+0/f//b0q7H0vGEjf/xq0yLMc7MtjLvyxQxjE3yMxKLKjE7zrU0ooqlsQHO4/CaD2Pwmg9PtOOKg7ZxyvC2lYsGeNjMIbkUTEc5r8z/OWYM67g+TTM4F00cNh7NO/YtTNV1JIyYdSuMnbSADBw0vcv")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_4gyf6")
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_ib4sr"]
+points = PackedVector3Array(0.054740477, 0.014877193, -0.04302968, 0.28302968, 0.20690958, 0.013470702, 0.27616933, 0.20690958, 0.013470702, -0.20721798, 0.1481443, 0.1422211, 0.25583154, 0.17978553, -0.020433202, -0.09647922, -0.00546059, -0.022691011, -0.21402967, 0.17297825, 0.14449726, -0.18464206, 0.039732154, 0.06541875, 0.08641487, 0.021663465, -0.036237888, -0.20269306, 0.09395924, 0.11059336, -0.15301631, 0.0013256744, 0.008936722, -0.012938611, -0.0077296793, -0.031722263, 0.18586567, 0.10746874, -0.038495705, 0.26940626, 0.2001023, -0.0068679675, -0.1914051, 0.039732154, 0.056369144, 0.19262871, 0.10746874, -0.029464453, -0.026464697, -0.00546059, -0.038495705, -0.15072954, 0.0013256744, 0.017986327, -0.15754123, 0.0058428496, 0.011212889, -0.2094561, 0.08717298, 0.10381992, -0.20721798, 0.15942673, 0.14449726, 0.25811833, 0.17297825, -0.018175386, -0.17787902, 0.02844973, 0.05411133, -0.20493118, 0.12782754, 0.13093203, 0.12480366, 0.055552766, -0.04302968, -0.09647922, -0.0077296793, -0.011383593, 0.28302968, 0.2023504, 0.008936722, -0.20721798, 0.17297825, 0.14449726, 0.050264217, 0.010360025, -0.03398008, -0.18916698, 0.032945886, 0.058626957, -0.19593002, 0.07135236, 0.09253086, 0.1993431, 0.114234, -0.036237888)
+
+[node name="Cable" type="Node3D" unique_id=1125451945]
+
+[node name="cable" type="MeshInstance3D" parent="." unique_id=1223518048]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.034499757, 0.0065793395, -0.05116497)
+mesh = SubResource("ArrayMesh_wmqp7")
+
+[node name="cable_col" type="StaticBody3D" parent="cable" unique_id=1903019278]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="cable/cable_col" unique_id=1274694550]
+shape = SubResource("ConvexPolygonShape3D_ib4sr")

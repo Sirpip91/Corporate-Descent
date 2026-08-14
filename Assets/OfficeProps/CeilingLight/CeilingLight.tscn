@@ -1,0 +1,95 @@
+[gd_scene format=4 uid="uid://bfevgmws6y2ud"]
+
+[ext_resource type="Texture2D" uid="uid://b28jthakejxim" path="res://Assets/OfficeProps/CeilingLight/CeilingLight_window frame.png" id="1_3olcl"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ea13k"]
+resource_name = "light"
+cull_mode = 2
+albedo_color = Color(0.9063318, 0.9063318, 0.9063318, 1)
+roughness = 0.5
+emission_enabled = true
+emission = Color(1, 1, 1, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dlp5o"]
+resource_name = "frame"
+cull_mode = 2
+albedo_texture = ExtResource("1_3olcl")
+roughness = 0.5
+texture_filter = 2
+metadata/_gltf_primary_texture_coord = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_f3tm8"]
+_surfaces = [{
+"aabb": AABB(-0.23000002, -0.01999988, -0.22999997, 0.46, 1e-05, 0.45999995),
+"format": 34896613377,
+"index_count": 6,
+"index_data": PackedByteArray("AAABAAIAAAADAAEA"),
+"name": "light",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray("AAAAAP//AAD//wAAAAAAAAAAAAAAAAAA//8AAP//AAA=")
+}, {
+"aabb": AABB(-0.24999997, -0.01999988, -0.25000003, 0.49999997, 0.019999916, 0.5),
+"format": 34896613377,
+"index_count": 48,
+"index_data": PackedByteArray("AAABAAIAAgABAAMAAAAEAAEABQAAAAIABQACAAYABwAAAAUAAgADAAgABgACAAgACAADAAkABgAIAAoACwAEAAAACwAJAAQABwALAAAACAAJAAsACgALAAcACgAIAAsA"),
+"name": "frame",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 12,
+"vertex_data": PackedByteArray("//8AAAAAAAAAAP//AAAAAAAAAAAAAAAAAAD/////AAD/////AAAAAMH1AAA9CgAAPQoAAD0KAADB9QAAwfUAAAAAAAD//wAA////////AAA9CgAAwfUAAP//AAD//wAA")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_wmll1"]
+resource_name = "CeilingLight_Plane_006"
+_surfaces = [{
+"aabb": AABB(-0.23000002, -0.01999988, -0.22999997, 0.46, 1e-05, 0.45999995),
+"attribute_data": PackedByteArray("+wMD/AP8+wP7A/sDA/wD/A=="),
+"format": 34896613399,
+"index_count": 6,
+"index_data": PackedByteArray("AAABAAIAAAADAAEA"),
+"material": SubResource("StandardMaterial3D_ea13k"),
+"name": "light",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray("AAAAAP///z///wAAAAD/PwAAAAAAAP8///8AAP///z8AAP9/AAD/fwAA/38AAP9/")
+}, {
+"aabb": AABB(-0.24999997, -0.01999988, -0.25000003, 0.49999997, 0.019999916, 0.5),
+"attribute_data": PackedByteArray("AAAh/6LjaL+i4yH/AABov6fjQP8EAIe/BABA/6fjh7+uBZz/UOnjv1DpnP+uBeO/quT//wcBRcAHAf7/quRFwI/br38HAWi/Igqvf6rkaL+M2m2ABAAmwB8JbYCn4ybAyQ4RgFDpyr814BGArgXKvxoJjICi40XAh9qMgAAARcA="),
+"format": 34896613399,
+"index_count": 48,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUAGAAZABoAGAAbABkAHAAdAB4AHAAfAB0A"),
+"material": SubResource("StandardMaterial3D_dlp5o"),
+"name": "frame",
+"primitive": 3,
+"uv_scale": Vector4(27.606789, 3.9447517, 0, 0),
+"vertex_count": 32,
+"vertex_data": PackedByteArray("//8AAAAA//8AAP//AAD//wAAAAAAAP///////wAA//8AAAAA//8AAP///////wAA//8AAP//AAAAAP////8AAP//AAD///+//////wAA/7///wAAAAD/v/////////+/AAAAAAAAAAAAAP////8AAAAAAAD//wAAAAD//wAAAAA9CgAAPQpU1QAAAAD//1TVPQoAAMH1VNUAAAAAAABU1T0KAADB9f////8AAP/////B9QAAwfX//wAAAAD/////wfUAAMH1qir//wAAAACqKsH1AAA9Cqoq//8AAP//qirB9QAAPQoAAAAAAAAAAAAAPQoAAD0KAAD//wAAAAAAAP9/////f////3////9/////f/9//3//f/9//3//f/9//38AAP9/AAD/fwAA/38AAP8//3//P/9//z//f/8//39VVVRVVVVUVVVVVFVVVVRV/3//P/9//z//f/8//3//P1VVVFVVVVRVVVVUVVVVVFX/f/8//3//P/9//z//f/8/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_f3tm8")
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_tagp1"]
+points = PackedVector3Array(0.25, 3.5390258e-08, 0.24999997, -0.24999997, 3.5390258e-08, 0.24999997, 0.25, -0.01999988, 0.24999997, 0.25, 3.5390258e-08, -0.25000003, -0.24999997, -0.01999988, 0.24999997, -0.24999997, 3.5390258e-08, -0.25000003, 0.25, -0.01999988, -0.25000003, -0.24999997, -0.01999988, -0.25000003)
+
+[node name="CeilingLight" type="Node3D" unique_id=1750589695]
+transform = Transform3D(1.7, 0, 0, 0, 1.7, 0, 0, 0, 1.7, 0, 0, 0)
+
+[node name="light" type="MeshInstance3D" parent="." unique_id=452393380]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.01999998, 0)
+mesh = SubResource("ArrayMesh_wmll1")
+
+[node name="light_col" type="StaticBody3D" parent="light" unique_id=143886978]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="light/light_col" unique_id=450056237]
+shape = SubResource("ConvexPolygonShape3D_tagp1")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=1608230210]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.28500107, 0)
+light_color = Color(0.95, 0.97, 1, 1)
+shadow_enabled = true
+omni_range = 10.0
+omni_attenuation = 1.2

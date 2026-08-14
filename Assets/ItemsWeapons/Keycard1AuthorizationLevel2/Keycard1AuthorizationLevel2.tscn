@@ -1,0 +1,56 @@
+[gd_scene format=4]
+
+[ext_resource type="Texture2D" path="res://Assets/ItemsWeapons/Keycard1AuthorizationLevel2/Keycard1AuthorizationLevel2_keys_mp_1.png" id="1_fk0ol"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xi6hs"]
+resource_name = "keys_mp_1"
+cull_mode = 2
+albedo_texture = ExtResource("1_fk0ol")
+texture_filter = 2
+metadata/_gltf_primary_texture_coord = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_g0pwk"]
+_surfaces = [{
+"aabb": AABB(-0.068397135, 0, -0.04320021, 0.13199416, 0.0018000007, 0.08519993),
+"format": 34896613377,
+"index_count": 84,
+"index_data": PackedByteArray("AAABAAIAAwAAAAIAAwACAAQAAQAEAAIABQAAAAMABQADAAQAAAAGAAEAAAAHAAYABQAHAAAACAABAAYACAAGAAcABQAEAAkAAQAKAAQABAAKAAkACQALAAUACQAKAAsABwAFAAwADAAFAAsACAAHAA0ABwAMAA0ADgABAAgACgABAA4ACAANAA4ADwALAAoADwAMAAsACgAOAA8ADQAMAA8ADQAPAA4A"),
+"name": "keys_mp_1",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 16,
+"vertex_data": PackedByteArray("Lfr//wAAAADRBQAAAAAAAC36AAAAAAAA/////wMJAAD//wAAAwkAAP/////79gAA0QX//wAAAAAAAP//AwkAAAAAAAADCQAA//8AAPv2AAAt+gAA//8AAC36/////wAA0QX/////AAAAAP//+/YAAAAAAAD79gAA0QUAAP//AAA=")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_4ulxg"]
+resource_name = "Keycard1AuthorizationLevel2_keycard_1_authorization_level_2_001"
+_surfaces = [{
+"aabb": AABB(-0.068397135, 0, -0.04320021, 0.13199416, 0.0018000007, 0.08519993),
+"attribute_data": PackedByteArray("EMX/b+2d/3AQxf9w7Z3/b+2d/3AQxf9vEMX/cO2d/28NpP9v8L//cA2k/3Dwv/9v7Z3/bv/FDG4Qxf9uEMX/U//F81T/nPNU/5wMbu2d/1P/nPM57Z3/U/+cDFP/xQxTEMX/UxDF/zjtnf84/8XzOf+c/3Dtnf9v/5z/b+2d/3Dwv/9v/8D/cPC//3D/wP9vDaT/cP+i/28NpP9v/6L/cP+c/2/tnf9w/5z/cO2d/2/wv/9wDaT/bw2k/3Dwv/9v"),
+"format": 34896613399,
+"index_count": 84,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0ADQAPABAADwAMABEAEQAMABIADwARABMAFAAVABYAFAAXABUAFQAXABgAFwAUABkAGQAUABoAFwAZABsAHAAdAB4AHAAfAB0AIAAhACIAIAAjACEAJAAlACYAJAAnACUAKAApACoAKAArACkALAAtAC4ALAAvAC0A"),
+"material": SubResource("StandardMaterial3D_xi6hs"),
+"name": "keys_mp_1",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 48,
+"vertex_data": PackedByteArray("Lfr//wAAAADRBQAAAAAAAC36AAAAAAAA0QX//wAAAADRBQAA//8AgC36/////wCALfoAAP//AIDRBf////8AgP/////79v+///8AAAMJ/7///wAA+/b/v/////8DCf+/LfoAAP////8AAAAA+/b//9EFAAD/////0QUAAAAA//8AAAAAAwn/////AAADCf////8AAPv2//8t+gAAAAD//wAA//8DCf+/0QX//////78AAP//+/b/v//////79v+/Lfr//////78t+v//AAD/v9EF//8AAP+//////wMJ/78AAAAAAwkAANEF//8AAAAAAAD//wMJAADRBQAAAAAAAP////8DCf/fLfoAAAAA/9///wAAAwn/3y36//8AAP/f//8AAPv2/58t+v//////n//////79v+fLfoAAP///58AAP//+/b/n9EFAAD///+fAAAAAPv2/5/RBf//////nwAAAAADCQAAAAD///v2AAAAAAAA+/YAAAAA//8DCQAA/v//f////3/+//9/////f/9/////f////3////9/////fwAA/38AAP9/AAD/fwAA/3//P/9//z//f/8//3//P/9//z//f/8//7////9//z////9//v//f/7//3/+//9//v//f/7//3/+//9//v/+f///fKX//3yl//98pf//fKX/fwAA/38AAP9/AAD/fwAA/38AAP9/AAD/fwAA/38AAP9//v//f/7//3/+//9/////P/9//z//f/8//3//P/9/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_g0pwk")
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_nlu4w"]
+points = PackedVector3Array(0.062534325, 0.0031424467, 0.04375238, -0.067347445, -0.0010472089, -0.04424762, -0.06944761, -0.0010472089, -0.04214582, 0.064647615, -0.0010472089, 0.04165058, 0.062534325, 0.0031424467, -0.04424762, -0.06944761, 0.0031424467, 0.04165058, -0.067347445, -0.0010472089, 0.04375238, -0.067347445, 0.0031424467, -0.04424762, 0.062534325, -0.0010472089, -0.04424762, 0.064647615, 0.0031424467, -0.04214582, -0.067347445, 0.0031424467, 0.04375238, 0.062534325, -0.0010472089, 0.04375238, 0.064647615, -0.0010472089, -0.04214582, 0.064647615, 0.0031424467, 0.04165058, -0.06944761, 0.0031424467, -0.04214582, -0.06944761, -0.0010472089, 0.04165058)
+
+[node name="Keycard1AuthorizationLevel2" type="Node3D" unique_id=1452767905]
+
+[node name="keycard_1_authorization_level_2" type="MeshInstance3D" parent="." unique_id=1450330566]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0023994446, 0, 0.0006008148)
+mesh = SubResource("ArrayMesh_4ulxg")
+
+[node name="keycard_1_authorization_level_2_col" type="StaticBody3D" parent="keycard_1_authorization_level_2" unique_id=138338346]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="keycard_1_authorization_level_2/keycard_1_authorization_level_2_col" unique_id=421802298]
+shape = SubResource("ConvexPolygonShape3D_nlu4w")

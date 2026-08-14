@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_moon"]
+shading_mode = 0
+albedo_color = Color(0.92, 0.93, 0.88, 1)
+
+[sub_resource type="SphereMesh" id="SphereMesh_moon"]
+radius = 0.4
+height = 0.8
+
+[node name="Moon" type="MeshInstance3D"]
+cast_shadow = 0
+mesh = SubResource("SphereMesh_moon")
+surface_material_override/0 = SubResource("StandardMaterial3D_moon")

@@ -1,0 +1,60 @@
+[gd_scene format=4]
+
+[ext_resource type="Texture2D" path="res://Assets/Appliances/Microwave002/Microwave002_appliance.png" id="1_if828"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sltak"]
+resource_name = "appliance"
+cull_mode = 2
+albedo_texture = ExtResource("1_if828")
+roughness = 0.5
+texture_filter = 2
+metadata/_gltf_primary_texture_coord = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_0cdws"]
+_surfaces = [{
+"aabb": AABB(2.9802322e-08, -0.26, 0, 0.34000012, 0.26000005, 0.049999863),
+"format": 34896613377,
+"index_count": 96,
+"index_data": PackedByteArray("AAABAAIAAAAEAAEABAAGAAEABwABAAYABAAIAAYACAAEAAkABwAGAAwADQAGAAgACAAJAA0ADQAMAAYADQAJAAUAAwAHAAwACwAMAA0ADQAFAAsAAwALAAUACwAKAAwAAwAMAAoAAwAKAAsADgADAAUAAAAOAAUAAAAPAA4ADgAPABAAAAAQAA8ADgAQABEAAwAOABEAAAASABAAEQAQABIAEgAAAAIAAwASAAIAEQASABMAAwATABIAAwARABMA"),
+"lods": [0.019027708, PackedByteArray("AAABAAIAAwAAAAIAAAAEAAEABQAAAAMABAAGAAEABwABAAYABAAIAAYACAAEAAkABwAGAAoAAwAHAAoACwAGAAgACAAJAAsACwAKAAYACwAJAAUAAwAKAAsAAwALAAUA")],
+"name": "appliance",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 20,
+"vertex_data": PackedByteArray("aOkAAJiZAAAAAP7/mJkAAGjp/v+YmQAA/////5iZAAAAAAAAmJkAAP//AACYmQAAAAD+/wAAAABo6f//mJkAAAAAAAAAAAAAaOkAAJiZAAD/////AAAAAP//AAAAAAAAaOn//wAAAABo6QAAAAAAAP//VhzLzAAAaOlWHMvMAABo6f9///8AAP///3///wAAaOmo48vMAAD//6jjy8wAAA==")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_gvlq1"]
+resource_name = "Microwave002_Cube_062"
+_surfaces = [{
+"aabb": AABB(2.9802322e-08, -0.26, 0, 0.34000012, 0.26000005, 0.049999863),
+"attribute_data": PackedByteArray("251NvavVDX+r1U29250Nf9XjAH0a2cC1GtkAfdXjwLUvooQQn6j0Fi+i9BYr64QQK+v0Fhf6//6m8y/HF/ovx6bz//4l8/2LlvnNwyXzzcOW+f2LeZpCZX1REp19UUJleZoSnY96sgYbvSINH3QiDRu9sgYfdLIG2fyoG7P6Sk2z+nsV//5iMdn8HUfV42CZGtmKg9XjioMa2WCZ1eM1rxrZNa+79zeC4PmVUOD5ZYiV9X1su/fCVp+ohBAIlEJlCJQSnY96Ig0="),
+"format": 34896613399,
+"index_count": 96,
+"index_data": PackedByteArray("AAABAAIAAAADAAEAHgAfACAAHwAeACEAHwAhACIAIwAkACUABAAlACQABAAkAAYAIwAmACQAJwAmACMAJwAoACYABQAoACcABQAnAAcAKQAqACsAKgApACwAKgAsAC0ALgAKAAgALgAJAAoACwAJAC4ACwAMAAkADQAOAA8ADQAQAA4AEQASABMAEQAUABIALwAWABcALwAwABYAFQAwAC8AFQAYADAAGQAaADEAGQAcABoAHQAZADEAHQAxABsA"),
+"lods": [0.019027708, PackedByteArray("AAABAAIAAAADAAEABAAFAAYABwAFAAQACAAJAAoACwAJAAgACwAMAAkADQAOAA8ADQAQAA4AEQASABMAEQAUABIAFQAWABcAFQAYABYAGQAaABsAGQAcABoAHQAZABsA")],
+"material": SubResource("StandardMaterial3D_sltak"),
+"name": "appliance",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 50,
+"vertex_data": PackedByteArray("aOkAAJiZ/78AAP7/mJn/v2jp/v+Ymf+/AAAAAJiZ/7//////mJmfjWjpAACYmZ+NaOn+/5iZn43//wAAmJmfjf//AAAAAP//aOkAAJiZ/////wAAmJn//wAAAAAAAP//AAAAAJiZ//8AAAAAmJn/vwAA/v8AAP+/AAD+/5iZ/78AAAAAAAD/v/////+Ymf+///8AAAAA/7///wAAmJn/v/////8AAP+///8AAAAA//8AAP7/AAD//wAAAAAAAP///////wAA//9o6f//mJn//wAA/v8AAP///////wAA//8AAP7/mJn///////+Ymf//aOmo48vM/79o6QAAmJn/v2jp/v+Ymf+/aOn/f////79o6VYcy8z/v////3///wCAaOmo48vM0Yj//6jjy8zRiGjp/3///wCA//9WHMvM0Yho6VYcy8zRiP//VhzLzP+//////5iZ/7///wAAmJn/v////3////+///+o48vM/79o6QAAAAD//2jpAAAAAP//aOn//wAA//9o6f//AAD////////////////////////+//9/AAD/f/7//38AAP9//3//P/9//z//f/8//3//P/9//z//f////3////9/////f////38AAP9/AAD/fwAA/38AAP///3/+//9//v//f////3//f/+//3//v/9//7//f/+//3//v/9//v//f/7//3/+//9//v8AgP7//3////7//3/+//9//3///wAA/38AAP9//38AAP9/AAD/fwAA/38AAP9/AAD/f/8/////f////3//f/+/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_0cdws")
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_hx3or"]
+points = PackedVector3Array(0.34269845, -0.23029315, 0.045866147, 0.32542217, -0.011506974, 0.033995476, 0.32546243, -0.011476131, 0, -0.0026646256, -0.2626984, 0.03507461, -0.0026646256, 0.00172019, 0.03507461, 0.014571386, -0.2495021, 3.469447e-18, 0.32546243, -0.2495021, 0, 0.014571386, -0.011476131, 3.469447e-18, 0.3048694, -0.084624805, 0.051269837, 0.34269845, -0.2626984, 0.03507461, 0.34269845, -0.030659184, 0.045866147, 0.3048694, -0.17632753, 0.051269837, 0.34269845, -0.084624805, 0.051269837, 0.34269845, -0.17632753, 0.051269837, 0.3048694, -0.030659184, 0.045866147, 0.3048694, -0.23029315, 0.045866147)
+
+[node name="Microwave002" type="Node3D" unique_id=536935541]
+transform = Transform3D(1.7, 0, 0, 0, 1.7, 0, 0, 0, 1.7, 0, 0, 0)
+
+[node name="microwave_002" type="MeshInstance3D" parent="." unique_id=925199662]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.17000008, 0.26, -0.025000095)
+mesh = SubResource("ArrayMesh_gvlq1")
+
+[node name="microwave_002_col" type="StaticBody3D" parent="microwave_002" unique_id=866442030]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="microwave_002/microwave_002_col" unique_id=1424478552]
+shape = SubResource("ConvexPolygonShape3D_hx3or")

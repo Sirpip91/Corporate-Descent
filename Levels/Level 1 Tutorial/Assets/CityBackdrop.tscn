@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Texture2D" path="res://Levels/Level 1 Tutorial/Assets/Backgrounds/One Room Apartment - midnight_background3.png" id="1_city"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_city"]
+shading_mode = 0
+albedo_texture = ExtResource("1_city")
+texture_filter = 2
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_city"]
+size = Vector2(15, 10)
+orientation = 2
+
+[node name="CityBackdrop" type="MeshInstance3D"]
+mesh = SubResource("PlaneMesh_city")
+surface_material_override/0 = SubResource("StandardMaterial3D_city")

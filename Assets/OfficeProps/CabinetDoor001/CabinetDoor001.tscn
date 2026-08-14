@@ -1,0 +1,57 @@
+[gd_scene format=4]
+
+[ext_resource type="Texture2D" path="res://Assets/OfficeProps/CabinetDoor001/CabinetDoor001_cabinet.png" id="1_mcs48"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gvct5"]
+resource_name = "cabinet"
+cull_mode = 2
+albedo_texture = ExtResource("1_mcs48")
+roughness = 0.5
+texture_filter = 2
+metadata/_gltf_primary_texture_coord = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_suj5q"]
+_surfaces = [{
+"aabb": AABB(-0.49999997, -0.9545454, -0.049999997, 1.0227271, 1.9090908, 0.099999994),
+"format": 34896613377,
+"index_count": 24,
+"index_data": PackedByteArray("AAABAAIAAAADAAEAAgAEAAAAAwAFAAEAAgAGAAQABAAGAAUAAwAHAAUABAAFAAcA"),
+"name": "cabinet",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("AAAAAAAAAAD/////AAAAAAAA//8AAAAA//8AAAAAAAAAAAAA//8AAP///////wAAAAD/////AAD//wAA//8AAA==")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_elx3m"]
+resource_name = "CabinetDoor001_Cube_036"
+_surfaces = [{
+"aabb": AABB(-0.49999997, -0.9545454, -0.049999997, 1.0227271, 1.9090908, 0.099999994),
+"attribute_data": PackedByteArray("0t5zegX7Fq/S3havBftzepYC1Yty1lT9lgJU/XLW1YvY1mN7/AJ8hvwCY3vY1nyG2NbxavwCCnb8AvFq2NYKdg=="),
+"format": 34896613399,
+"index_count": 24,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0A"),
+"material": SubResource("StandardMaterial3D_gvct5"),
+"name": "cabinet",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 16,
+"vertex_data": PackedByteArray("AAAAAAAA////////AAD//wAA//8AAP////8AAAAA//8AAAAA////v/////////+///8AAP///78AAP//////v///AAAAAFTV////////VNX/////AABU1f//AAD//1TVAAD//wAAVNUAAAAA//9U1QAAAAAAAFTVAAD/////VNX///9/////f////3////9//////////////////////6qqVFWqqlRVqqpUVaqqVFVU1VTVVNVU1VTVVNVU1VTV")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_suj5q")
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_fn70d"]
+points = PackedVector3Array(0.49241856, 0.87276185, 0.049999997, -0.5151508, -0.96965075, -0.06515079, -0.46216467, -0.87276185, 0.049999997, 0.5454047, -0.96965075, -0.06515079, -0.5151508, 0.96965075, -0.06515079, 0.5454047, 0.96965075, -0.06515079, -0.46216467, 0.87276185, 0.049999997, 0.49241856, -0.87276185, 0.049999997)
+
+[node name="CabinetDoor001" type="Node3D" unique_id=762809510]
+
+[node name="cabinet door_001" type="MeshInstance3D" parent="." unique_id=480773151]
+transform = Transform3D(0.44, 0, 0, 0, 0.44, 0, 0, 0, 0.2, -0.004999995, 0.41999996, 0)
+mesh = SubResource("ArrayMesh_elx3m")
+
+[node name="cabinet door_001_col" type="StaticBody3D" parent="cabinet door_001" unique_id=1376718481]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="cabinet door_001/cabinet door_001_col" unique_id=1146069048]
+shape = SubResource("ConvexPolygonShape3D_fn70d")

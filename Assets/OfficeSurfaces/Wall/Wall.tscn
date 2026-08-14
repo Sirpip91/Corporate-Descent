@@ -1,0 +1,57 @@
+[gd_scene format=3]
+
+[ext_resource type="Texture2D" path="res://Assets/OfficeSurfaces/Wall/Wall_walls.png" id="1_aeh1i"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xiwl4"]
+resource_name = "walls"
+cull_mode = 2
+albedo_texture = ExtResource("1_aeh1i")
+roughness = 0.5
+texture_filter = 2
+metadata/_gltf_primary_texture_coord = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_ihy2o"]
+_surfaces = [{
+"aabb": AABB(-3.948792e-07, 1.1920929e-07, -0.50000006, 1e-05, 2.5, 1.0000001),
+"format": 34896613377,
+"index_count": 6,
+"index_data": PackedByteArray(0, 0, 1, 0, 2, 0, 0, 0, 3, 0, 1, 0),
+"name": "walls",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray(0, 0, 0, 0, 255, 255, 0, 0, 55, 20, 255, 255, 0, 0, 0, 0, 246, 11, 255, 255, 255, 255, 0, 0, 65, 8, 0, 0, 0, 0, 0, 0)
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_piba5"]
+resource_name = "Wall_Plane_010"
+_surfaces = [{
+"aabb": AABB(-3.948792e-07, 1.1920929e-07, -0.50000006, 1e-05, 2.5, 1.0000001),
+"attribute_data": PackedByteArray(255, 255, 255, 255, 255, 127, 255, 127, 255, 255, 255, 127, 255, 127, 255, 255),
+"format": 34896613399,
+"index_count": 6,
+"index_data": PackedByteArray(0, 0, 1, 0, 2, 0, 0, 0, 3, 0, 1, 0),
+"material": SubResource("StandardMaterial3D_xiwl4"),
+"name": "walls",
+"primitive": 3,
+"uv_scale": Vector4(1.9999999, 4, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray(0, 0, 0, 0, 255, 255, 255, 191, 55, 20, 255, 255, 0, 0, 255, 191, 246, 11, 255, 255, 255, 255, 255, 191, 65, 8, 0, 0, 0, 0, 255, 191, 255, 127, 255, 255, 255, 127, 254, 255, 255, 127, 254, 255, 255, 127, 255, 255)
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_ihy2o")
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_mqfrt"]
+points = PackedVector3Array(-0.019833503, -0.019841194, -0.51984125, 0.019833503, 2.5198412, 0.5119048, -0.019833503, 2.5198412, 0.5119048, 0.019833503, -0.019841194, 0.5119048, 0.019833503, 2.5198412, -0.51984125, -0.019833503, 2.5198412, -0.51984125, -0.019833503, -0.019841194, 0.5119048, 0.019833503, -0.019841194, -0.51984125)
+
+[node name="Wall" type="Node3D" unique_id=2030938019]
+transform = Transform3D(1.7, 0, 0, 0, 1.7, 0, 0, 0, 1.7, 0, 0, 0)
+
+[node name="wall" type="MeshInstance3D" parent="." unique_id=549970243]
+mesh = SubResource("ArrayMesh_piba5")
+
+[node name="wall_col" type="StaticBody3D" parent="wall" unique_id=1888972620]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="wall/wall_col" unique_id=529070289]
+shape = SubResource("ConvexPolygonShape3D_mqfrt")

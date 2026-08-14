@@ -1,0 +1,58 @@
+[gd_scene format=3]
+
+[ext_resource type="Texture2D" path="res://Assets/OfficeProps/ElevatorButton/ElevatorButton_doors.png" id="1_a40p2"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ugcb6"]
+resource_name = "doors"
+cull_mode = 2
+albedo_texture = ExtResource("1_a40p2")
+roughness = 0.5
+texture_filter = 2
+metadata/_gltf_primary_texture_coord = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_ikl5o"]
+_surfaces = [{
+"aabb": AABB(-1.4901161e-08, -0.16, -0.06000018, 1e-05, 0.32000002, 0.12000036),
+"format": 34896613377,
+"index_count": 6,
+"index_data": PackedByteArray(0, 0, 1, 0, 2, 0, 0, 0, 3, 0, 1, 0),
+"name": "doors",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 255, 255, 255, 255, 0, 0, 0, 0, 255, 255, 0, 0, 0, 0, 0, 0, 0, 0, 255, 255, 0, 0)
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_8fd3o"]
+resource_name = "ElevatorButton_Cube_046"
+_surfaces = [{
+"aabb": AABB(-1.4901161e-08, -0.16, -0.06000018, 1e-05, 0.32000002, 0.12000036),
+"attribute_data": PackedByteArray(168, 89, 165, 79, 128, 76, 92, 44, 168, 89, 92, 44, 128, 76, 165, 79),
+"format": 34896613399,
+"index_count": 6,
+"index_data": PackedByteArray(0, 0, 1, 0, 2, 0, 0, 0, 3, 0, 1, 0),
+"material": SubResource("StandardMaterial3D_ugcb6"),
+"name": "doors",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray(0, 0, 0, 0, 0, 0, 255, 191, 0, 0, 255, 255, 255, 255, 255, 191, 0, 0, 255, 255, 0, 0, 255, 191, 0, 0, 0, 0, 255, 255, 255, 191, 255, 127, 0, 0, 255, 127, 0, 0, 255, 127, 0, 0, 255, 127, 0, 0)
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_ikl5o")
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_e5wwx"]
+points = PackedVector3Array(-1.4901161e-08, 0.16000003, 0.06000018, -1.4901161e-08, 0.16000003, -0.06000018, -1.4901161e-08, -0.16, 0.06000018, -1.4901161e-08, -0.16, -0.06000018)
+
+[node name="ElevatorButton" type="Node3D" unique_id=1871389702]
+transform = Transform3D(1.7, 0, 0, 0, 1.7, 0, 0, 0, 1.7, 0, 0, 0)
+
+[node name="elevator button" type="MeshInstance3D" parent="." unique_id=1401745902]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.2452087e-06, 0.16000003, 0)
+mesh = SubResource("ArrayMesh_8fd3o")
+
+[node name="elevator button_col" type="StaticBody3D" parent="elevator button" unique_id=708215274]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="elevator button/elevator button_col" unique_id=875837519]
+shape = SubResource("ConvexPolygonShape3D_e5wwx")

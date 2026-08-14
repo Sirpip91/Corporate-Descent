@@ -1,0 +1,53 @@
+[gd_scene format=4]
+
+[ext_resource type="Texture2D" path="res://Assets/ElectronicsMisc/CellPhoneBattery11/CellPhoneBattery11_cell_phone_battery_1.png" id="1_x5661"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3v0q3"]
+roughness = 0.5
+resource_name = "cell_phone_battery_1"
+cull_mode = 2
+albedo_texture = ExtResource("1_x5661")
+texture_filter = 2
+texture_repeat = false
+metadata/_gltf_primary_texture_coord = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_exvk3"]
+_surfaces = [{
+"aabb": AABB(-0.029995425, -5.0211697e-09, -0.044997294, 0.05999947, 0.0120000085, 0.09000015),
+"format": 34896613377,
+"index_count": 84,
+"index_data": PackedByteArray("AAABAAIAAwACAAEAAwAEAAIABAAAAAIAAQAFAAMABQAEAAMAAQAGAAUABgAHAAUAAQAIAAYABgAIAAcAAAAIAAEACQAFAAcACQAEAAUACAAJAAcABAAKAAAACAALAAkABAAMAAoABAAJAAwACgANAAAACgAMAA0ACAAAAA4ACAAOAAsADgAAAA0ADAAJAA8ACwAPAAkADQAMAA8ACwAOAA8ADQAPAA4A"),
+"name": "cell_phone_battery_1",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 16,
+"vertex_data": PackedByteArray("///MTP//AACi8P////8AAP7/MrP//wAAovD//wAAAAD+/zKzAAAAAFwP/v8AAAAAXA/+////AAAAADKzAAAAAAAAMrP//wAAAADMTAAAAAD//8xMAAAAAAAAzEz//wAAovAAAAAAAACi8AAA//8AAFwPAAD//wAAXA8AAAAAAAA=")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_pkk0w"]
+resource_name = "CellPhoneBattery11_cell_phone_battery_1_1_001"
+_surfaces = [{
+"aabb": AABB(-0.029995425, -5.0211697e-09, -0.044997294, 0.05999947, 0.0120000085, 0.09000015),
+"attribute_data": PackedByteArray("1WqF+L9kwebVajLu4AQy7roKwea6Cv//v2T//+AEhfj/BybjqmoAAP8HAACqaibjVJUm4//3AAD/9ybjVJUAAKp6JuNUhQAAqnoAAFSFJuPo/v3uB/j//+j+8Pdyjpj3U5X//1OVweYH+MHmco4v7v8HAAAAACbj/wcm4wAAAACqcibjVH0AAKpyAABUfSbjqooAAFSVJuOqiibjVJUAAFSFJuNUjQAAVIUAAFSNJuOqegAAVIUm46p6JuNUhQAA"),
+"format": 34896613399,
+"index_count": 84,
+"index_data": PackedByteArray("AAABAAIAAAADAAEAAQADAAQAAwAAAAUABQAAAAYAAwAFAAcACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUAFQAXABgAFwAUABkAGQAUABoAFwAZABsAHAAdAB4AHAAfAB0AIAAhACIAIAAjACEAJAAlACYAJAAnACUAKAApACoAKAArACkALAAtAC4ALAAvAC0A"),
+"material": SubResource("StandardMaterial3D_3v0q3"),
+"name": "cell_phone_battery_1",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 48,
+"vertex_data": PackedByteArray("///MTP//PYCi8P////80gP7/MrP//5WBAAAys///NoBcD/7///8AgFwPAAD//y6AovAAAP//AIAAAMxM//9lgaLw/////wAAXA/+/wAAAACi8P//AAAAAFwP/v///wAAovAAAP////9cDwAAAAD//1wPAAD/////ovAAAAAA//8AADKz//+qKgAAzEwAAKoqAAAyswAAqioAAMxM//+qKgAAzEwAAAAAXA/+/wAAAAAAADKzAAAAAP7/MrMAAAAAovD//wAAAACi8AAAAAAAAFwPAAAAAAAA///MTAAAAACi8P//AABUFv7/MrP//1QWovD/////VBb+/zKzAABUFlwP/v///1QWAAAyswAAVBZcD/7/AABUFgAAMrP//1QW///MTAAAqumi8AAA//+q6f//zEz//6rpovAAAAAAqukAAMxM//8COlwPAAAAAAI6AADMTAAAAjpcDwAA//8COv7/MrMAAFTV///MTP//VNX+/zKz//9U1f//zEwAAFTV/3//f/9//3//f/9//3//f/9/////f/9//3////9//3//f/+//3//v/9//7//f/+//3//P/9//z//f/8//3//P1RVqqpUVaqqVFWqqlRVqqrRgSz+hIF5/oWLefRHgLf//3/+/xaA6P//f/7/QoO7/AQ19hUENfYVBDX2FQQ19hUJagS1CWoEtQlqBLUJagS19ZX6SvWV+kr1lfpK9ZX6Sv45/pz+Of6c/jn+nP45/pyqqlRVqqpUVaqqVFWqqlRV")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_exvk3")
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_q85nq"]
+points = PackedVector3Array(-0.028770374, 0.0023703738, -0.04282941, 0.029281165, 0.0091188345, 0.043589804, 0.028770374, 0.0023703738, 0.04282941, 0.029281165, 0.0091188345, -0.043589804, -0.02655622, 0.01184378, 0.043587316, -0.027852107, -0.0007130271, 0.045714285, 0.027852107, -0.0007130271, -0.045714285, -0.02655622, 0.01184378, -0.043587316, 0.02655622, 0.01184378, 0.043587316, -0.027852107, -0.0007130271, -0.045714285, 0.027852107, -0.0007130271, 0.045714285, 0.02655622, 0.01184378, -0.043587316, -0.029281165, 0.0091188345, 0.043589804, -0.029281165, 0.0091188345, -0.043589804, 0.028770374, 0.0023703738, -0.04282941, -0.028770374, 0.0023703738, 0.04282941)
+
+[node name="CellPhoneBattery11" type="Node3D" unique_id=1240502102]
+
+[node name="cell_phone_battery_1_1" type="MeshInstance3D" parent="." unique_id=535476872]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.8146973e-06, 0, -2.861023e-06)
+mesh = SubResource("ArrayMesh_pkk0w")

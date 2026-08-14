@@ -157,6 +157,16 @@ func _build_graphics_panel() -> VBoxContainer:
 
 	panel.add_child(HSeparator.new())
 
+	# Volumetric fog (light rays) — a downgrade-only toggle, see GameState.apply_graphics_settings()
+	var fog_check := CheckBox.new()
+	fog_check.text = "Volumetric Fog"
+	fog_check.add_theme_font_size_override("font_size", 22)
+	fog_check.button_pressed = GameState.volumetric_fog_enabled
+	fog_check.toggled.connect(_on_volumetric_fog_toggled)
+	panel.add_child(fog_check)
+
+	panel.add_child(HSeparator.new())
+
 	var is_fullscreen := DisplayServer.window_get_mode() == DisplayServer.WINDOW_MODE_FULLSCREEN \
 		or DisplayServer.window_get_mode() == DisplayServer.WINDOW_MODE_EXCLUSIVE_FULLSCREEN
 
@@ -302,6 +312,11 @@ func _show_panel(panel: Control) -> void:
 
 func _on_fps_toggled(on: bool) -> void:
 	UI.set_fps_visible(on)
+
+
+func _on_volumetric_fog_toggled(on: bool) -> void:
+	GameState.volumetric_fog_enabled = on
+	GameState.apply_graphics_settings()
 
 
 func _on_master_volume_changed(value: float) -> void:

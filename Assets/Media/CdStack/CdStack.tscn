@@ -1,0 +1,60 @@
+[gd_scene format=4]
+
+[ext_resource type="Texture2D" path="res://Assets/Media/CdStack/CdStack_media.png" id="1_4ka8k"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dwnno"]
+resource_name = "media"
+cull_mode = 2
+albedo_texture = ExtResource("1_4ka8k")
+roughness = 0.5
+texture_filter = 2
+metadata/_gltf_primary_texture_coord = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_7dig0"]
+_surfaces = [{
+"aabb": AABB(-0.071, -0.009999995, -0.125, 0.142, 0.25, 0.25),
+"format": 34896613377,
+"index_count": 84,
+"index_data": PackedByteArray("DAANAAIACAAMAAIADAAIAAkACQAIAAoACAACAAoACQAKAAsADAAJAA4ADgAJAAsABwALAAoADgALAAcABwAKAAIAAAAMAA4ADAAAAA0AAAAOAAYABgAOAAcAAAAGAA8ABgAHAA8AAAAPAA0AAgAFAAcADwABAA0ADQADAAIAAgADAAUADQABAAMABwAFAAQABwAEAA8ABAAFAAMADwAEAAEABAADAAEA"),
+"lods": [4.009989e-05, PackedByteArray("AAABAAIAAQADAAIABAADAAEAAAAEAAEABAAFAAMAAgADAAUAAAAGAAQABwAFAAQAAgAFAAcABgAHAAQACAAAAAIAAAAJAAYAAAAIAAkABgAJAAcACAACAAoACQAIAAoABwAKAAIACQAKAAsABwALAAoACQALAAcA")],
+"name": "media",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 16,
+"vertex_data": PackedByteArray("AAAAAAAAAAAAAP//AAAAAAAAhOv/fwAAAAD///9/AAD/////AAAAAP//////fwAA//8AAAAAAAD//4Tr/38AAAAAAAD//wAA//8AAP//AAAAAITr//8AAP//hOv//wAAAAAAAP9/AAAAAITrAAAAAP//AAD/fwAA//+E6wAAAAA=")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_nmppj"]
+resource_name = "CdStack_Cube_024"
+_surfaces = [{
+"aabb": AABB(-0.071, -0.009999995, -0.125, 0.142, 0.25, 0.25),
+"attribute_data": PackedByteArray("HqBIFx6grgHrqmgD66quAbi1SBe4tWgDEy3LZd4BVX7eActlEy1Vfk2mj4aNfo+GjX71cE2mWlsYe1pbGHv1cNiQetZiqTr+2JA6/mKpetbT9CQ60/S+T47ovk+O6CQ6a/w2NtDmrB1r/Kwd0OY2NpL5ebP34++akvnvmvfjebPwebA2e3YlHvB5JR57drA266pIFx6gaANTBVV+UwXLZU2m9XCNflpb0/TxRI7o8UQ="),
+"format": 34896613399,
+"index_count": 84,
+"index_data": PackedByteArray("JAAlAAIAJAAAACUABAAkAAIABAACAAUAJQADAAIAJQABAAMABgAmACcABgAJACYAJgAIACcAJgAHAAgAKAALAAwAKAAKAAsADQAoAAwADQAMACkADAAOACkADAAPAA4AEAARABIAEAATABEAKgAWACsAKgAVABYAFAAqACsAFAArABcAGAAZABoAGAAbABkAHAAdAB4AHAAfAB0AIAAhACIAIAAjACEA"),
+"lods": [4.009989e-05, PackedByteArray("AAABAAIAAQADAAIABAAAAAIABAACAAUABgAHAAgABgAJAAcACgALAAwADQAKAAwADQAMAA4ADAAPAA4AEAARABIAEAATABEAFAAVABYAFAAWABcAGAAZABoAGAAbABkAHAAdAB4AHAAfAB0AIAAhACIAIAAjACEA")],
+"material": SubResource("StandardMaterial3D_dwnno"),
+"name": "media",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 44,
+"vertex_data": PackedByteArray("AAAAAAAA/78AAP//AAD/vwAAhOv/f/+/AAD///9//78AAAAA////vwAAhOv///+/AAAAAAAA////////AAD//wAA//8AAP////8AAAAA/////wAA//9U1f//hOv//1TV//+E6/9/VNX//wAAAABU1f////8AAFTV//////9/VNX//wAA/////wAAhOv///////+E6/////8AAAAA/////wAAAAAAAP//AAAAAP///////wAA////////AAAAAP////+E6/9/VNUAAITr//9U1QAAhOv/f1TV//+E6///VNX/////AABU1QAA////f1TVAAD//wAAVNX//////39U1QAAhOv/f/+///////9//7///4Tr/3//vwAA////f/+/AAAAAP9//78AAITrAAD/v///hOsAAP//AACE6wAA/////wAA/39U1f//hOsAAFTVAAAAAP9//////wAA/3////9/////f////3////9/////f////3////8//7//P/+//z//v/8//7+qqlRVqqpUVaqqVFWqqlVVqqpUVaqqVFX/f/9//3//f/9//3//f/9//3//P/9//z//f/8//3//P1TVqipU1aoqVNWqKlTVqipU1aoqVNWqKlTVqipU1aoq/3//f/9//3//f/9//3//f/9/////f////z//v/8//7+qqlRVqqpVVf9//z//f/8/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_7dig0")
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_ax34d"]
+points = PackedVector3Array(0.070999995, -0.007045121, -0.12206949, 0.070999995, 0.21799585, 0.12209338, 0.07382691, 0.24198413, 0.0039527165, -0.070999995, 0.23852827, -0.12355212, -0.070999995, -0.008527604, 0.12355212, -0.070999995, -0.008527604, -0.12355212, -0.070999995, 0.21922627, 0.12355212, 0.070999995, -0.007045121, 0.12206949, 0.06877523, 0.24, -0.12499981, -0.07298413, 0.24195927, 0.0039527165, 0.070999995, 0.23709385, -0.12209338)
+
+[node name="CdStack" type="Node3D" unique_id=2094859072]
+transform = Transform3D(1.7, 0, 0, 0, 1.7, 0, 0, 0, 1.7, 0, 0, 0)
+
+[node name="cd stack" type="MeshInstance3D" parent="." unique_id=1861638939]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.00999999, 0)
+mesh = SubResource("ArrayMesh_nmppj")
+
+[node name="cd stack_col" type="StaticBody3D" parent="cd stack" unique_id=1450708339]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="cd stack/cd stack_col" unique_id=1372887530]
+shape = SubResource("ConvexPolygonShape3D_ax34d")
