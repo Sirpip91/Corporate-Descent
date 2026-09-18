@@ -87,13 +87,10 @@ texture_filter = 2
 [sub_resource type="PlaneMesh" id="PlaneMesh_gdw3i"]
 size = Vector2(23, 4)
 
-[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_unqso"]
-data = PackedVector3Array(10.822499, 0, 2, -10.822499, 0, 2, 10.822499, 0, -2, -10.822499, 0, 2, -10.822499, 0, -2, 10.822499, 0, -2)
+[sub_resource type="BoxShape3D" id="BoxShape3D_k0ifv"]
+size = Vector3(23, 0.001, 4)
 
-[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_sc4xa"]
-data = PackedVector3Array(11.5, 0, 2, -11.5, 0, 2, 11.5, 0, -2, -11.5, 0, 2, -11.5, 0, -2, 11.5, 0, -2)
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_k0ifv"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vwy5n"]
 cull_mode = 2
 albedo_texture = ExtResource("4_ubxuc")
 uv1_scale = Vector3(25.41, 0.42600003, 1)
@@ -102,7 +99,7 @@ texture_filter = 2
 [sub_resource type="PlaneMesh" id="PlaneMesh_y525h"]
 size = Vector2(25.41, 1.065)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vwy5n"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yrdot"]
 cull_mode = 2
 albedo_texture = ExtResource("4_ubxuc")
 uv1_scale = Vector3(25.41, 0.42600003, 1)
@@ -111,7 +108,7 @@ texture_filter = 2
 [sub_resource type="PlaneMesh" id="PlaneMesh_cipgo"]
 size = Vector2(25.41, 1.065)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yrdot"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6hhjh"]
 cull_mode = 2
 albedo_texture = ExtResource("4_ubxuc")
 uv1_scale = Vector3(2.59, 1.6, 1)
@@ -123,7 +120,7 @@ size = Vector2(2.59, 4)
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_1g6cm"]
 load_path = "res://.godot/imported/Wall_walls.png-d83c519031d54adc9147793304a5ab8d.s3tc.ctex"
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6hhjh"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kkku1"]
 cull_mode = 2
 albedo_texture = SubResource("CompressedTexture2D_1g6cm")
 uv1_scale = Vector3(3.015, 1.6, 1)
@@ -135,7 +132,7 @@ size = Vector2(3.015, 4)
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_us83b"]
 load_path = "res://.godot/imported/Wall_walls.png-d83c519031d54adc9147793304a5ab8d.s3tc.ctex"
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kkku1"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_d57e4"]
 cull_mode = 2
 albedo_texture = SubResource("CompressedTexture2D_us83b")
 uv1_scale = Vector3(7, 0.282, 1)
@@ -147,7 +144,7 @@ size = Vector2(7, 0.705)
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_sc4xa"]
 load_path = "res://.godot/imported/Wall_walls.png-d83c519031d54adc9147793304a5ab8d.s3tc.ctex"
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_d57e4"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_askw3"]
 cull_mode = 2
 albedo_texture = SubResource("CompressedTexture2D_sc4xa")
 uv1_scale = Vector3(1.7, 1.6, 1)
@@ -156,7 +153,7 @@ texture_filter = 2
 [sub_resource type="PlaneMesh" id="PlaneMesh_us83b"]
 size = Vector2(1.7, 4)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_askw3"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lv77v"]
 cull_mode = 2
 albedo_texture = ExtResource("4_ubxuc")
 uv1_scale = Vector3(8.7, 1.6, 1)
@@ -165,10 +162,10 @@ texture_filter = 2
 [sub_resource type="PlaneMesh" id="PlaneMesh_kkku1"]
 size = Vector2(8.7, 4)
 
-[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_lv77v"]
-data = PackedVector3Array(4.35, 0, 2, -4.35, 0, 2, 4.35, 0, -2, -4.35, 0, 2, -4.35, 0, -2, 4.35, 0, -2)
+[sub_resource type="BoxShape3D" id="BoxShape3D_lv77v"]
+size = Vector3(8.7, 0.1, 4)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lv77v"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8nt2l"]
 cull_mode = 2
 albedo_texture = ExtResource("7_c0ocj")
 uv1_scale = Vector3(5.6, 4, 1)
@@ -192,7 +189,7 @@ size = Vector3(40, 0.8, 0.4)
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_70hq4"]
 load_path = "res://.godot/imported/Ceiling_ceiling.png-0115040333cc661bfa34873cb38ae40c.s3tc.ctex"
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8nt2l"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kwk3w"]
 cull_mode = 2
 albedo_texture = SubResource("CompressedTexture2D_70hq4")
 uv1_scale = Vector3(5.6, 4, 1)
@@ -218,7 +215,7 @@ ambient_light_color = Color(0.5, 0.55, 0.6, 1)
 ambient_light_energy = 0.3
 tonemap_mode = 2
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kwk3w"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8h5fl"]
 cull_mode = 2
 albedo_texture = ExtResource("4_ubxuc")
 uv1_scale = Vector3(20.025, 4, 1)
@@ -227,7 +224,7 @@ texture_filter = 2
 [sub_resource type="PlaneMesh" id="PlaneMesh_lv77v"]
 size = Vector2(20.025, 10)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8h5fl"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_h45k1"]
 cull_mode = 2
 albedo_texture = ExtResource("7_c0ocj")
 uv1_scale = Vector3(5.6, 4, 1)
@@ -275,65 +272,60 @@ transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 3.01
 material_override = SubResource("StandardMaterial3D_w1uwr")
 mesh = SubResource("PlaneMesh_gdw3i")
 
-[node name="StaticBody3D2" type="StaticBody3D" parent="WallWhite/ModularWall3" unique_id=816305345]
+[node name="StaticBody3D" type="StaticBody3D" parent="WallWhite/ModularWall3" unique_id=1770311570]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="WallWhite/ModularWall3/StaticBody3D2" unique_id=1461170558]
-shape = SubResource("ConcavePolygonShape3D_unqso")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="WallWhite/ModularWall3" unique_id=985168719]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="WallWhite/ModularWall3/StaticBody3D" unique_id=676107071]
-shape = SubResource("ConcavePolygonShape3D_sc4xa")
+[node name="CollisionShape3D" type="CollisionShape3D" parent="WallWhite/ModularWall3/StaticBody3D" unique_id=1712487626]
+shape = SubResource("BoxShape3D_k0ifv")
 
 [node name="ModularWallSouth_Header" parent="WallWhite" unique_id=1253424384 instance=ExtResource("3_778cc")]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -1.295, 3.4675, -10)
-material_override = SubResource("StandardMaterial3D_k0ifv")
+material_override = SubResource("StandardMaterial3D_vwy5n")
 mesh = SubResource("PlaneMesh_y525h")
 
 [node name="ModularWallSouth_Sill" parent="WallWhite" unique_id=234824646 instance=ExtResource("3_778cc")]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -1.295, 0.5325, -10)
-material_override = SubResource("StandardMaterial3D_vwy5n")
+material_override = SubResource("StandardMaterial3D_yrdot")
 mesh = SubResource("PlaneMesh_cipgo")
 
 [node name="ModularWallSouth_East" parent="WallWhite" unique_id=1458869041 instance=ExtResource("3_778cc")]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 12.705, 2, -10)
-material_override = SubResource("StandardMaterial3D_yrdot")
+material_override = SubResource("StandardMaterial3D_6hhjh")
 mesh = SubResource("PlaneMesh_ncbef")
 
 [node name="ModularWall5" parent="WallWhite" unique_id=1680743444 instance=ExtResource("3_778cc")]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -14.51293, 1.746367, 10)
-material_override = SubResource("StandardMaterial3D_6hhjh")
+material_override = SubResource("StandardMaterial3D_kkku1")
 mesh = SubResource("PlaneMesh_gs22k")
 texture = SubResource("CompressedTexture2D_1g6cm")
 
 [node name="ModularWall6" parent="WallWhite" unique_id=1800917655 instance=ExtResource("3_778cc")]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -10.521861, 3.531541, 9.957102)
-material_override = SubResource("StandardMaterial3D_kkku1")
+material_override = SubResource("StandardMaterial3D_d57e4")
 mesh = SubResource("PlaneMesh_y0j88")
 texture = SubResource("CompressedTexture2D_us83b")
 
 [node name="ModularWall7" parent="WallWhite" unique_id=1392677848 instance=ExtResource("3_778cc")]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -10.728382, 1.746367, 10)
-material_override = SubResource("StandardMaterial3D_d57e4")
+material_override = SubResource("StandardMaterial3D_askw3")
 mesh = SubResource("PlaneMesh_us83b")
 texture = SubResource("CompressedTexture2D_sc4xa")
 
 [node name="ModularWall4" parent="WallWhite" unique_id=1340211636 instance=ExtResource("3_778cc")]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -10.040173, 2, 5.277814)
-material_override = SubResource("StandardMaterial3D_askw3")
+material_override = SubResource("StandardMaterial3D_lv77v")
 mesh = SubResource("PlaneMesh_kkku1")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="WallWhite/ModularWall4" unique_id=1506080538]
+[node name="StaticBody3D" type="StaticBody3D" parent="WallWhite/ModularWall4" unique_id=1022853466]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="WallWhite/ModularWall4/StaticBody3D" unique_id=1490869440]
-shape = SubResource("ConcavePolygonShape3D_lv77v")
+[node name="CollisionShape3D" type="CollisionShape3D" parent="WallWhite/ModularWall4/StaticBody3D" unique_id=1028895435]
+shape = SubResource("BoxShape3D_lv77v")
 
 [node name="Player" parent="." unique_id=850230065 instance=ExtResource("4_778cc")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.3551664, 0.15733153, 0.5386801)
 
 [node name="ModularCeiling" parent="." unique_id=1771687823 instance=ExtResource("6_7dn25")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.7689772, 0)
-material_override = SubResource("StandardMaterial3D_lv77v")
+material_override = SubResource("StandardMaterial3D_8nt2l")
 mesh = SubResource("PlaneMesh_2pyi3")
 meters_per_tile_x = 5.0
 meters_per_tile_y = 5.0
@@ -491,7 +483,7 @@ mesh = SubResource("BoxMesh_7l77t")
 
 [node name="ModularCeiling2" parent="." unique_id=1300530933 instance=ExtResource("6_7dn25")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.7689772, 19.908443)
-material_override = SubResource("StandardMaterial3D_8nt2l")
+material_override = SubResource("StandardMaterial3D_kwk3w")
 mesh = SubResource("PlaneMesh_06rti")
 texture = SubResource("CompressedTexture2D_70hq4")
 meters_per_tile_x = 5.0
@@ -722,7 +714,7 @@ transform = Transform3D(-0.5925925, 0, 5.1806072e-08, 0, 0.5925925, 0, -5.180607
 
 [node name="NPC1" parent="NPCs" unique_id=238139284 instance=ExtResource("31_3f8bm")]
 transform = Transform3D(1.35, 0, 0, 0, 1.35, 0, 0, 0, 1.35, -12.871475, 0, -9.121513)
-look = 3
+look = 2
 
 [node name="NPC2" parent="NPCs" unique_id=638650777 instance=ExtResource("31_3f8bm")]
 transform = Transform3D(-1.35, 0, -1.1802075e-07, 0, 1.35, 0, 1.1802075e-07, 0, -1.35, 1.7335031, -0.0020945456, 6.8474617)
@@ -760,12 +752,12 @@ transform = Transform3D(-1.4, 0, -2.1139412e-07, 0, 1.4, 0, 2.1139412e-07, 0, -1
 
 [node name="ModularWall2" parent="." unique_id=879126835 instance=ExtResource("3_778cc")]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 23.754988, -1, -9.949453)
-material_override = SubResource("StandardMaterial3D_kwk3w")
+material_override = SubResource("StandardMaterial3D_8h5fl")
 mesh = SubResource("PlaneMesh_lv77v")
 
 [node name="ModularCeiling3" parent="." unique_id=1719467614 instance=ExtResource("6_7dn25")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28, 3.7689772, 0)
-material_override = SubResource("StandardMaterial3D_8h5fl")
+material_override = SubResource("StandardMaterial3D_h45k1")
 mesh = SubResource("PlaneMesh_2pyi3")
 meters_per_tile_x = 5.0
 meters_per_tile_y = 5.0
@@ -784,6 +776,7 @@ transform = Transform3D(2.02, 0, 0, 0, 2.02, 0, 0, 0, 2.02, -12.242251, 2.582105
 
 [node name="NPCFemale1" parent="." unique_id=607925936 instance=ExtResource("38_sc4xa")]
 transform = Transform3D(1.0513359, 0, -1.0699033, 0, 1.5, 0, 1.0699033, 0, 1.0513359, -6.5494223, -0.0046482086, 5.97943)
+timeline_id = "interview_candidate"
 initial_state = 8
 
 [editable path="Desk Row/Desk_Area/OfficeDeskBundled"]

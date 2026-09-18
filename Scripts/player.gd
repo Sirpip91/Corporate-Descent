@@ -5,8 +5,6 @@ const WALK_SPEED = 2.5
 const CROUCH_SPEED = 2
 const SPRINT_SPEED = 4.5
 const DEV_SPEED = 30.0
-const STEP_HEIGHT = 0.18
-const STEP_PROBE = 0.2
 var dev_fast: bool = false
 # Sensitivity is set in GameState.mouse_sensitivity and read live each frame.
 const CROUNCH_DEPTH = -0.75
@@ -39,13 +37,11 @@ const CROUCH_HEIGHT = 0.5          # ← optional, used later for camera & colli
 
 func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
-	# Godot's defaults here (0.001 margin, 4 slide iterations) are too tight
-	# against the batch-generated prop collision in this project — those hulls
-	# (from create_multiple_convex_collisions()) aren't always clean, and with
-	# no recovery buffer and few slide iterations the player can end up stuck
-	# still overlapping geometry, especially off a jump's fast vertical motion.
-	safe_margin = 0.04
-	max_slides = 6
+	# Extra recovery slack and slide iterations so the capsule doesn't hang up
+	# on imperfect level collision (uneven hulls, seams between pieces) —
+	# Godot's defaults (0.001 margin, 4 slides) are too tight for that.
+	safe_margin = 0.15
+	max_slides = 8
 
 
 func _unhandled_input(event):
@@ -117,18 +113,18 @@ func _physics_process(delta):
 					 Vector3(input_dir.x, 0, input_dir.y)).normalized()
 
 	if is_on_floor():
-		if direction:
-			velocity.x = direction.x * speed
-			velocity.z = direction.z * speed
-		else:
-			velocity.x = lerp(velocity.x, direction.x * speed, delta * 7.0)
-			velocity.z = lerp(velocity.z, direction.z * speed, delta * 7.0)
+		# Lerp instead of a hard set even while grounded — snapping straight to
+		# full input-direction speed every tick fights move_and_slide()'s own
+		# resolved velocity when sliding along a wall at an angle, oscillating
+		# between full speed and the slid speed every frame (visible as the
+		# camera/FOV "spazzing" when running into a wall at a glancing angle).
+		velocity.x = lerp(velocity.x, direction.x * speed, delta * 15.0)
+		velocity.z = lerp(velocity.z, direction.z * speed, delta * 15.0)
 	else:
 		velocity.x = lerp(velocity.x, direction.x * speed, delta * 3.0)
 		velocity.z = lerp(velocity.z, direction.z * speed, delta * 3.0)
 
 	# ── Apply physics --------------------------------------
-	_try_step_up()
 	move_and_slide()
 
 	# ── Head‑bob & FOV ------------------------------------------
@@ -143,47 +139,6 @@ func _physics_process(delta):
 		var velocity_clamped = clamp(velocity.length(), 0.5, SPRINT_SPEED * 2)
 		var target_fov = BASE_FOV + FOV_CHANGE * velocity_clamped
 		camera.fov = lerp(camera.fov, target_fov, delta * 8.0)
-
-
-# CharacterBody3D has no step handling of its own — without this the player
-# catches on door thresholds and floor transitions and has to jump them.
-func _try_step_up() -> void:
-	if not is_on_floor():
-		return
-
-	var horizontal := Vector3(velocity.x, 0.0, velocity.z)
-	if horizontal.length() < 0.01:
-		return
-
-	var probe := horizontal.normalized() * STEP_PROBE
-	var from := global_transform
-
-	if not test_move(from, probe):
-		return
-
-	var lifted := from.translated(Vector3.UP * STEP_HEIGHT)
-	if test_move(lifted, probe):
-		return  # solid all the way up — a wall, not a step
-
-	# only rise as far as the step actually is, so a small lip doesn't pop the
-	# camera the full STEP_HEIGHT
-	var hit := KinematicCollision3D.new()
-	var lift := STEP_HEIGHT
-	if test_move(lifted.translated(probe), Vector3.DOWN * STEP_HEIGHT, hit):
-		lift -= hit.get_travel().length()
-	lift = max(lift, 0.0)
-	if lift < 0.001:
-		return
-
-	# an angled hit (a corner, or an imprecise convex hull on a generated prop)
-	# can pass both checks above but still overlap something at the exact
-	# computed height — confirm it's actually clear before committing, or the
-	# player ends up half-embedded and stuck rather than blocked normally
-	var candidate := from.translated(Vector3.UP * lift)
-	if test_move(candidate, probe):
-		return
-
-	global_position.y += lift
 
 
 func shake(intensity: float) -> void:
