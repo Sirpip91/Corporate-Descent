@@ -3,9 +3,10 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://s6e1j42s4fon"
-path="res://.godot/imported/ElevatorScreen1_elevator_screen_1.png-fae05fdd3946157bfa046ac4c0863f52.ctex"
+path.s3tc="res://.godot/imported/ElevatorScreen1_elevator_screen_1.png-fae05fdd3946157bfa046ac4c0863f52.s3tc.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
 }
 generator_parameters={
 "md5": "2b7df2068a4d7c36b4321d61ae4d85c9"
@@ -14,11 +15,11 @@ generator_parameters={
 [deps]
 
 source_file="res://Assets/ElectronicsMisc/ElevatorScreen1/ElevatorScreen1_elevator_screen_1.png"
-dest_files=["res://.godot/imported/ElevatorScreen1_elevator_screen_1.png-fae05fdd3946157bfa046ac4c0863f52.ctex"]
+dest_files=["res://.godot/imported/ElevatorScreen1_elevator_screen_1.png-fae05fdd3946157bfa046ac4c0863f52.s3tc.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0
@@ -40,4 +41,4 @@ process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
-detect_3d/compress_to=1
+detect_3d/compress_to=0

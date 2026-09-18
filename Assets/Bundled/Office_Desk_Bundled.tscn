@@ -1,0 +1,61 @@
+[gd_scene format=3 uid="uid://b6qbtrjgaobda"]
+
+[ext_resource type="PackedScene" uid="uid://bglc7kvpod113" path="res://Assets/OfficeProps/DeskSimple/DeskSimple.tscn" id="1_tcdkt"]
+[ext_resource type="PackedScene" path="res://Assets/OfficeProps/Monitor/Monitor.tscn" id="2_preg4"]
+[ext_resource type="PackedScene" path="res://Assets/OfficeProps/Keyboard/Keyboard.tscn" id="3_s5t4r"]
+[ext_resource type="PackedScene" path="res://Assets/OfficeProps/Computer/Computer.tscn" id="4_g62hi"]
+[ext_resource type="PackedScene" path="res://Assets/OfficeProps/Mouse/Mouse.tscn" id="5_ij5pa"]
+[ext_resource type="PackedScene" path="res://Assets/ElectronicsMisc/MousePadMp1/MousePadMp1.tscn" id="6_p2akr"]
+[ext_resource type="PackedScene" path="res://Assets/SmallProps/PhotoFrameMp1/PhotoFrameMp1.tscn" id="7_g62hi"]
+[ext_resource type="PackedScene" path="res://Assets/OfficeProps/Cable002/Cable002.tscn" id="9_p2akr"]
+[ext_resource type="PackedScene" path="res://Assets/OfficeProps/Cable001/Cable001.tscn" id="10_0hebr"]
+[ext_resource type="PackedScene" uid="uid://bxjpd6bilbt0a" path="res://Assets/OfficeProps/OfficeSeat/Blue/BlueChair.tscn" id="11_0hebr"]
+[ext_resource type="PackedScene" path="res://Assets/OfficeProps/PaperStack/PaperStack.tscn" id="11_58ul3"]
+[ext_resource type="PackedScene" path="res://Assets/SmallProps/PencilMp1/PencilMp1.tscn" id="12_5pb07"]
+[ext_resource type="PackedScene" path="res://Assets/OfficeProps/DividerSmall/DividerSmall.tscn" id="13_5pb07"]
+
+[node name="OfficeDeskBundled" type="Node3D" unique_id=37220661]
+
+[node name="DeskSimple4" parent="." unique_id=1952435296 instance=ExtResource("1_tcdkt")]
+
+[node name="Monitor" parent="." unique_id=123774027 instance=ExtResource("2_preg4")]
+transform = Transform3D(1.2889006, 0, 0.5465667, 0, 1.4, 0, -0.5465667, 0, 1.2889006, -0.56667423, 1.19, -0.28090042)
+
+[node name="Keyboard" parent="." unique_id=259957388 instance=ExtResource("3_s5t4r")]
+transform = Transform3D(1.3716149, 0, 0.2804862, 0, 1.4, 0, -0.2804862, 0, 1.3716149, -0.36414817, 1.19, 0.23661661)
+
+[node name="Monitor2" parent="." unique_id=1409014553 instance=ExtResource("2_preg4")]
+transform = Transform3D(1.3987598, 0, -0.058916524, 0, 1.4, 0, 0.058916524, 0, 1.3987598, 0.021235675, 1.19, -0.37161797)
+
+[node name="Computer" parent="." unique_id=686033485 instance=ExtResource("4_g62hi")]
+transform = Transform3D(0.96050525, 0, 1.0185431, 0, 1.3999999, 0, -1.0185431, 0, 0.96050525, 0.5374089, 1.19, -0.14670256)
+
+[node name="Mouse" parent="." unique_id=475899155 instance=ExtResource("5_ij5pa")]
+transform = Transform3D(1.8224832, 0, 0.9165995, 0, 2.04, 0, -0.9165995, 0, 1.8224832, 0.5393704, 1.2075543, 0.28861442)
+
+[node name="MousePadMp1" parent="." unique_id=1369861217 instance=ExtResource("6_p2akr")]
+transform = Transform3D(1.455, 0, 0, 0, 1.455, 0, 0, 0, 1.455, 0.53826845, 1.19, 0.25667113)
+
+[node name="PhotoFrameMp1" parent="." unique_id=588362733 instance=ExtResource("7_g62hi")]
+transform = Transform3D(0.8317165, 0, 0.55520064, 0, 1, 0, -0.55520064, 0, 0.8317165, -0.8188956, 1.19, 0.007960528)
+
+[node name="Cable002" parent="." unique_id=216921766 instance=ExtResource("9_p2akr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.11047906, 1.2163328, -0.016583527)
+
+[node name="Cable001" parent="." unique_id=1155660613 instance=ExtResource("10_0hebr")]
+transform = Transform3D(0.84367174, 0, 0.5368594, 0, 1, 0, -0.5368594, 0, 0.84367174, 0.4626264, 1.2195616, -0.007802233)
+
+[node name="BlueChair" parent="." unique_id=570089488 instance=ExtResource("11_0hebr")]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, -0.2881186, 0, 0.61327815)
+
+[node name="PaperStack" parent="." unique_id=577928118 instance=ExtResource("11_58ul3")]
+transform = Transform3D(1.2628103, 0, 0.6044089, 0, 1.3999999, 0, -0.6044089, 0, 1.2628103, 0.17346269, 1.19, 0.0023371577)
+
+[node name="PencilMp1" parent="." unique_id=704458038 instance=ExtResource("12_5pb07")]
+transform = Transform3D(0.7977544, 0, 0.60298246, 0, 1, 0, -0.60298246, 0, 0.7977544, -0.82076305, 1.19, 0.34935793)
+
+[node name="DividerSmall" parent="." unique_id=426405233 instance=ExtResource("13_5pb07")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -0.40796185, 0.7674953, -0.6001706)
+
+[node name="DividerSmall2" parent="." unique_id=530964800 instance=ExtResource("13_5pb07")]
+transform = Transform3D(0.99999, 0, -0.0044712275, 0, 1, 0, 0.0044712275, 0, 0.99999, 1.0367362, 0.7674953, -0.012872517)

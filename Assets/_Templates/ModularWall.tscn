@@ -12,9 +12,6 @@ texture_filter = 2
 [sub_resource type="PlaneMesh" id="PlaneMesh_1vfnq"]
 size = Vector2(2, 2.5)
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_c73c4"]
-size = Vector3(10, 0.1, 4)
-
 [node name="ModularWall" type="MeshInstance3D" unique_id=996914352]
 transform = Transform3D(1, 0, 0, 0, 0.12533323, 0.9921147, 0, -0.9921147, 0.12533323, 0, 0, 0)
 material_override = SubResource("StandardMaterial3D_3tl6o")
@@ -22,8 +19,3 @@ mesh = SubResource("PlaneMesh_1vfnq")
 script = ExtResource("1_3tl6o")
 texture = ExtResource("2_83hda")
 meters_per_tile_y = 2.5
-
-[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=1395960803]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=728729150]
-shape = SubResource("BoxShape3D_c73c4")

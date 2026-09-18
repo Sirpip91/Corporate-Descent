@@ -34,8 +34,9 @@ That means:
   make it, leave. Don't restructure things that weren't asked for,
   don't leave scaffolding "for next time," don't add speculative
   abstractions for features that don't exist yet.
-- **Story/level content lives in `Design/`** (see below), not scattered
-  as comments or hardcoded strings inside gameplay scripts.
+- **Story/level content lives in `Design/`, actual line/subtitle text
+  lives in `Dialogue/`** (see below), not scattered as comments or
+  hardcoded strings inside gameplay scripts.
 
 ## Current Status
 
@@ -53,9 +54,10 @@ That means:
 | Name | File | Purpose |
 |------|------|---------|
 | `GameState` | `Scripts/game_state.gd` | Settings (`mouse_sensitivity`, `master_volume`, `volumetric_fog_enabled`) + bare `inventory` array. `apply_graphics_settings()` re-derives the active level's `WorldEnvironment` fog from (level's own authored value) AND (player's preference) — downgrade-only, never turns an effect on for a level that wasn't built with it. Add floor/story state here as real levels need it. |
-| `UI` | `UI/hud.gd` | Crosshair (`hide_crosshair(reason)` / `show_crosshair(reason)`), examine hints (`show_examine_hints`/`hide_examine_hints`), FPS counter (`set_fps_visible`). No dialogue system yet — add one here when the new story needs it, don't hack dialogue into a level script. |
+| `UI` | `UI/hud.gd` | Crosshair (`hide_crosshair(reason)` / `show_crosshair(reason)`), examine hints (`show_examine_hints`/`hide_examine_hints`), FPS counter (`set_fps_visible`). Dialogue is Dialogic's job now — see the `Dialogic` row below. |
 | `Dev` | `UI/dev_console.gd` | `Dev.msg("[color=yellow]text[/color]")` — never use raw `print()` in gameplay scripts. Backtick key to open in-game. |
 | `ExamineController` | `Scripts/examine_controller.gd` | `begin(Node3D)`, `end(bool collect)`, `rotate(Vector2)`, `is_collectible()` — drives the pick-up/hold/rotate/zoom/drop behavior for `Examinable`. |
+| `Dialogic` | `addons/dialogic` (third-party) | Dialogue engine. `Dialogic.start(timeline_id)` runs a `.dtl` timeline. NPCs trigger this via `NPCBase.timeline_id`/`interact()` — see `Dialogue/README.md`. `UI/hud.gd` connects to `Dialogic.timeline_started`/`timeline_ended` once, globally, to lock player movement and show the mouse cursor for the duration. |
 
 ## Key Classes
 
@@ -67,6 +69,24 @@ That means:
   collect. Exports: `display_name`, `hold_rotation`, `collect_item_id`
   (leave blank for examine-and-drop items like a flashlight; set it for
   things that should actually enter `GameState.inventory`).
+- **`NPCBase`** (`Scripts/npc_base.gd`, extends `Interactable`) — shared
+  base for every NPC scene. Owns the animation state machine over the
+  character pack's baked clips (`play_idle`/`play_walk`/`play_turn`/
+  `play_stop`/`play_sit`/`play_typing`/`play_pacing_phone`, with TURN/STOP
+  auto-chaining to the next state when their clip finishes) and the
+  `timeline_id` export that starts a Dialogic timeline on interact.
+  Per-pack scripts (`Assets/Characters/<Pack>/npc.gd`) extend it and only
+  supply their own Look enum/texture swap. Movement/animation is driven by
+  one of two mutually exclusive built-in behaviors: a `patrol_enabled`
+  demo (straight-line back-and-forth walk/idle, off by default) or, once
+  `destinations_array` (an `Array[Marker3D]`) is populated, a real
+  waypoint patrol that walks to each marker in order, looping back to the
+  first after the last, idling a random 1–5s at each stop — the array
+  takes over from the demo automatically when non-empty. On `interact()`,
+  a `LookAtModifier3D` on the head bone (`mixamorig_Head`) turns to face
+  the player's camera for the duration of the conversation, layered on
+  top of whatever animation is playing — no per-NPC setup needed, it's
+  automatic for any pack sharing that bone name.
 
 ## Critical Architecture Rules
 
@@ -107,16 +127,18 @@ match their structure rather than inventing a new one per prop.
 
 ## Where Story/Level Content Lives
 
-- `Design/` — story bible, level list, dialogue content, whatever the
+- `Design/` — story bible, level list, character notes, whatever the
   new narrative needs. Plain docs, not code.
+- `Dialogue/` — Dialogic content: a `.dch` character + one or more `.dtl`
+  timelines per NPC that talks. This is the actual line text — unlike
+  `Design/`, it's read by the game at runtime. See `Dialogue/README.md`.
 - Level scenes go under `Levels/<LevelName>/` (mirrors the old project's
   convention) once the first real level starts — `TestArea/` was a
   systems-check scene only, not a real level; retire it once the first
   actual level exists.
-- Gameplay scripts reference story content the same way the old project
-  did it right (one lookup point, e.g. `M.line("key")`) rather than
-  hardcoding strings per-level — build that lookup fresh for the new
-  story rather than reusing the old `monologue_data.gd` content.
+- Gameplay scripts reference story content through one lookup point —
+  `NPCBase.timeline_id` → `Dialogic.start()` — rather than hardcoding
+  strings per-level.
 
 ## Project History
 

@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://dn5g8johypw5q"]
+
+[ext_resource type="PackedScene" path="res://Assets/OfficeProps/ChairLegs/ChairLegs.tscn" id="1_h1kse"]
+[ext_resource type="PackedScene" path="res://Assets/OfficeProps/ChairSeat/ChairSeat.tscn" id="2_un50g"]
+
+[node name="BlueChair" type="Node3D" unique_id=570089488]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 0, 0, 0)
+
+[node name="ChairLegs" parent="." unique_id=2135026420 instance=ExtResource("1_h1kse")]
+transform = Transform3D(1.7, 0, 0, 0, 1.7, 0, 0, 0, 1.7, 0, 0, 0)
+
+[node name="ChairSeat" parent="." unique_id=762290462 instance=ExtResource("2_un50g")]
+transform = Transform3D(1.7, 0, 0, 0, 1.7, 0, 0, 0, 1.7, 0.018419795, 0.5212235, -0.10838562)

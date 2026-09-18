@@ -104,6 +104,31 @@ won't.
 > *"Fifteen years. If you're not this, what are you?"*
 > *"Nobody out there is waiting for you. That's why you stayed."*
 
+## The suit
+
+Halloran doesn't chase anyone. He signed the form, said his one line,
+went back to his monitor — that indifference is the point, and it
+doesn't change below Floor 9.
+
+What does chase him is never named, never given a face, and never
+speaks. A suit and tie, nothing where the face should be. The only
+setup it gets is a phone call: as he leaves Halloran's office on Floor
+10, glimpsed through the glass, Halloran is already dialing an
+extension, talking too quietly to hear. Nothing explains it. It's the
+last time Halloran matters to the plot.
+
+Below Floor 9 the suit is glimpsed before it's a threat — motionless,
+facing away, gone if you look away and back — and starts actively
+hunting on Floor 7, once he's somewhere he isn't supposed to be. Being
+caught doesn't end the game. It re-files him: he wakes up back where he
+started the floor, and something he'd already found is sealed again.
+Caught means processed back into the system, not erased out of it.
+
+The suit is never explained and never needs to be. It reads equally as
+what a company actually does to someone who tries to leave, or as
+something the building manifests once he stops being legible to it. The
+game doesn't pick.
+
 ## The thesis
 
 The lobby turnstiles read badges **on the way in.** Going out, they
@@ -130,6 +155,5 @@ He walks out. Nobody stops him. Nobody ever would have.
   floors
 - Whether there's a predecessor — someone who tried this before and
   left a trail of routes and notes through the building
-- Cast beyond Halloran and Denise
 - An ending where he takes an offer to stay, if there's a scene that
   earns it

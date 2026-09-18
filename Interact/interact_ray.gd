@@ -9,9 +9,11 @@ var _dwell_target = null
 var _dwell_time: float = 0.0
 
 func _physics_process(delta):
-	if ExamineController.active:
+	if ExamineController.active or Dialogic.current_timeline != null:
 		# the held item sits right in the ray's path — Examinable already
-		# shows its own name, so don't also show the interact prompt for it
+		# shows its own name, so don't also show the interact prompt for it.
+		# Same idea during a Dialogic timeline — nothing else in the world
+		# should be interactable mid-conversation.
 		clear_text()
 		_dwell_target = null
 		_dwell_time = 0.0

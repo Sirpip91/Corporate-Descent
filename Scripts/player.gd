@@ -53,6 +53,8 @@ func _unhandled_input(event):
 		if examining:
 			ExamineController.rotate(event.relative)
 			return
+		if movement_locked:
+			return
 		head.rotate_y(-event.relative.x * GameState.mouse_sensitivity)
 		camera.rotate_x(-event.relative.y * GameState.mouse_sensitivity)
 		camera.rotation.x = clamp(camera.rotation.x, deg_to_rad(-90), deg_to_rad(90))
@@ -64,6 +66,10 @@ func _unhandled_input(event):
 	if Input.is_action_pressed("escape"):
 		if examining:
 			ExamineController.end(false)
+			return
+		if Dialogic.current_timeline != null:
+			if UI.dialogue_skippable:
+				Dialogic.end_timeline(true)  # true = skip the fade-out leave animation, close instantly
 			return
 		if get_tree().paused:
 			$PauseMenu._unpause()

@@ -3,9 +3,10 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b6hicd2cchbde"
-path="res://.godot/imported/MonitoringScreenMp11_crt_screen_mp_2.png-a63ec868986c10ef6ce4e770ed38d02e.ctex"
+path.s3tc="res://.godot/imported/MonitoringScreenMp11_crt_screen_mp_2.png-a63ec868986c10ef6ce4e770ed38d02e.s3tc.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
 }
 generator_parameters={
 "md5": "f3cf4b514704f08268bb92cc3fc9fa3d"
@@ -14,11 +15,11 @@ generator_parameters={
 [deps]
 
 source_file="res://Assets/ElectronicsMisc/MonitoringScreenMp11/MonitoringScreenMp11_crt_screen_mp_2.png"
-dest_files=["res://.godot/imported/MonitoringScreenMp11_crt_screen_mp_2.png-a63ec868986c10ef6ce4e770ed38d02e.ctex"]
+dest_files=["res://.godot/imported/MonitoringScreenMp11_crt_screen_mp_2.png-a63ec868986c10ef6ce4e770ed38d02e.s3tc.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0
@@ -40,4 +41,4 @@ process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
-detect_3d/compress_to=1
+detect_3d/compress_to=0

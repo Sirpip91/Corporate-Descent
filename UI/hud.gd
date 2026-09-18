@@ -2,9 +2,9 @@ extends CanvasLayer
 # Autoloaded as "UI".
 #
 # Trimmed for the systems-only rebuild: crosshair, examine hints, FPS counter.
-# The original project's inner_monologue.gd also drives a dialogue queue
-# (say/say_ambient) and an inventory HUD — narrative-specific, not part of
-# "basic player mechanics," left out until real levels/story come back in.
+# Dialogue is Dialogic's job now (see Dialogue/README.md) — this used to also
+# own a subtitle bar for NPC lines, removed when Dialogic replaced the custom
+# dialogue system.
 
 var _fps_label: Label
 var _examine_hints: VBoxContainer
@@ -14,9 +14,15 @@ var _crosshair_outer: ColorRect
 var _crosshair_inner: ColorRect
 var _crosshair_hidden: Array[String] = []  # reasons crosshair is hidden — visible only when empty
 
+# Set by NPCBase.interact() right before Dialogic.start() — player.gd reads
+# this on Escape to decide whether the current timeline can be bailed out of.
+var dialogue_skippable: bool = true
+
 
 func _ready() -> void:
 	layer = 10
+	Dialogic.timeline_started.connect(_on_dialogic_timeline_started)
+	Dialogic.timeline_ended.connect(_on_dialogic_timeline_ended)
 
 	# FPS counter — top-right, hidden until toggled from pause menu
 	_fps_label = Label.new()
@@ -197,3 +203,26 @@ func _add_hint(key: String, action: String) -> void:
 	hbox.add_child(action_lbl)
 
 	_examine_hints.add_child(hbox)
+
+
+# ── DIALOGIC ─────────────────────────────────────────────────────────────────
+# NPCBase.interact() starts Dialogic timelines directly — this just hands
+# control to/from the player around them, same "named reason" pattern as
+# hide_crosshair/show_crosshair, and the same movement_locked/mouse-mode
+# pattern ExamineController and PauseMenu already use.
+
+func _on_dialogic_timeline_started() -> void:
+	hide_crosshair("dialogue")
+	var player := get_tree().get_first_node_in_group("player")
+	if player:
+		player.movement_locked = true
+	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+
+
+func _on_dialogic_timeline_ended() -> void:
+	show_crosshair("dialogue")
+	var player := get_tree().get_first_node_in_group("player")
+	if player:
+		player.movement_locked = false
+	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+	dialogue_skippable = true

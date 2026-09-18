@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://ww76jtle2fod"]
+
+[ext_resource type="Texture2D" uid="uid://b78wangtl7bec" path="res://Assets/Custom_Drawings/rough1.png" id="1_qp61y"]
+[ext_resource type="Shader" uid="uid://cpttxqsfgnfhj" path="res://Assets/Custom_Drawings/rotatable_canvas.gdshader" id="2_rotshader"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_rotcanvas"]
+render_priority = 0
+shader = ExtResource("2_rotshader")
+shader_parameter/albedo_texture = ExtResource("1_qp61y")
+shader_parameter/rotation_degrees = 0.0
+shader_parameter/roughness_value = 0.9
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_canvas"]
+roughness = 0.9
+
+[node name="Drawing" type="Node3D" unique_id=1520952676]
+
+[node name="Canvas" type="CSGBox3D" parent="." unique_id=321510943]
+material_override = SubResource("ShaderMaterial_rotcanvas")
+flip_faces = true
+size = Vector3(1, 1.3, 0.03)
+material = SubResource("StandardMaterial3D_canvas")

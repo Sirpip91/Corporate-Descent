@@ -79,15 +79,18 @@ Worth bringing back once, later, when it means something different.
 He is briefly, completely dependent on the drones he spent fifteen
 years resenting, and not one of them notices.
 
-## Failure — Open
-
-There is no fail state yet, and that's a real hole rather than a
-decision.
+## Failure — Re-filing
 
 A heat/security system was drafted and cut along with badge farming —
 it only existed to punish stealing badges, and there's no stealing
-anymore. Whatever replaces it has to punish something the player
-actually does now.
+anymore. What replaces it, starting Floor 7: getting spotted by the
+suit (see `story.md`) doesn't end the game, it **re-files** him — a
+cut, and he wakes up back near where he started the floor, with
+something he'd already found sealed shut again. Progress and time
+lost, no game-over screen. It punishes the thing the player actually
+does now — being seen somewhere he shouldn't be — and it's the same
+"administrative erasure" idea the whole game already runs on: caught
+means processed back into the system, not killed by it.
 
 ## The Clock — Set Dressing Only
 

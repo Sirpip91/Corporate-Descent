@@ -1,0 +1,179 @@
+[gd_scene format=4]
+
+[ext_resource type="Texture2D" path="res://Assets/ElevatorDoor/ElevatorDoor_walls_locker.png" id="1_b2md2"]
+[ext_resource type="Texture2D" path="res://Assets/ElevatorDoor/ElevatorDoor_elevator.png" id="2_sy7o2"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xqbpw"]
+resource_name = "walls locker"
+cull_mode = 2
+albedo_texture = ExtResource("1_b2md2")
+texture_filter = 2
+metadata/_gltf_primary_texture_coord = 0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8l22r"]
+resource_name = "elevator"
+cull_mode = 2
+albedo_texture = ExtResource("2_sy7o2")
+metallic = 0.07272727
+roughness = 0.5
+emission_enabled = true
+emission = Color(0.4, 0.4, 0.4, 1)
+emission_operator = 1
+emission_texture = ExtResource("2_sy7o2")
+texture_filter = 2
+metadata/_gltf_primary_texture_coord = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_odw7b"]
+_surfaces = [{
+"aabb": AABB(-0.5, 2.2, 4.7683716e-07, 0.99999905, 1, 1e-05),
+"format": 34359742465,
+"index_count": 6,
+"index_data": PackedByteArray("AAABAAIAAAADAAEA"),
+"name": "walls locker",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray("AAAAv83MDEAAAAA14P//Ps3MTEAAAAA14P//Ps3MDEAAAAA1AAAAv83MTEAAAAA1")
+}, {
+"aabb": AABB(-0.49999905, 0, -0.29999948, 0.99999905, 2.2000003, 0.29999995),
+"format": 34896613377,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAwACAAEAAAAEAAEAAwABAAUAAAAGAAQABwADAAUAAAAIAAYABwAFAAkACAAKAAYACgAHAAkACAALAAoACgALAAcA"),
+"name": "elevator",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 12,
+"vertex_data": PackedByteArray("/v//////AAD/f///AAAAAP9//////wAAAAD/////AAD/////AAAAAAAA//8AAAAA//8AAAAAAAAAAAAA//8AAP7/AAD//wAAAAAAAAAAAAD/fwAAAAAAAP9/AAD//wAA")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_7j4c4"]
+resource_name = "ElevatorDoor_Cube_001"
+_surfaces = [{
+"aabb": AABB(-0.5, 2.2, 4.7683716e-07, 0.99999905, 1, 1e-05),
+"attribute_data": PackedByteArray("Ase2QEg1oD4LwcpAAABKOgvBykBINaA+BMe2QAAASjo="),
+"format": 34359742487,
+"index_count": 6,
+"index_data": PackedByteArray("AAABAAIAAAADAAEA"),
+"material": SubResource("StandardMaterial3D_xqbpw"),
+"name": "walls locker",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray("AAAAv83MDEAAAAA14P//Ps3MTEAAAAA14P//Ps3MDEAAAAA1AAAAv83MTEAAAAA1/3//f////7//f/9/////v/9//3////+//3//f////78=")
+}, {
+"aabb": AABB(-0.49999905, 0, -0.29999948, 0.99999905, 2.2000003, 0.29999995),
+"attribute_data": PackedByteArray("K4hMIGilwA5opUwgK4jADiuITCAriMAO2PdgVkzmnnNM5mBW2Peec9j3YFZM5mBWv9mC/DTI2ns0yIL8v9nae7/Z2ns0yIL8NMjae7/Zgvw="),
+"format": 34896613399,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAACAAEABAABAAUABgAHAAgABgAJAAcABwAJAAoABwAKAAsADAANAA4ADAAPAA0AEAARABIAEAATABEA"),
+"material": SubResource("StandardMaterial3D_8l22r"),
+"name": "elevator",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 20,
+"vertex_data": PackedByteArray("/v//////////f///AAD/P/9///////8//////wAA//8AAP//////PwAA//8AAP8//v8AAP//VNX/fwAAAACqKv//AAAAAFTV/38AAP//qioAAAAA//+qKgAAAAAAAKoqAAAAAP//AAAAAP//AAAAAAAAAAAAAAAAAAD/////AAD+////////v///AAAAAP+//////wAA/7/+/wAA////v/9//z8AAP9/AAD/f/9//z8AAP9/AAD/f6mqqqqpqqqqqaqqqqmqqqqpqqqqqaqqqv+//3//v/9//7//f/+//3//f////3////9/////f///")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_odw7b")
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_0i1xm"]
+points = PackedVector3Array(-0.5, 0, -0.29999948, -0.5, 0, 4.7683716e-07, -0.5, 2.1998434, -0.29999948, 0.5, 0, -0.29999948, 0.49990213, 0, 4.7683716e-07, -0.5, 3.2, 4.7683716e-07, 0.5, 2.1998434, -0.29999948, 0.49990213, 3.2, 4.7683716e-07)
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_tuldj"]
+_surfaces = [{
+"aabb": AABB(-0.5, -1.1920929e-07, -0.10000014, 0.5000005, 2.2000003, 0.10000038),
+"format": 34896613377,
+"index_count": 12,
+"index_data": PackedByteArray("AAABAAIAAAADAAEAAwAEAAEAAwAFAAQA"),
+"name": "elevator",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 6,
+"vertex_data": PackedByteArray("AAAAAAAAAAD/////AAAAAAAA//8AAAAA//8AAAAAAAD///7///8AAP//AAD//wAA")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_fdwbf"]
+resource_name = "ElevatorDoor_Cube_018"
+_surfaces = [{
+"aabb": AABB(-0.5, -1.1920929e-07, -0.10000014, 0.5000005, 2.2000003, 0.10000038),
+"attribute_data": PackedByteArray("I4K2AtkCpB/ZArYCI4KkHyOCpB/ZAm0l2QKkHyOCbSU="),
+"format": 34896613399,
+"index_count": 12,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUA"),
+"material": SubResource("StandardMaterial3D_8l22r"),
+"name": "elevator",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("AAAAAAAA////////AAD//wAA//8AAP////8AAAAA/////wAAAABU1f///v///1TV/////wAAVNX//wAA//9U1f8//7//P/+//z//v/8//7+qqlRVqqpUVaqqVFWqqlRV")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_tuldj")
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_uqlab"]
+points = PackedVector3Array(-0.5, -1.1920929e-07, -0.10000014, 4.7683716e-07, -1.1920929e-07, -0.10000014, 4.7683716e-07, -1.1920929e-07, 2.3841858e-07, -0.5, 2.2000003, -0.10000014, 4.7683716e-07, 2.2000003, -0.10000014, 4.7683716e-07, 2.1997848, 2.3841858e-07)
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_sjryr"]
+_surfaces = [{
+"aabb": AABB(-4.84387e-07, -1.1920929e-07, -2.384186e-07, 0.5000005, 2.2000003, 0.10000038),
+"format": 34896613377,
+"index_count": 12,
+"index_data": PackedByteArray("AAABAAIAAAADAAEAAwAEAAEAAwAFAAQA"),
+"name": "elevator",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 6,
+"vertex_data": PackedByteArray("//8AAP7/AAAAAP////8AAP/////+/wAAAAAAAP//AAAAAP7/AAAAAAAAAAAAAAAA")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_kwgju"]
+resource_name = "ElevatorDoor_Cube_026"
+_surfaces = [{
+"aabb": AABB(-4.84387e-07, -1.1920929e-07, -2.384186e-07, 0.5000005, 2.2000003, 0.10000038),
+"attribute_data": PackedByteArray("I4K2AtkCpB/ZArYCI4KkHyOCpB/ZAm0l2QKkHyOCbSU="),
+"format": 34896613399,
+"index_count": 12,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUA"),
+"material": SubResource("StandardMaterial3D_8l22r"),
+"name": "elevator",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("//8AAP7//78AAP//////v//////+//+/AAAAAP///78AAAAA//9U1QAA/v8AAFTVAAD/////VNUAAAAAAABU1f9//3//f/9//3//f/9//39UVaqqVFWqqlRVqqpUVaqq")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_sjryr")
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_f3qj6"]
+points = PackedVector3Array(-4.84387e-07, -1.1920929e-07, -2.384186e-07, -4.84387e-07, -1.1920929e-07, 0.10000014, -4.84387e-07, 2.1997848, -2.384186e-07, 0.5, -1.1920929e-07, 0.09999035, -4.84387e-07, 2.2000003, 0.10000014, 0.5, 2.2000003, 0.09999035)
+
+[node name="ElevatorDoor" type="Node3D" unique_id=583686008]
+
+[node name="ElevatorDoorFrame" type="MeshInstance3D" parent="." unique_id=93948177]
+mesh = SubResource("ArrayMesh_7j4c4")
+
+[node name="ElevatorDoorFrame_col" type="StaticBody3D" parent="ElevatorDoorFrame" unique_id=548930374]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ElevatorDoorFrame/ElevatorDoorFrame_col" unique_id=2146500276]
+shape = SubResource("ConvexPolygonShape3D_0i1xm")
+
+[node name="ElevatorDoorLeft" type="MeshInstance3D" parent="." unique_id=1986809909]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, -1, 0, 0, -0.29999995)
+mesh = SubResource("ArrayMesh_fdwbf")
+
+[node name="ElevatorDoorLeft_col" type="StaticBody3D" parent="ElevatorDoorLeft" unique_id=509625338]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ElevatorDoorLeft/ElevatorDoorLeft_col" unique_id=70897599]
+shape = SubResource("ConvexPolygonShape3D_uqlab")
+
+[node name="ElevatorDoorRight" type="MeshInstance3D" parent="." unique_id=1117944373]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.29999995)
+mesh = SubResource("ArrayMesh_kwgju")
+
+[node name="ElevatorDoorRight_col" type="StaticBody3D" parent="ElevatorDoorRight" unique_id=1322885448]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ElevatorDoorRight/ElevatorDoorRight_col" unique_id=89937741]
+shape = SubResource("ConvexPolygonShape3D_f3qj6")

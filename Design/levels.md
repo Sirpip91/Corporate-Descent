@@ -180,6 +180,14 @@ will go down to 9, 8, 7. IT is on 7.
 **The doors close and the panel offers nothing above his current
 floor.** That's the game announcing its rules.
 
+#### One more thing, on the way out
+
+Through the glass of Halloran's office, as the player leaves: he's
+picked up his desk phone, dialing an extension, talking too quietly to
+hear, eyes following the player out. No subtitle, no reaction if the
+player stops to look. Nothing explains it. This is the only setup the
+antagonist below Floor 9 ever gets.
+
 ### Teaching checklist
 
 | Mechanic | Taught by |
@@ -321,6 +329,14 @@ measure.
 
 Freight elevator down to 8.
 
+### One sighting
+
+Somewhere in the service corridor, once the player has already passed
+through it at least once: a suited figure stands motionless at the far
+end, facing away. Gone if the player looks away and back. No AI, no
+name, no dialogue — a static mesh and a trigger. First taste of what
+the phone call on Floor 10 set in motion.
+
 ---
 
 ## Routes Down — the level vocabulary
@@ -343,7 +359,93 @@ reach it.
 | **Fire escape** | Unused. Out a window, down the outside, back in one floor lower. |
 | **Chute** | Unused. Mail, laundry, garbage. Nasty and memorable. Use once. |
 
-## Floors 8 and Below — Open
+## Floor 8 — The Seam
 
-Not designed. IT is on 7. Everything else — what each floor is, how
-many there are, where the metrics documents surface — is still open.
+**Role:** transition floor. The crack widens, still not a full chase.
+
+Office geometry starts lying: a service corridor the player already
+walked loops back on itself once — same fire extinguisher, same stain
+on the ceiling tile, different door at the end.
+
+Second sighting of the suited figure from Floor 9 — closer this time,
+and it turns to face the player before the player turns away. Still no
+AI: a scripted trigger, not a patrol.
+
+**Exit:** renovation zone / ceiling drop — plastic sheeting, exposed
+studs, a gap into Floor 7.
+
+---
+
+## Floor 7 — Records
+
+**~25–30 minutes.** The file-cabinet floor. IT was already established
+as being on this floor — this is the room next door.
+
+Rows of identical cabinets. **Objective: find his own personnel file.**
+Inside it, the thing that unlocks the route down — one concrete object,
+not a checklist (a physical key, a badge stub, a maintenance
+requisition).
+
+**The suit now actively patrols this floor.** First real hunt: line of
+sight matters, the player has to route around instead of through.
+
+**Getting spotted doesn't end the game — it re-files him.** Screen
+cuts, he wakes up back near the entrance, a drawer he'd already
+searched is freshly stamped and sealed. Progress and time lost, no game
+over screen. Getting caught means getting processed back into the
+system instead of erased out of it — the same idea the rest of the
+game runs on.
+
+**Exit:** once the file is found, a service door / archive lift that
+was locked becomes usable.
+
+---
+
+## Floor 6 — The Rest Floor
+
+**Role:** breather floor. Lower threat, dialogue-forward, the floor
+that carries the game's central piece of lore — through dialogue and
+environment only, never a document dump.
+
+Rows of sleep pods along a corridor, a PA murmuring wellness copy
+softly in the background. They aren't break-room nap pods — they're
+recharging worker-units. Never stated outright: a maintenance panel
+with a diagram of a pod wired to something that isn't a person, a
+technician's offhand line about "output" instead of "rest," a nameplate
+on a pod that matches someone the player already met.
+
+One occupied pod: **Denise**, from Floor 10, badly diminished — she's
+been "resting" far longer than a break allows, and whether she was ever
+fully a person or has been fully replaced stays ambiguous. Her Floor 10
+line — *"You'll be back. Everyone comes back."* — gets a callback here
+in a much darker, possibly literal register.
+
+The suit is heard, not hunting, here — footsteps in the corridor
+outside, a distant office door closing. Keeps tension simmering without
+another full chase.
+
+**Exit:** a maintenance hatch behind the pod-supply closet.
+
+---
+
+## Floor 5 — Full Break
+
+**Role:** the big set-piece. Reality stops pretending to be an office.
+
+Repeating identical rooms, buzzing/failing fluorescents, fog as level
+design — heaviest use of the grimy PSX-style industrial/decayed texture
+set anywhere in the game.
+
+**The suit hunts in earnest** — the real chase set-piece, same
+underlying patrol/detection as Floor 7, tuned harder: faster, longer
+sightlines.
+
+**Exit:** elevator shaft + fire axe — the fire-cabinet glass he's never
+broken before, saved until here so it hits harder.
+
+---
+
+## Lobby
+
+Unchanged from `story.md`'s ending — the turnstiles only ever read
+badges on the way in. He walks out. Nobody stops him.

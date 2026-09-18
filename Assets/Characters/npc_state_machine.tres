@@ -1,0 +1,73 @@
+[gd_resource type="AnimationNodeStateMachine" format=3 uid="uid://bfc5gljkcng7e"]
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_ascending_stairs"]
+animation = &"ascending_stairs"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_descending_stairs"]
+animation = &"descending_stairs"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_idle"]
+animation = &"idle"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_idle_alt"]
+animation = &"idle_alt"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_pace"]
+animation = &"pacing_phone"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_right_hand_interact"]
+animation = &"right_hand_interact"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_running"]
+animation = &"running"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_sit"]
+animation = &"sit"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_sit_alt"]
+animation = &"sit_alt"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_stop"]
+animation = &"stop_walking"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_talking_on_phone"]
+animation = &"talking_on_phone"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_typing"]
+animation = &"typing"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_walk"]
+animation = &"walk"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_turn"]
+animation = &"walk_turn_180"
+
+[resource]
+states/ascending_stairs/node = SubResource("AnimationNodeAnimation_ascending_stairs")
+states/ascending_stairs/position = Vector2(100, 580)
+states/descending_stairs/node = SubResource("AnimationNodeAnimation_descending_stairs")
+states/descending_stairs/position = Vector2(300, 580)
+states/idle/node = SubResource("AnimationNodeAnimation_idle")
+states/idle/position = Vector2(100, 100)
+states/idle_alt/node = SubResource("AnimationNodeAnimation_idle_alt")
+states/idle_alt/position = Vector2(100, 420)
+states/pacing_phone/node = SubResource("AnimationNodeAnimation_pace")
+states/pacing_phone/position = Vector2(500, 260)
+states/right_hand_interact/node = SubResource("AnimationNodeAnimation_right_hand_interact")
+states/right_hand_interact/position = Vector2(500, 580)
+states/running/node = SubResource("AnimationNodeAnimation_running")
+states/running/position = Vector2(700, 420)
+states/sit/node = SubResource("AnimationNodeAnimation_sit")
+states/sit/position = Vector2(100, 260)
+states/sit_alt/node = SubResource("AnimationNodeAnimation_sit_alt")
+states/sit_alt/position = Vector2(300, 420)
+states/stop_walking/node = SubResource("AnimationNodeAnimation_stop")
+states/stop_walking/position = Vector2(700, 100)
+states/talking_on_phone/node = SubResource("AnimationNodeAnimation_talking_on_phone")
+states/talking_on_phone/position = Vector2(500, 420)
+states/typing/node = SubResource("AnimationNodeAnimation_typing")
+states/typing/position = Vector2(300, 260)
+states/walk/node = SubResource("AnimationNodeAnimation_walk")
+states/walk/position = Vector2(300, 100)
+states/walk_turn_180/node = SubResource("AnimationNodeAnimation_turn")
+states/walk_turn_180/position = Vector2(500, 100)

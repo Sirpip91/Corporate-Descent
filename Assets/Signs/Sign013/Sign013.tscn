@@ -1,0 +1,56 @@
+[gd_scene format=4]
+
+[ext_resource type="Texture2D" path="res://Assets/Signs/Sign013/Sign013_signs.png" id="1_wxfnd"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gqemc"]
+resource_name = "signs"
+cull_mode = 2
+albedo_texture = ExtResource("1_wxfnd")
+roughness = 0.5
+texture_filter = 2
+metadata/_gltf_primary_texture_coord = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_we2tk"]
+_surfaces = [{
+"aabb": AABB(-0.1452797, -0.20501167, 0, 0.29055953, 0.41002333, 1e-05),
+"format": 34359742465,
+"index_count": 6,
+"index_data": PackedByteArray("AAABAAIAAAADAAEA"),
+"name": "signs",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray("PMQUPpTuUT4AAACANMQUvpTuUb4AAACANMQUvpTuUT4AAACAPMQUPpTuUb4AAACA")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_m0mu7"]
+resource_name = "Sign013_Cube_215"
+_surfaces = [{
+"aabb": AABB(-0.1452797, -0.20501167, 0, 0.29055953, 0.41002333, 1e-05),
+"attribute_data": PackedByteArray("7mufPoAg2jzY6iE+wqXrPtjqIT6AINo87mufPsKl6z4="),
+"format": 34359742487,
+"index_count": 6,
+"index_data": PackedByteArray("AAABAAIAAAADAAEA"),
+"material": SubResource("StandardMaterial3D_gqemc"),
+"name": "signs",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray("PMQUPpTuUT4AAACANMQUvpTuUb4AAACANMQUvpTuUT4AAACAPMQUPpTuUb4AAACA/3//f////7//f/9/////v/9//3////+//3//f////78=")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_we2tk")
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_2pgpw"]
+points = PackedVector3Array(-0.1452797, -0.20501167, 0, 0.1452514, -0.20501167, 0, -0.1452797, 0.20501167, 0, 0.1452514, 0.20501167, 0)
+
+[node name="Sign013" type="Node3D" unique_id=2094048979]
+
+[node name="Sign013" type="MeshInstance3D" parent="." unique_id=1632930396]
+mesh = SubResource("ArrayMesh_m0mu7")
+
+[node name="Sign013_col" type="StaticBody3D" parent="Sign013" unique_id=904877940]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Sign013/Sign013_col" unique_id=709198776]
+shape = SubResource("ConvexPolygonShape3D_2pgpw")

@@ -1,6 +1,7 @@
-[gd_scene format=4]
+[gd_scene format=4 uid="uid://dce4jgmirtpxt"]
 
-[ext_resource type="Texture2D" path="res://Assets/OfficeProps/GlassDoor/GlassDoor_metal.png" id="1_euvd4"]
+[ext_resource type="Texture2D" uid="uid://ig1qoqso12cj" path="res://Assets/OfficeProps/GlassDoor/GlassDoor_metal.png" id="1_euvd4"]
+[ext_resource type="Script" uid="uid://dmqfb3mevquve" path="res://Assets/OfficeProps/GlassDoor/glass_door.gd" id="2_glassdoor"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hd186"]
 resource_name = "metal"
@@ -80,11 +81,49 @@ roughness = 0.05
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_lkw0v"]
 points = PackedVector3Array(0.036718912, 2, 0.90000045, 0.03999418, 1.9966719, 0.89665276, 0.036718912, 2, -4.7683716e-07, 0.0032673366, 2, 0.90000045, 0.036718912, 0, 0.90000045, 0.03999418, 1.9966719, 0.0032591193, 0.03999418, 0, 0.89665276, 0.090000235, 0.8999609, 0.83991814, 0.090000235, 0.9099452, 0.8299632, 0.0032673366, 2, -4.7683716e-07, 0.036718912, 0, -4.7683716e-07, -7.931143e-06, 1.9966719, 0.89665276, 0.0032673366, 0, 0.90000045, 0.090000235, 0.9099452, 0.71992975, 0.03999418, 0, 0.0032591193, 0.090000235, 0.8899765, 0.8299632, -7.931143e-06, 1.9966719, 0.0032591193, 0.0032673366, 0, -4.7683716e-07, -0.050000288, 0.9099452, 0.8299632, -0.050000288, 0.8999609, 0.83991814, -7.931143e-06, 0, 0.89665276, 0.090000235, 0.8899765, 0.71992975, -0.050000288, 0.9099452, 0.71992975, -7.931143e-06, 0, 0.0032591193, -0.050000288, 0.8899765, 0.8299632, -0.050000288, 0.8899765, 0.71992975)
 
+[sub_resource type="Animation" id="Animation_euvd4"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("glass door:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_4bb55"]
+resource_name = "door_open"
+length = 0.73333335
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("glass door:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.73333335),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0, -1.3962634, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_lkw0v"]
+_data = {
+&"RESET": SubResource("Animation_euvd4"),
+&"door_open": SubResource("Animation_4bb55")
+}
+
 [node name="GlassDoor" type="Node3D" unique_id=1675382153]
 transform = Transform3D(1.7, 0, 0, 0, 1.7, 0, 0, 0, 1.7, 0, 0, 0)
+script = ExtResource("2_glassdoor")
 
 [node name="glass door" type="MeshInstance3D" parent="." unique_id=1730463990]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.019999973, 0, -0.45000005)
+transform = Transform3D(1, 0, 0, 0, 1.0000001, 0, 0, 0, 1, -0.019999975, 0, -0.45000008)
 mesh = SubResource("ArrayMesh_pos6m")
 surface_material_override/1 = SubResource("StandardMaterial3D_4bb55")
 
@@ -92,3 +131,6 @@ surface_material_override/1 = SubResource("StandardMaterial3D_4bb55")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="glass door/glass door_col" unique_id=1294354920]
 shape = SubResource("ConvexPolygonShape3D_lkw0v")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=271589594]
+libraries/ = SubResource("AnimationLibrary_lkw0v")

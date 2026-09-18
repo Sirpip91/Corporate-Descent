@@ -1,0 +1,57 @@
+[gd_scene format=4]
+
+[ext_resource type="Texture2D" path="res://Assets/Signs/Sign011/Sign011_signs.png" id="1_a62qm"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nhvpi"]
+resource_name = "signs"
+cull_mode = 2
+albedo_texture = ExtResource("1_a62qm")
+roughness = 0.5
+texture_filter = 2
+metadata/_gltf_primary_texture_coord = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_w0kkk"]
+_surfaces = [{
+"aabb": AABB(-0.2520884, -0.18071407, 0, 0.504177, 0.36142814, 1e-05),
+"format": 34359742465,
+"index_count": 6,
+"index_data": PackedByteArray("AAABAAIAAAADAAEA"),
+"name": "signs",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray("uxGBvhwNOb4AAACAwRGBPhwNOT4AAACAwRGBPhwNOb4AAACAuxGBvhwNOT4AAACA")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_kenlk"]
+resource_name = "Sign011_Cube_451"
+_surfaces = [{
+"aabb": AABB(-0.2520884, -0.18071407, 0, 0.504177, 0.36142814, 1e-05),
+"attribute_data": PackedByteArray("uF44P/Yjzj4Eonw/4IWTPASifD/2I84+uF44P+CFkzw="),
+"format": 34359742487,
+"index_count": 6,
+"index_data": PackedByteArray("AAABAAIAAAADAAEA"),
+"material": SubResource("StandardMaterial3D_nhvpi"),
+"name": "signs",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray("uxGBvhwNOb4AAACAwRGBPhwNOT4AAACAwRGBPhwNOb4AAACAuxGBvhwNOT4AAACA/3//f////7//f/9/////v/9//3////+//3//f////78=")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_w0kkk")
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_afab2"]
+points = PackedVector3Array(0.25208858, 0.18071407, 0, 0.25208858, -0.18071407, 0, -0.2520884, 0.18071407, 0, -0.2520884, -0.18071407, 0)
+
+[node name="Sign011" type="Node3D" unique_id=760278719]
+
+[node name="Sign011" type="MeshInstance3D" parent="." unique_id=2013325339]
+transform = Transform3D(0, 1, 0, -1, 0, 0, 0, 0, 1, 0, 0, 0)
+mesh = SubResource("ArrayMesh_kenlk")
+
+[node name="Sign011_col" type="StaticBody3D" parent="Sign011" unique_id=2064314963]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Sign011/Sign011_col" unique_id=2029510159]
+shape = SubResource("ConvexPolygonShape3D_afab2")

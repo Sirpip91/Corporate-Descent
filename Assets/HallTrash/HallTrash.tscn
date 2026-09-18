@@ -1,0 +1,86 @@
+[gd_scene format=4]
+
+[ext_resource type="Texture2D" path="res://Assets/HallTrash/HallTrash_sink.png" id="1_utras"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0xqhe"]
+resource_name = "sink"
+cull_mode = 2
+albedo_texture = ExtResource("1_utras")
+roughness = 0.5
+texture_filter = 2
+metadata/_gltf_primary_texture_coord = 0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_an3bm"]
+resource_name = "sink black"
+cull_mode = 2
+albedo_texture = ExtResource("1_utras")
+texture_filter = 2
+metadata/_gltf_primary_texture_coord = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_5f57s"]
+_surfaces = [{
+"aabb": AABB(-0.40000024, -5.9604645e-08, 0, 0.8000004, 0.8, 0.5),
+"format": 34896613377,
+"index_count": 144,
+"index_data": PackedByteArray("AAABAAIAAAACAAMABAACAAEABAADAAIABAABAAUABAAGAAMABQAHAAQABgAEAAcABQAIAAcABgAHAAkACgAIAAUACgALAAgABQABAAwABQAMAAoACgAMAA0ADgAMAAEADgAPAAwAAAAOAAEADgAQAA8AEQALAAoACgANABEAEQASAAsAEQATABIAFAARAA0AEQAUABMAFAAJABMAFAAGAAkAFAANABUABgAUABUABgAVAAMAFgADABUAFgAVABcAAAADABYAFgAXABgAAAAWABkAFgAYABkAGgAZABgAGgAYABsAHAAZABoAAAAZAB0AHAAdABkAAAAdAB4AHAAeAB0AAAAeAA4AHAAfAB4ADgAeABAAHwAQAB4AHwAgABAA"),
+"name": "sink",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 33,
+"vertex_data": PackedByteArray("/3//H///AAAAAP////8AAP9//////wAA////////AAD/f///mZkAAP8///+ZmQAA/7///5mZAAD/f5j5mZkAAP8/mPmZmQAA/7+Y+ZmZAAD/P///ZWYAAP8/mPllZgAAAAD//wAAAAD/f///AAAAAAAA/x///wAAAAD/HwAAAAD/D/8fAAAAAP9///9lZgAA/3+Y+WVmAAD/v5j5ZWYAAP+///9lZgAA/////wAAAAD///8f//8AAP///x8AAAAA/+//HwAAAAD/7/8fZeYAAP/vAABl5gAA/+8AAAAAAAD/fwAAZeYAAP9//x9l5gAA/w//H2XmAAD/DwAAZeYAAP8PAAAAAAAA")
+}, {
+"aabb": AABB(-0.20000044, 0.7799999, 0.19999981, 0.40000087, 1e-05, 0.10000038),
+"format": 34896613377,
+"index_count": 12,
+"index_data": PackedByteArray("AAABAAIAAAADAAEAAAAEAAMAAAAFAAQA"),
+"name": "sink black",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 6,
+"vertex_data": PackedByteArray("/38AAAAAAAAAAAAA//8AAAAAAAAAAAAA/38AAP//AAD//wAA//8AAP//AAAAAAAA")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_cnhkt"]
+resource_name = "HallTrash_Cube_207"
+_surfaces = [{
+"aabb": AABB(-0.40000024, -5.9604645e-08, 0, 0.8000004, 0.8, 0.5),
+"attribute_data": PackedByteArray("DNi6nwalcEYM2HBGBqW6nwalcEYGpbqf/wAiCY0DpSL/AKUijQMiCY0DpSL/AKUikp2bKEhEYmhIRJsokp1iaBQ6Zy8OB+lIkSBnLw4HIgkUOulIkSClIg4H6UgUOiIJkSBnLxQ6pSIOByIJkSClIv8ApSKNA2cv/wBnL40DpSL/AGcvjQPpSP8A6UiNA2cv/wBnL40DZy82P5lIlT1RODY/UTiVPfhGGOsihVfeiL5X3iKFGOuIvj9ujOwBe+e/AXuM7D9u578Be+e/P27nv7qFQfUZhNvpuoU66BmEQfUZhNvpuoU66JKdmyhIRGJokp1iaEhEmyj/AKUijQNnL40DpSL/AGcvNj+ZSJU9UTiVPfhGNj9ROBjrIoVX3oi+GOuIvlfeIoU="),
+"format": 34896613399,
+"index_count": 144,
+"index_data": PackedByteArray("AAABAAIAAAADAAEAAAACAAQAAAAEAAUABgAHAAgABgAJAAcABgAKAAkABgALAAoADAANAA4ADAAPAA0AEAARABIAEgARABMAEAAUABEAEgATABUAEAAWABQAFQATABcAEAAYABYAFQAXABkAGAAaABYAGwAZABcAGAAbABoAGwAXABoAHAAdAB4AHAAfAB0AIAAhACIAIAAjACEAJAAiACEAJAAhACUAJgAnACgAJgApACcAKgArACwAKgAtACsALgAvADAALgAxAC8ALgAwADIALgAyADMANAA1ADYANAA3ADUANAA4ADcANAA5ADgAOgA7ADwAOgA9ADsAPgA/AEAAPgBBAD8AQgBDAEQAQgBFAEMARgBHAEgARgBJAEcA"),
+"material": SubResource("StandardMaterial3D_0xqhe"),
+"name": "sink",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 74,
+"vertex_data": PackedByteArray("/3//H///AAAAAP////8AgP9//////wAAAAD/H///AID///////8AAP///x///wAA/3///2Vm/z//P5j5ZWb/v/8///9lZv+//3+Y+WVm/z//v5j5ZWb/P/+///9lZv8/AAD/H///VNUAAP//AABU1QAA/////1TVAAD/HwAAVNX/f///mZkAAAAA//////+//z///5mZ/78AAP//AAD/v/9//////wAA/z///2Vm/7////////8AAP9///8AAAAA/7///5mZAAD/f///ZWYAAP////8AAAAA/7///2VmAAD/P///ZWZU1f8/mPmZmVTV/z///5mZVNX/P5j5ZWZU1f8///+Zmf///3+Y+ZmZAAD/f///mZkAAP8/mPmZmf///7///5mZAAD/v5j5mZkAAAAA/x///////w//HwAA//8AAP8fAAD///8P/x9l5v///w8AAGXmVNX/D/8fAABU1f8P/x9l5lTV/w8AAAAAVNX/fwAAZeb/P/8P/x9l5v+//3//H2Xm/z//DwAAZeb/v//v/x9l5v8//+8AAGXm/z//f/8f//+qKv8P/x9l5lTVAAD/H///VNX/f/8fZeaqKv/v/x9l5qoq////H///qir///8f//+qKv////8AAKoq////HwAAqir///////+qKv+///9lZqoq/7+Y+ZmZqir/v5j5ZWaqKv+///+Zmaoq////H////z//7/8fAAD/P//v/x9l5v8/////HwAA/z//7wAAZeaqKv/v/x8AAKoq/+8AAAAAqir/7/8fZeaqKv9//3//f////3//f/9/////f/9//3//f/9//3//f/9//3//f/9//3//f/9//3//f1RVqapUVaqqVFWqqlRVqar/f/+//v//f/7//3/+//9//3//v/7//3//f/+//3//v/9//7//f/+//3//v/9//7+qqlRVqqpUVaqqVFWqqlRV/z//v/8//7//P/+//z//v/8//7//P/+//3//P/9//z//f/8//3//P1RVqqpUVaqqVFWqqlRVqqr///////////////////////////////+qKlTVqipU1aoqVNWqKlTVqipU1aoqVNWqqlRVqqpUVaqqVFWqqlRVVFWqqlRVqqpUVaqqVFWqqgAA/38AAP9/AAD/fwAA/3+qqlRVqqpUVaqqVFWqqlRV")
+}, {
+"aabb": AABB(-0.20000044, 0.7799999, 0.19999981, 0.40000087, 1e-05, 0.10000038),
+"attribute_data": PackedByteArray("ypjwC4iVbQXKmG0FiJXwC4iVbQXKmG0F"),
+"format": 34896613399,
+"index_count": 12,
+"index_data": PackedByteArray("AAABAAIAAAADAAEAAAAEAAMAAAAFAAQA"),
+"material": SubResource("StandardMaterial3D_an3bm"),
+"name": "sink black",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 6,
+"vertex_data": PackedByteArray("/38AAAAAqioAAAAA//9U1QAAAAAAAFTV/38AAP//qir//wAA//+qKv//AAAAAKoqVNWqKlTVqipU1aoqVNWqKlTVqipU1aoq")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_5f57s")
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_3lr7b"]
+points = PackedVector3Array(0.40000018, 0.79999995, 0.5, 0.40000018, 0.09992163, 0.5, 0.40000018, 0.79999995, 0, -0.40000024, 0.79999995, 0.5, 0.349961, -5.9604645e-08, 0.44998044, 0.40000018, 0.09992163, 0, -0.40000024, 0.09992163, 0.5, -0.40000024, 0.79999995, 0, 0.349961, -5.9604645e-08, 0, -0.35003936, -5.9604645e-08, 0.44998044, -0.40000024, 0.09992163, 0, -0.35003936, -5.9604645e-08, 0)
+
+[node name="HallTrash" type="Node3D" unique_id=2111083522]
+
+[node name="hall_trash" type="MeshInstance3D" parent="." unique_id=411747132]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.9604645e-08, 0)
+mesh = SubResource("ArrayMesh_cnhkt")
+
+[node name="hall_trash_col" type="StaticBody3D" parent="hall_trash" unique_id=452174237]
+
+[node name="@CollisionShape3D@3" type="CollisionShape3D" parent="hall_trash/hall_trash_col" unique_id=1686078751]
+shape = SubResource("ConvexPolygonShape3D_3lr7b")

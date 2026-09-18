@@ -1,0 +1,61 @@
+[gd_scene format=4]
+
+[ext_resource type="Texture2D" path="res://Assets/ElevatorButtons/ElevatorButtons_elevator.png" id="1_56iwi"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yct8t"]
+resource_name = "elevator"
+cull_mode = 2
+albedo_texture = ExtResource("1_56iwi")
+metallic = 0.07272727
+roughness = 0.5
+emission_enabled = true
+emission = Color(0.4, 0.4, 0.4, 1)
+emission_operator = 1
+emission_texture = ExtResource("1_56iwi")
+texture_filter = 2
+metadata/_gltf_primary_texture_coord = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_xip2g"]
+_surfaces = [{
+"aabb": AABB(-0.05255004, -0.2540505, -1.9180284e-08, 0.10510008, 0.5081011, 1e-05),
+"format": 34359742465,
+"index_count": 6,
+"index_data": PackedByteArray("AAABAAIAAAADAAEA"),
+"name": "elevator",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray("tj5XvegSgr7kwaQytj5XPewSgj7kwaSytj5XPegSgr7kwaQytj5XvewSgj7kwaSy")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_xyvwr"]
+resource_name = "ElevatorButtons_Plane_003"
+_surfaces = [{
+"aabb": AABB(-0.05255004, -0.2540505, -1.9180284e-08, 0.10510008, 0.5081011, 1e-05),
+"attribute_data": PackedByteArray("mO1xPwSXlD5C2X4/oEw9PULZfj8El5Q+mO1xP6BMPT0="),
+"format": 34359742487,
+"index_count": 6,
+"index_data": PackedByteArray("AAABAAIAAAADAAEA"),
+"material": SubResource("StandardMaterial3D_yct8t"),
+"name": "elevator",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray("tj5XvegSgr7kwaQytj5XPewSgj7kwaSytj5XPegSgr7kwaQytj5XvewSgj7kwaSy/3//f////7//f/9/////v/9//3////+//3//f////78=")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_xip2g")
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_pwna1"]
+points = PackedVector3Array(-0.05255004, -0.2540505, 1.9180284e-08, 0.05255004, -0.2540505, 1.9180284e-08, -0.05255004, 0.2540506, -1.9180284e-08, 0.05255004, 0.2540506, -1.9180284e-08)
+
+[node name="ElevatorButtons" type="Node3D" unique_id=949593895]
+
+[node name="ElevatorButtons" type="MeshInstance3D" parent="." unique_id=518513976]
+mesh = SubResource("ArrayMesh_xyvwr")
+
+[node name="ElevatorButtons_col" type="StaticBody3D" parent="ElevatorButtons" unique_id=829706869]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ElevatorButtons/ElevatorButtons_col" unique_id=2058048815]
+shape = SubResource("ConvexPolygonShape3D_pwna1")

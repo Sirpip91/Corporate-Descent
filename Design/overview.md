@@ -99,10 +99,12 @@ back up.
 - [x] Core threat — administrative erasure, never confirmed as
 	  supernatural
 - [x] Core mechanic — find the unofficial route down, one per floor
-- [ ] Floors 8 and below — nothing designed past Floor 9
-- [ ] Fail state — the old heat system was cut with badge farming and
-	  nothing replaced it
+- [x] Floors 8 and below — Floors 8 through 5 + Lobby specced, see
+	  `levels.md`
+- [x] Fail state — getting spotted by the suit re-files him; see
+	  `mechanics.md`
+- [x] Secondary antagonist — the suit, seeded by Halloran's phone call
+	  on Floor 10, never named or voiced; see `story.md`
 - [ ] The abandoned thing (camera / guitar / knife roll) — pick one
 - [ ] Where the surveillance-metrics documents surface
 - [ ] Whether there's a predecessor who tried this before
-- [ ] Cast beyond Halloran and Denise
